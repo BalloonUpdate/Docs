@@ -58,8 +58,6 @@ b. 当服务端修改一些文件之后，不用再下载整个客户端，在�
 
 ---
 
-<!-- tabs:start -->
-
 ## **开源地址**
 
 <!-- tabs:start -->
@@ -80,6 +78,8 @@ b. 当服务端修改一些文件之后，不用再下载整个客户端，在�
 4. 规则编辑器：https://github.com/updater-for-minecraft/updater-rulesEditor
 
 <!-- tabs:end -->
+
+<!-- tabs:start -->
 
 ## **更新记录（服务端）**
 
