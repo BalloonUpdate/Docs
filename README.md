@@ -62,10 +62,24 @@ b. 当服务端修改一些文件之后，不用再下载整个客户端，在�
 
 ## **开源地址**
 
-1. 服务端：https://github.com/innc11/updater-server
-2. 核心包: https://github.com/innc11/updater-core (核心包通常内嵌与服务端Jar之中)
-3. 客户端: https://github.com/innc11/updater-client (只是个空壳，核心逻辑在核心包里面)
-4. 编辑器：https://github.com/innc11/updater-rulesEditor
+<!-- tabs:start -->
+
+### **2.0版本**
+
+1. PHP服务端：https://github.com/updater-for-minecraft/UpdaterServer
+2. 热更新包：https://github.com/updater-for-minecraft/UpdaterHotupdatePackage
+3. 客户端：https://github.com/updater-for-minecraft/UpdaterLauncher
+4. 对象存储部署工具：https://github.com/updater-for-minecraft/AutoDeployer
+5. 目录校验文件工具：https://github.com/updater-for-minecraft/JsonGenerator
+
+### **1.0版本（不推荐）**
+
+1. 服务端：https://github.com/updater-for-minecraft/updater-server
+2. 核心包: https://github.com/updater-for-minecraft/updater-core (核心包通常内嵌与服务端Jar之中)
+3. 客户端: https://github.com/updater-for-minecraft/updater-client (只是个空壳，核心逻辑在核心包里面)
+4. 规则编辑器：https://github.com/updater-for-minecraft/updater-rulesEditor
+
+<!-- tabs:end -->
 
 ## **更新记录（服务端）**
 
