@@ -100,6 +100,10 @@ b. 当服务端修改一些文件之后，不用再下载整个客户端，在�
 调整了热更新包信号文件的路径（从`.minecraft/*.signal`->`.minecraft/updater/*.signal`）
 调整了log文件的位置（`.minecraft/updater.log`->`.minecraft/logs/updater.log`）
 
+2.5.1:
+修复：找不到配置文件文件提示窗口显示时依赖配置文件内容的依赖问题
+默认会自动创建log文件
+优化了一些调试输出
 ```
 
 ### **客户端**
