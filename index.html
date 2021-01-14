@@ -37,5 +37,29 @@
   <script src="//cdn.jsdelivr.net/npm/prismjs@1.23.0/components/prism-json.min.js"></script>
   <!-- docsify-tabs (latest v1.x.x) -->
   <script src="https://cdn.jsdelivr.net/npm/docsify-tabs@1"></script>
+
+  <script>
+    (function(){
+      var defaultTitle = document.querySelector('title').innerHTML
+      var plugin = [
+          function(hook) {
+            hook.afterEach(function(html) {
+              var parser = new DOMParser()
+              var root = parser.parseFromString(html, 'text/html')
+              var dom = root.querySelectorAll('h1,h2,h3,h4,h5,h6')
+              if(dom.length > 0) {
+                setTimeout(() => {
+                  document.querySelector('title').innerHTML = dom[0].innerText
+                }, 5);
+              } else {
+                document.querySelector('title').innerHTML = defaultTitle
+              }
+              return html;
+            });
+          }
+        ]
+      window.$docsify.plugins = window.$docsify.plugins.concat(plugin)
+    })()
+  </script>
 </body>
 </html>
