@@ -38,11 +38,11 @@
     <!-- docsify-tabs (latest v1.x.x) -->
     <script src="https://cdn.jsdelivr.net/npm/docsify-tabs@1"></script>
 
-    <script src="//cdn.jsdelivr.net/gh/innc11/VaComment@v1.3.2/index.js"></script>
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/innc11/VaComment@v1.3.2/index.css" />
+    <!-- <script src="//cdn.jsdelivr.net/gh/innc11/VaComment@v1.3.2/index.js"></script>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/innc11/VaComment@v1.3.2/index.css" /> -->
 
-    <!-- <script src="http://127.0.0.1:9981/index.js"></script>
-	<link rel="stylesheet" type="text/css" href="http://127.0.0.1:9981/index.css" /> -->
+    <script src="http://127.0.0.1:9981/index.js"></script>
+	<link rel="stylesheet" type="text/css" href="http://127.0.0.1:9981/index.css" />
 
     <script>
 
@@ -83,27 +83,27 @@
             window.$docsify.plugins = window.$docsify.plugins.concat([plugin])
         })();
 
-        (function(){
-            var plugin = function(hook) {
-                hook.afterEach(function(html) {
-                    setTimeout(() => {
-                        va.key = location.href.replace(location.origin, '').replace('#', '%23')
-                        va.pageComment = document.querySelector('title').innerHTML
-                        va.create()
-                    }, 10);
-                    return html + `<hr style="margin: 4rem 0 3rem 0;"/><div class="comment-tip">评论</div><div id="va-comment-widget">A</div>`;
-                });
+        // (function(){
+        //     var plugin = function(hook) {
+        //         hook.afterEach(function(html) {
+        //             setTimeout(() => {
+        //                 va.key = location.href.replace(location.origin, '').replace('#', '%23')
+        //                 va.pageComment = document.querySelector('title').innerHTML
+        //                 va.create()
+        //             }, 10);
+        //             return html + `<hr style="margin: 4rem 0 3rem 0;"/><div class="comment-tip">评论</div><div id="va-comment-widget">A</div>`;
+        //         });
 
-                hook.beforeEach(function(content) {
-                    if(!va.isDestroyed()) {
-                        va.destroy()
-                    }
+        //         hook.beforeEach(function(content) {
+        //             if(!va.isDestroyed()) {
+        //                 va.destroy()
+        //             }
 
-                    return content
-                })
-            }
-            window.$docsify.plugins = window.$docsify.plugins.concat([plugin])
-        })();
+        //             return content
+        //         })
+        //     }
+        //     window.$docsify.plugins = window.$docsify.plugins.concat([plugin])
+        // })();
     </script>
 
     <style>
