@@ -60,31 +60,10 @@
     <!-- 全局搜索 -->
     <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
 
-    <script src="//cdn.jsdelivr.net/gh/innc11/VaComment@v1.3.5/index.js"></script>
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/innc11/VaComment@v1.3.5/index.css" />
-
-    <!-- <script src="http://127.0.0.1:9981/index.js"></script>
-	<link rel="stylesheet" type="text/css" href="http://127.0.0.1:9981/index.css" /> -->
-
     <script>
 
-        console.log('VaComment v'+VaComment.version()+' ('+(VaComment.isProduction()?'prod':'dev')+')')
-
-        var va = new VaComment({
-            elementId: 'va-comment-widget',
-            api: 'https://server.innc11.cn:4010',
-            mailEnabled: true,
-            websiteEnabled: false,
-            language: {
-                comment: '还有什么要补充的吗?\n支持Markdown格式，留下邮箱可以收到回复提醒',
-                nick: '昵称',
-                mail: '邮箱(会被保密，可选)',
-                website: '网站',
-            },
-
-        });
-
         (function(){
+            // 将第一个标题作为网页Title
             var defaultTitle = document.querySelector('title').innerHTML
             var plugin = function(hook) {
                 hook.afterEach(function(html) {
@@ -102,28 +81,6 @@
                 });
             }
             
-            window.$docsify.plugins = window.$docsify.plugins.concat([plugin])
-        })();
-
-        (function(){
-            var plugin = function(hook) {
-                hook.afterEach(function(html) {
-                    setTimeout(() => {
-                        va.key = location.href.replace(location.origin, '').replace('#', '%23')
-                        va.pageComment = document.querySelector('title').innerHTML
-                        va.create()
-                    }, 10);
-                    return html + `<hr style="margin: 4rem 0 3rem 0;"/><div class="comment-tip">评论</div><div id="va-comment-widget">A</div>`;
-                });
-
-                hook.beforeEach(function(content) {
-                    if(!va.isDestroyed()) {
-                        va.destroy()
-                    }
-
-                    return content
-                })
-            }
             window.$docsify.plugins = window.$docsify.plugins.concat([plugin])
         })();
     </script>
