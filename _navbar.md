@@ -8,6 +8,6 @@
   - [食用手册-1.2.2](/食用手册-1.2.2 ':target=_self')
   - [食用手册-1.2.1](/食用手册-1.2.1 ':target=_self')
   - [食用手册-1.0-1.2.0](/食用手册-1.0-1.2.0 ':target=_self')
-  - [食用手册-FileSA/ClientUpdater远古版本](/食用手册-FileSA远古版本 ':target=_self')
+  - [食用手册-FileSA远古版本](/食用手册-FileSA远古版本 ':target=_self')
 - [下载地址](下载地址.md  ':target=_self')
 
