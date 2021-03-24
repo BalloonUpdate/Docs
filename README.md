@@ -1,81 +1,64 @@
 ## updater——更新客户端小程序，Mod服好帮手
 
-!> 如果你不知道该做什么，请点击下方列出的文档链接
+Updater好处都有啥？
 
-!> 配置服务端之前需要先搭建一个HTTP服务器作为运行环境，例如Phpstudy、Http File Server、宝塔、Nginx、Apache
+1. 两种服务端支持，大佬小白没烦恼
+2. 支持静态HTTP服务器（阿里腾讯对象存储、CDN、FTP）
+3. 支持动态PHP服务端，安装简单，开箱即用，面板服友好
+4. 支持`跟随启动`特性，在游戏启动前更新文件
+5. 两种工作模式支持，指定路径更新和指定文件更新
+6. 用正则表达式精细匹配要更新的目录
+7. Updater本身支持自身热升级，升级新版不用重发zip包
+8. 可执行文件打包，无需Jvav环境也能正常运行
+9. CEF驱动，界面支持100%自定义
 
-有现成PHP主机或者不想折腾的服主推荐用**动态部署**
+## Updater文档
 
-如果想部署到CDN或者静态服务器上，推荐选择**静态部署**
+!> 在使用Updater之前，请确保您了解基本的计算机相关概念，比如：路径，HTTP，json文件，目录，URL，端口等
 
-在使用IIS HTTP 服务器时，请尽量避免文件名包含+号，否则可能会无法访问对应文件。
+在开始使用之前，你需要从两种服务端类型中选择**其中一种**适合自己的
 
-| 链接                                              | 备注                |
-| ------------------------------------------------- | ------------------- |
-| [文档-2.6](食用手册-2.6.md)                       |                     |
-| [文档-2.5](食用手册-2.5.md)                       |                     |
-| [文档-2.4](食用手册-2.4.md)                       |                     |
-| [文档-2.1-2.2](食用手册-2.1-2.2.md)               |                     |
-| [文档-2.0-2.1.1](食用手册-2.0-2.1.1.md)           |                     |
-| [文档-1.2.2](食用手册-1.2.2.md)                   | 已过时              |
-| [文档-1.2.1](食用手册-1.2.1.md)                   | 已过时              |
-| [文档-1.0-1.2.0](食用手册-1.0-1.2.0.md)           | 已过时              |
-| [文档-FileSA远古版本](食用手册-FileSA远古版本.md) | 前ClientUpdater项目 |
+如果你用过对象存储服务，CDN等云服务，建议选择`静态服务端`
+
+如果你是一个站长，做过网站，搭建过论坛等PHP软件，建议选择`PHP服务端`
+
+如果你是一位技术专家，想使用CDN发挥出Updater的全部能力，建议选择`静态服务端`
+
+如果你有现成的PHP环境和一个配置不错的网站主机，建议选择`PHP服务端`
+
+如果你有一位关系不错的大佬朋友，你想请他帮忙配置，请选择`静态服务端`
+
+在选择好你要的服务端类型之后，请点击[起步](起步.md)
+
+目录：
+
+1. [起步](起步.md)
+2. [PHP服务端安装](PHP服务端安装.md)
+3. [静态服务端安装](静态服务端安装.md)
+5. [服务端配置文件](服务端配置文件.md)
+5. [小工具使用教程](小工具使用教程.md)
+6. [客户端安装教程](客户端安装教程.md)
+7. [常见问题解答](FAQ.md)
+8. [从旧版本升级](从旧版本升级.md)
+9. [自定义界面](自定义界面教程.md)
 
 ## 开发计划
 
 + [x] ~~隐藏客户端程序的倒计时黑框，优化PCL2启动器的体验~~（`2021年3月12日/客户端2.1.3`）
 + [x] ~~使小工具`Deployer`额外支持FTP/SFTP上传操作~~（`2021年3月22日/小工具1.6`）
 + [ ] 同时支持纯文本路径匹配模式和正则表达式匹配模式
++ [x] ~~支持多线程下载~~（`2021年3月22日/客户端2.6.2`）
 
-## 宣传文案
+## 历史版本
 
-<!-- tabs:start -->
-
-## **2.0版本介绍**
-
-1. 支持静态部署，支持对象存储服务、支持CDN（静态部署方式）
-2. 支持集成到启动器，一键启动游戏
-3. 两种工作模式支持，A模式：指定路径更新 和 B模式：指定文件更新
-2. 支持用正则表达式过滤文件或者路径
-3. 依然支持热更新的特性
-4. 服务端使用php开发，可以将更新源挂到网站空间上，对面服极其友好（动态部署方式）
-5. exe文件打包，即使没有Jvav环境也能正常运行
-8. 2.0可以在任务栏下方显示总下载进度（是按文件大小算的不是按文件数量算的哦，不会出现卡99%那种令人捉急的情况）
-
-![taskbar](README/taskbar.gif)
-
-![ui预览](README/ui预览.gif)
-
-## **1.0版本介绍（已过时）**
-
-特别注意：
-1. 本软件是一个软件，请独立运行，不要放到plugins文件夹或者Mods文件夹
-2. 本软件运行要求最低是Java8
-3. 面板服通常无法使用此软件(多数情况下)，因为无法开启新的独立端口也没有主机终端可以操作，VPS则不受这个影响
-
-<!-- tabs:end -->
-
-## **开源地址**
-
-<!-- tabs:start -->
-
-### **2.0版本**
-
-1. PHP服务端：https://github.com/updater-for-minecraft/UpdaterServer
-2. 热更新包：https://github.com/updater-for-minecraft/UpdaterHotupdatePackage
-3. 客户端：https://github.com/updater-for-minecraft/UpdaterLauncher
-4. 对象存储部署工具：https://github.com/updater-for-minecraft/AutoDeployer
-5. 目录校验文件工具：https://github.com/updater-for-minecraft/JsonGenerator
-
-### **1.0版本（不推荐）**
-
-1. 服务端：https://github.com/updater-for-minecraft/updater-server
-2. 核心包: https://github.com/updater-for-minecraft/updater-core (核心包通常内嵌与服务端Jar之中)
-3. 客户端: https://github.com/updater-for-minecraft/updater-client (只是个空壳，核心逻辑在核心包里面)
-4. 规则编辑器：https://github.com/updater-for-minecraft/updater-rulesEditor
-
-<!-- tabs:end -->
+1. [文档-2.5](https://github.com/updater-for-minecraft/Docs/tree/c49c065a9815b35c168d7d8616abf77d510ab2e0) 
+3. [文档-2.4](https://github.com/updater-for-minecraft/Docs/tree/c49c065a9815b35c168d7d8616abf77d510ab2e0) 
+4. [文档-2.1-2.2](https://github.com/updater-for-minecraft/Docs/tree/c49c065a9815b35c168d7d8616abf77d510ab2e0) 
+5. [文档-2.0-2.1.1](https://github.com/updater-for-minecraft/Docs/tree/c49c065a9815b35c168d7d8616abf77d510ab2e0)
+6. [文档-1.2.2](https://github.com/updater-for-minecraft/Docs/tree/c49c065a9815b35c168d7d8616abf77d510ab2e0)
+7. [文档-1.2.1](https://github.com/updater-for-minecraft/Docs/tree/c49c065a9815b35c168d7d8616abf77d510ab2e0)
+8. [文档-1.0-1.2.0](https://github.com/updater-for-minecraft/Docs/tree/c49c065a9815b35c168d7d8616abf77d510ab2e0)
+9. [文档-FileSA远古版本/前ClientUpdater项目](https://github.com/updater-for-minecraft/Docs/tree/c49c065a9815b35c168d7d8616abf77d510ab2e0)
 
 ## 更新记录
 
@@ -278,5 +261,26 @@ JsonGenerator：
 
 1.0.1：
 首次发布
+
+<!-- tabs:end -->
+
+## 开源地址
+
+<!-- tabs:start -->
+
+### **2.0版本**
+
+1. PHP服务端：https://github.com/updater-for-minecraft/UpdaterServer
+2. 热更新包：https://github.com/updater-for-minecraft/UpdaterHotupdatePackage
+3. 客户端：https://github.com/updater-for-minecraft/UpdaterLauncher
+4. 对象存储部署工具：https://github.com/updater-for-minecraft/AutoDeployer
+5. 目录校验文件工具：https://github.com/updater-for-minecraft/JsonGenerator
+
+### **1.0版本（不推荐）**
+
+1. 服务端：https://github.com/updater-for-minecraft/updater-server
+2. 核心包: https://github.com/updater-for-minecraft/updater-core (核心包通常内嵌与服务端Jar之中)
+3. 客户端: https://github.com/updater-for-minecraft/updater-client (只是个空壳，核心逻辑在核心包里面)
+4. 规则编辑器：https://github.com/updater-for-minecraft/updater-rulesEditor
 
 <!-- tabs:end -->
