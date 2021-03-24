@@ -1,4 +1,4 @@
-## updater——更新客户端小程序，Mod服好帮手
+## updater——更新客户端小程序，Mod服好帮手(2.6.2)
 
 Updater好处都有啥？
 
@@ -51,14 +51,20 @@ Updater好处都有啥？
 
 ## 历史版本
 
+1. [2.6.1文档](https://github.com/updater-for-minecraft/Docs/tree/2.6.1)
+
+---
+
+更旧的版本：
+
 1. [文档-2.5](https://github.com/updater-for-minecraft/Docs/tree/c49c065a9815b35c168d7d8616abf77d510ab2e0) 
-3. [文档-2.4](https://github.com/updater-for-minecraft/Docs/tree/c49c065a9815b35c168d7d8616abf77d510ab2e0) 
-4. [文档-2.1-2.2](https://github.com/updater-for-minecraft/Docs/tree/c49c065a9815b35c168d7d8616abf77d510ab2e0) 
-5. [文档-2.0-2.1.1](https://github.com/updater-for-minecraft/Docs/tree/c49c065a9815b35c168d7d8616abf77d510ab2e0)
-6. [文档-1.2.2](https://github.com/updater-for-minecraft/Docs/tree/c49c065a9815b35c168d7d8616abf77d510ab2e0)
-7. [文档-1.2.1](https://github.com/updater-for-minecraft/Docs/tree/c49c065a9815b35c168d7d8616abf77d510ab2e0)
-8. [文档-1.0-1.2.0](https://github.com/updater-for-minecraft/Docs/tree/c49c065a9815b35c168d7d8616abf77d510ab2e0)
-9. [文档-FileSA远古版本/前ClientUpdater项目](https://github.com/updater-for-minecraft/Docs/tree/c49c065a9815b35c168d7d8616abf77d510ab2e0)
+2. [文档-2.4](https://github.com/updater-for-minecraft/Docs/tree/c49c065a9815b35c168d7d8616abf77d510ab2e0) 
+3. [文档-2.1-2.2](https://github.com/updater-for-minecraft/Docs/tree/c49c065a9815b35c168d7d8616abf77d510ab2e0) 
+4. [文档-2.0-2.1.1](https://github.com/updater-for-minecraft/Docs/tree/c49c065a9815b35c168d7d8616abf77d510ab2e0)
+5. [文档-1.2.2](https://github.com/updater-for-minecraft/Docs/tree/c49c065a9815b35c168d7d8616abf77d510ab2e0)
+6. [文档-1.2.1](https://github.com/updater-for-minecraft/Docs/tree/c49c065a9815b35c168d7d8616abf77d510ab2e0)
+7. [文档-1.0-1.2.0](https://github.com/updater-for-minecraft/Docs/tree/c49c065a9815b35c168d7d8616abf77d510ab2e0)
+8. [文档-FileSA远古版本/前ClientUpdater项目](https://github.com/updater-for-minecraft/Docs/tree/c49c065a9815b35c168d7d8616abf77d510ab2e0)
 
 ## 更新记录
 
