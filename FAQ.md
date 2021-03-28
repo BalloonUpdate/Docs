@@ -34,7 +34,7 @@
 
 ### 解决方法2
 
-1. 从源码仓库克隆2.6alpha3的Commit的源文件（https://github.com/updater-for-minecraft/Hotupdate/tree/4d177fb65b00d931107c0606b2a756864369cf60）
+1. 从源码仓库克隆2.6alpha3的Commit的源文件（ https://github.com/updater-for-minecraft/Hotupdate/tree/4d177fb65b00d931107c0606b2a756864369cf60 ）
 2. 复制仓库下的`assets`目录到服务端的`hotupdate`目录下
 3. 打开`assets/index.js`，跳转到159行`on_error`函数
 4. 在`detail+'\n'`后面添加`+trackback`语句，使其变成`alert('出现异常: '+type+'\n\n'+detail+'\n'+trackback)`即可完整输出报错信息
