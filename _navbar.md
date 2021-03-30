@@ -10,5 +10,5 @@
   - [7. 常见问题解答](FAQ.md)
   - [8. 从旧版本升级](从旧版本升级.md)
   - [9. 自定义界面](自定义界面教程.md)
-- [下载](https://github.com/updater-for-minecraft/Docs/tree/download-link  ':target=_blank')
+- [下载](https://updater-for-minecraft.github.io/DownloadLink  ':target=_blank')
 

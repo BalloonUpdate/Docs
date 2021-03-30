@@ -8,18 +8,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
 
-    
     <!-- Edit on Github -->
     <script src="//cdn.jsdelivr.net/npm/docsify-edit-on-github"></script>
     
     <script>
         window.$docsify = {
             name: 'UpdaterForMinecraft',
-            repo: 'https://github.com/updater-for-minecraft/Docs',
+            repo: 'https://github.com/updater-for-minecraft/Docs/',
             auto2top: true,
             loadNavbar: true,
             // relativePath: true,
-            formatUpdated: '{MM}/{DD} {HH}:{mm}',
+            formatUpdated: '{YYYY}-{MM}-{DD} {HH}:{mm}',
             // routerMode: 'history',
             topMargin: 90,
             tabs: {
@@ -38,10 +37,16 @@
                 noData: '没有结果!',
             },
             plugins: [
-                EditOnGithubPlugin.create('https://github.com/updater-for-minecraft/Docs/blob/main', null, null)
+                EditOnGithubPlugin.create('https://github.com/updater-for-minecraft/Docs/blob/main/', null, null)
             ]
         }
     </script>
+
+    <style>
+        .markdown-section{
+            max-width: 1000px;
+        }
+    </style>
 </head>
 <body>
     <div id="app">Loading...</div>
