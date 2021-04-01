@@ -1,4 +1,4 @@
-## updater——更新客户端小程序，Mod服好帮手(2.6.5)
+## updater——更新客户端小程序，Mod服好帮手(适用于2.6.5)
 
 Updater好处都有啥？
 
@@ -42,13 +42,16 @@ Updater好处都有啥？
 8. [常见问题解答](FAQ.md)
 9. [从旧版本升级](从旧版本升级.md)
 10. [自定义界面](自定义界面教程.md)
+11.  [问题反馈](问题反馈.md)
+12. [参与贡献](参与贡献.md)
 
 ## 开发计划
 
 + [x] ~~隐藏客户端程序的倒计时黑框，优化PCL2启动器的体验~~（`2021年3月12日/客户端2.1.3`）
 + [x] ~~使小工具`Deployer`额外支持FTP/SFTP上传操作~~（`2021年3月22日/小工具1.6`）
-+ [ ] 同时支持纯文本路径匹配模式和正则表达式匹配模式
++ [x] ~~同时支持纯文本路径匹配模式和正则表达式匹配模式~~(`2021年3月28日/热更新包2.6.4`)
 + [x] ~~支持多线程下载~~（`2021年3月22日/客户端2.6.2`）
++ [ ] 配置文件可视化编辑
 
 ## 历史版本
 
@@ -124,6 +127,13 @@ Updater好处都有啥？
 
 2.6.5f1:
 1. 修复了Release构建文件版本号不正确的问题
+
+2.6.5f2:
+1. 在日志里增加了运行环境的信息输出
+2. 规范化了日志内容
+3. 在JS回调中增加了indev属性，用以判断是否被打包
+4. 修复了意外误伤文件的问题
+5. 尝试优化了界面加载速度
 ```
 
 ### **客户端**
@@ -294,11 +304,13 @@ JsonGenerator：
 
 ### **2.0版本**
 
-1. PHP服务端：https://github.com/updater-for-minecraft/UpdaterServer
-2. 热更新包：https://github.com/updater-for-minecraft/UpdaterHotupdatePackage
-3. 客户端：https://github.com/updater-for-minecraft/UpdaterLauncher
-4. 对象存储部署工具：https://github.com/updater-for-minecraft/AutoDeployer
-5. 目录校验文件工具：https://github.com/updater-for-minecraft/JsonGenerator
+1. 文档：https://github.com/updater-for-minecraft/Docs
+2. 下载地址页面：https://github.com/updater-for-minecraft/DownloadLink
+3. PHP服务端：https://github.com/updater-for-minecraft/PHPServer
+4. 静态服务端：https://github.com/updater-for-minecraft/StaticServer
+5. 热更新包：https://github.com/updater-for-minecraft/Hotupdate
+6. 客户端：https://github.com/updater-for-minecraft/Client
+7. 小工具：https://github.com/updater-for-minecraft/UtilityTool
 
 ### **1.0版本（不推荐）**
 

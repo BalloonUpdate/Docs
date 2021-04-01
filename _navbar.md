@@ -10,5 +10,7 @@
   - [7. 常见问题解答](FAQ.md)
   - [8. 从旧版本升级](从旧版本升级.md)
   - [9. 自定义界面](自定义界面教程.md)
+  - [10. 问题反馈](问题反馈.md)
+  - [11. 参与贡献](参与贡献.md)
 - [下载](https://updater-for-minecraft.github.io/DownloadLink  ':target=_blank')
 
