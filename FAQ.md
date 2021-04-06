@@ -1,5 +1,17 @@
 # 常见问题解答（QA环节）
 
+## Q：出现异常：PermissionError
+
+![QQ图片20210406215252](FAQ/QQ图片20210406215252.jpg)
+
+影响范围：热更新包2.6.5f1
+
+因为在服务端配置文件的regexes中所列出的目录，在服务端resources目录里不存在，所以会报这个错误
+
+发生此错误时，还可能会误删`.minecraft`目录下的文件
+
+解决方案：升级到2.6.5f2及以上版本
+
 ## Q：出现异常: KeyError
 
 ![KeyError](FAQ/KeyError.png)
