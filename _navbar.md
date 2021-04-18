@@ -12,5 +12,7 @@
   - [9. 自定义界面](自定义界面教程.md)
   - [10. 问题反馈](问题反馈.md)
   - [11. 参与贡献](参与贡献.md)
-- [下载](https://updater-for-minecraft.github.io/DownloadLink  ':target=_blank')
+- 下载
+  - [从GitHub Pages（全球推荐）](https://updater-for-minecraft.github.io/DownloadLink  ':target=_blank')
+  - [从Gitee Pages（中国大陆推荐）](https://updater-for-minecraft.github.io/DownloadLink  ':target=_blank')
 
