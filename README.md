@@ -55,8 +55,9 @@ Updater好处都有啥？
 
 ## 历史版本
 
-1. [2.6.1文档](https://github.com/updater-for-minecraft/Docs/tree/2.6.1)
-2. [2.6.3文档](https://github.com/updater-for-minecraft/Docs/tree/2.6.3)
++ [2.6.7文档](https://github.com/updater-for-minecraft/Docs/tree/v2.6.7)
++ [2.6.3文档](https://github.com/updater-for-minecraft/Docs/tree/2.6.3)
++ [2.6.1文档](https://github.com/updater-for-minecraft/Docs/tree/2.6.1)
 
 ---
 
