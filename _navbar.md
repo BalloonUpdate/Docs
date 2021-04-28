@@ -17,7 +17,5 @@
   - [更新记录](更新记录.md)
   - [历史版本](历史版本文档.md)
   - [问题反馈&参与贡献](问题反馈和参与贡献.md)
-- 下载
-  - [从GitHub Pages（全球推荐）](https://updater-for-minecraft.github.io/DownloadLink  ':target=_blank')
-  - [从Gitee Pages（中国大陆推荐）](https://updater-for-minecraft.gitee.io/download-link-mirror  ':target=_blank')
+- [下载](下载地址.md)
 
