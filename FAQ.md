@@ -12,6 +12,16 @@
 
 解决方案：升级到2.6.5f2及以上版本
 
+## Q：出现异常：check_hostname requires server_hostname
+
+影响范围：小工具全版本
+
+原因：可能是电脑开启了代理上网导致
+
+异常全称`qcloud_cos.cos_exception.CosClientError: check_hostname requires server_hostname`，这个是腾讯COS SDK的bug，是腾讯的锅，不是我代码的问题，我也不知道怎么回事就报这个错误了，多数是在上传到腾讯对象存储时触发的这个问题，只能等腾讯修复了
+
+解决方案：尝试关闭代理，或者给小工具设置白名单，或者在虚拟机里使用小工具
+
 ## Q：出现未知错误: KeyError：'client'
 
 ![QQ图片20210423150013](FAQ/QQ图片20210423150013.jpg)
