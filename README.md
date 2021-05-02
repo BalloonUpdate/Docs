@@ -2,7 +2,7 @@
 
 更新客户端小程序，Mod服好帮手
 
-!> 注意：v2.8.0版本完全不兼容v2.7.0版本，如非必要不建议升级到v2.8.0
+!> 注意：如果你不是首次安装Updater，请务必参考[升级须知](从旧版本升级.md)
 
 ### 1. 运行环境要求
 
@@ -24,13 +24,13 @@ HTTP服务器可以选择Nginx、Apache、IIS、宝塔、Phpstudy、Http File Se
 
 点击右上角的下载链接（把网页往上滑，不是那个绿色猫猫图标），依次下载**热更新包**，**客户端**，**PHP服务端**，**静态服务端**，**小工具**一共5个文件。所有文件选择最新版即可
 
-### 3. 带你入个门
+### 3. 食用指南
 
 根据你选择的**服务端类型**，点击对应的链接：[PHP服务端](PHP服务端安装.md ':target=_blank') / [静态服务端](静态服务端安装.md ':target=_blank')
 
 （你也可以随时从右上角进行跳转）
 
-### 4. 如果遇到问题
+### 4. 遇到问题
 
 首先参考[常见问题解答](FAQ.md ':target=_blank')，如不能解决，请加qq群 925057600 免审核。或者直接私聊群主qq(免验证)
 
@@ -45,7 +45,6 @@ HTTP服务器可以选择Nginx、Apache、IIS、宝塔、Phpstudy、Http File Se
 喜欢的话，欢迎前来给一颗Star呀`━(*｀∀´*)ノ亻!`
 
 + 文档：https://github.com/updater-for-minecraft/Docs
-+ 下载地址页面：https://github.com/updater-for-minecraft/DownloadLink
 + PHP服务端：https://github.com/updater-for-minecraft/PHPServer
 + 静态服务端：https://github.com/updater-for-minecraft/StaticServer
 + 热更新包：https://github.com/updater-for-minecraft/Hotupdate
