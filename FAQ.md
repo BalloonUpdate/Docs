@@ -1,6 +1,42 @@
 # 常见问题解答（QA环节）
 
-## Q：出现异常：PermissionError
+## FailedToConnectError
+
+此错误经常在网络不稳定时出现，请多试几次，如果仍然出现这个问题，请将弹框中的URL复制到浏览器进行访问，如果浏览器也打不开请检查电脑网络是否通畅，域名是否拼写正确
+
+## UnableToDecodeError
+
+服务器返回了无法解码的数据，一般为没有权限访问或者是url设置有误，请根据具体返回的原始数据判断是何种问题
+
+## UnexpectedTransmissionError
+
+连接中断，此错误经常在网络不稳定时出现，请多试几次
+
+## UnexpectedHttpCodeError
+
+服务器返回了非正常状态码，请根据具体返回的原始数据判断是何种问题
+
+## re.error
+
+正则表达式编写有误，一般多为转义字符使用不正确导致
+
+## UnknownWorkModeError
+
+工作模式填写不正确，只能填写`common`或者`exist`，不能填写其它的值
+
+## NotInRightPathError
+
+没有把热更新包放到正确的位置
+
+解决方法：需要把热更新包放到`.minecraft/updater`里
+
+### NoSettingsFileError
+
+找不到`.minecraft/updater.settings.json`配置文件
+
+解决方法：检查这个文件是否存在，文件名是否正确
+
+## PermissionError
 
 ![QQ图片20210406215252](FAQ/QQ图片20210406215252.jpg)
 
@@ -12,7 +48,7 @@
 
 解决方案：升级到2.6.5f2及以上版本
 
-## Q：出现异常：check_hostname requires server_hostname
+## check_hostname requires server_hostname
 
 影响范围：小工具全版本
 
@@ -22,7 +58,7 @@
 
 解决方案：尝试关闭代理，或者给小工具设置白名单，或者在虚拟机里使用小工具
 
-## Q：出现未知错误: KeyError：'client'
+## KeyError：'client'
 
 ![QQ图片20210423150013](FAQ/QQ图片20210423150013.jpg)
 
@@ -35,7 +71,7 @@
 1. 将服务端降级到2.3或2.4版本
 2. 将客户端升级到2.6.x版本
 
-## Q：出现异常: KeyError
+## KeyError
 
 ![KeyError](FAQ/KeyError.png)
 
@@ -45,7 +81,7 @@
 
 ![solution_KeyError](FAQ/solution_KeyError.png)
 
-## Q：使用HMCL时无法连接到更新服务器却能继续启动游戏
+## 使用HMCL时无法连接到更新服务器却能继续启动游戏
 
 影响范围：全版本
 
@@ -53,7 +89,7 @@
 
 由于HMCL机制所致，此问题暂时无解
 
-## Q：出现异常: error
+## error
 
 ![error](FAQ/error.png)
 
