@@ -1,5 +1,15 @@
 # 常见问题解答（QA环节）
 
+## 360报毒
+
+影响范围：全版本
+
+因为updater依赖cef，所以会在exe包中内置一个libcef.dll，360会将其误识别成chrome，从而报毒（因为cef全程就是Chromium Embedded Framework）
+
+如果仍然不放心，可以到GitHub仓库审阅程序源代码，所有updater相关的程序均是开源的，构建也采用的github actions构建，可以把构建输出的hash与本地文件hash进行对比，以确认源代码的有效性
+
+解决办法：目前只能手动加入白名单
+
 ## FailedToConnectError
 
 此错误经常在网络不稳定时出现，请多试几次，如果仍然出现这个问题，请将弹框中的URL复制到浏览器进行访问，如果浏览器也打不开请检查电脑网络是否通畅，域名是否拼写正确
