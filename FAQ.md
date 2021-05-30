@@ -10,6 +10,24 @@
 
 解决办法：目前只能手动加入白名单
 
+## 点击运行后无任何反应
+
+请检查热更新包是否放到了正确的位置（`.minecraft/updater/`下）
+
+另外请检查`.minecraft/`目录下有无生成名为`updater.error.log`的文件
+
+## utf-8 codec can't decode byte 0xc0
+
+影响范围：全版本
+
+生成的`updater.error.log`中包含以下内容：
+
+![QQPIC20210530142357](FAQ.assets/QQPIC20210530142357.png)
+
+此问题触发概率未知，具体原因可能是内部端口冲突，导致读取了错误的数据
+
+解决办法：在客户端配置文件`updater.setting.json`里增加一个配置项：`"cef_with_httpserver": false`
+
 ## FailedToConnectError
 
 此错误经常在网络不稳定时出现，请多试几次，如果仍然出现这个问题，请将弹框中的URL复制到浏览器进行访问，如果浏览器也打不开请检查电脑网络是否通畅，域名是否拼写正确
