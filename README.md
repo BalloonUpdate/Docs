@@ -25,9 +25,7 @@ HTTP服务器可以选择Nginx、Apache、IIS、宝塔、Phpstudy、Http File Se
 
 ### 3. 食用指南
 
-根据你选择的**服务端类型**，点击对应的链接：[PHP服务端](PHP服务端安装.md ':target=_blank') / [静态服务端](静态服务端安装.md ':target=_blank')
-
-（你也可以随时从右上角进行跳转）
+根据你选择的**服务端类型**，点击对应的教程链接：[PHP服务端](PHP服务端安装.md ':target=_blank') / [静态服务端](静态服务端安装.md ':target=_blank')（你也可以随时从右上角进行跳转）
 
 ### 4. 遇到问题
 
