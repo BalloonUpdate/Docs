@@ -1,16 +1,16 @@
 ## PHP服务端安装
 
-> 如何搭建PHP环境不在本文档的范围内，请善用搜索引擎
+1. 把`php服务端`文件夹里的所有文件，解压到网站根目录（一共四个文件）
 
-1. 新建一个空白文件夹，解压php服务端zip包的所有文件
-2. ![dynamic-server](PHP服务端安装/dynamic-server.png)
-3. 然后解压热更新包，将`UpdaterHotupdatePackage.exe`文件复制到PHP服务端的`php服务端/self`目录下
-4. ![dynamic-server-hu-package](PHP服务端安装/dynamic-server-hu-package.png)
-5. 编辑`php服务端/server.json`，参考[服务端配置文件](服务端配置文件.md ':target=_blank')
-6. 将需要更新的文件放到`res`目录里（确保目录结构完整），可以参考下面的图片
-7. ![file_structure_d](PHP服务端安装.assets/file_structure_d.png)
-8. ![file_structure_d](PHP服务端安装/file_structure_d.png)
-9. 配置服务端配置完毕！接下来是[客户端安装教程](客户端安装教程.md)
-10. 无论何时，想要查看热更新包的版本，请点击**右键->属性->详细信息->产品版本**
-11. ![inspect-version](PHP服务端安装/inspect-version.png)
+2. ![php-server-all-files](PHP服务端安装.assets/php-server-all-files.png)
+
+3. `res`目录存放要更新的文件、`config.yml`配置更新路径
+
+4. `index.php`和`Spyc.php`为程序文件，不用管它
+
+7. 编辑`config.yml`，请参考[这里](服务端配置文件.md ':target=_blank')
+
+6. 将需要更新的模组文件复制到`res/.minecraft/mods`目录里（其它文件按实际路径复制就好）
+
+7. 配置服务端配置完毕！接下来是[客户端安装教程](客户端安装教程.md)
 
