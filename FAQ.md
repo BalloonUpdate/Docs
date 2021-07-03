@@ -4,9 +4,7 @@
 
 影响范围：全版本
 
-因为updater依赖cef，所以会在exe包中内置一个libcef.dll，360会将其误识别成chrome，从而报毒（因为cef全程就是Chromium Embedded Framework）
-
-如果仍然不放心，可以到GitHub仓库审阅程序源代码，所有updater相关的程序均是开源的，构建也采用的github actions构建，可以把构建输出的hash与本地文件hash进行对比，以确认源代码的有效性
+此问题无解。如果不放心，可以到GitHub仓库审阅程序源代码，所有updater相关的程序均是开源的，构建也采用的github actions构建，可以把构建输出的hash与本地文件hash进行对比，以确认源代码的有效性
 
 解决办法：目前只能手动加入白名单
 
@@ -72,7 +70,7 @@
 
 ## PermissionError
 
-![QQ图片20210406215252](FAQ/QQ图片20210406215252.jpg)
+![QQ图片20210406215252](FAQ.assets/QQ图片20210406215252.jpg)
 
 影响范围：热更新包2.6.5f1
 
@@ -94,7 +92,7 @@
 
 ## KeyError：'client'
 
-![QQ图片20210423150013](FAQ/QQ图片20210423150013.jpg)
+![QQ图片20210423150013](FAQ.assets/QQ图片20210423150013.jpg)
 
 影响范围：热更新包2.5.x
 
@@ -107,13 +105,13 @@
 
 ## KeyError
 
-![KeyError](FAQ/KeyError.png)
+![KeyError](FAQ.assets/KeyError.png)
 
 影响范围：热更新包2.6.1升级到2.6.2或者2.6.3时
 
 需要一并升级服务端到对应的版本，如果使用静态服务端，也可以手动添加一个json属性来解决
 
-![solution_KeyError](FAQ/solution_KeyError.png)
+![solution_KeyError](FAQ.assets/solution_KeyError.png)
 
 ## 使用HMCL时无法连接到更新服务器却能继续启动游戏
 
@@ -125,7 +123,7 @@
 
 ## error
 
-![error](FAQ/error.png)
+![error](FAQ.assets/error.png)
 
 影响范围：热更新包2.6.1
 
