@@ -8,6 +8,18 @@
 
 解决办法：目前只能手动加入白名单
 
+#### 有歧义的文件类型
+
+AmbiguousFileTypeEeception
+
+![Ambiguous](FAQ.assets/Ambiguous.png)
+
+影响范围：3.x
+
+原因：3.0.0客户端不兼容2.x服务端
+
+解决办法：需要一并更新服务端版本到3.x
+
 ## 程序运行后有几率卡死未响应
 
 影响范围：v2.8以上
