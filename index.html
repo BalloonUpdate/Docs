@@ -10,7 +10,7 @@
     <link rel="icon" href="icon.png" type="image/png">
 
     <!-- Edit on Github -->
-    <!-- <script src="//cdn.jsdelivr.net/npm/docsify-edit-on-github"></script> -->
+    <script src="//cdn.jsdelivr.net/npm/docsify-edit-on-github"></script>
     
     <script>
         window.$docsify = {
@@ -38,16 +38,10 @@
                 noData: '没有结果!',
             },
             plugins: [
-                // EditOnGithubPlugin.create('https://github.com/updater-for-minecraft/Docs/blob/main/', null, null)
+                EditOnGithubPlugin.create('https://github.com/updater-for-minecraft/Docs/blob/main/', null, 'Edit on Github')
             ]
         }
     </script>
-
-    <style>
-        .markdown-section{
-            max-width: 1000px;
-        }
-    </style>
 </head>
 <body>
     <div id="app">Loading...</div>
@@ -63,6 +57,8 @@
     <script src="https://cdn.jsdelivr.net/npm/docsify-tabs@1"></script>
     <!-- 全局搜索 -->
     <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
+    <!-- 代码高亮 -->
+    <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-yaml.min.js"></script>
 
     <script>
 
@@ -90,17 +86,87 @@
     </script>
 
     <style>
-        #va-comment-widget {
-            max-width: 800px;
-            margin: 0 auto;
+        .markdown-section > div:first-child p {
+            margin: 0 0;
         }
 
-        .comment-tip {
-            padding: 5px;
-            font-weight: 600;
-            font-size: 1.8em;
-            text-align: center;
-            margin-bottom: 1rem;
+        @media(prefers-color-scheme:dark) {
+            .sidebar, body {
+                background-color: rgb(39, 39, 39);
+            }
+
+            body {
+                color: #c1c1c1;
+            }
+
+            /* header 123456 */
+            .anchor span {
+                color: #e2e2e2;
+            }
+
+            .sidebar {
+                border-right-color: #a9a9a912;
+            }
+
+            .sidebar,
+            .sidebar ul li a {
+                color: #c1c1c1;
+            }
+            
+            .markdown-section h1, .markdown-section h2, .markdown-section h3, .markdown-section h4, .markdown-section strong {
+                color: #7bc9e6;
+            }
+
+            .markdown-section code, .markdown-section pre {
+                background-color: #353535;
+            }
+
+            .markdown-section p.tip, .markdown-section tr:nth-child(2n) {
+                background-color: #3c3c3c;
+            }
+
+            .markdown-section td, .markdown-section th {
+                border: 1px solid #4c4c4c;
+            }
+
+            .markdown-section p.tip, .markdown-section tr:nth-child(2n) {
+                background-color: #2d2d2d !important;
+            }
+
+            .markdown-section pre[v-pre], 
+            .markdown-section pre[v-pre] code {
+                background-color: #151515 !important;
+                /* background-color: #f14b4b !important; */
+            }
+            .markdown-section pre[v-pre] {
+                border-radius: 4px;
+            }
+
+            .markdown-section pre>code {
+                color: #b9b8b8;
+            }
+
+            .markdown-section blockquote {
+                background-color: #2d2d2d;
+            }
+
+            .markdown-section hr {
+                border-bottom-color: #6b6b6b;
+            }
+
+            .app-nav li ul {
+                background-color: #333;
+                border-color: #636363;
+            }
+
+            .search .input-wrap input {
+                background-color: #313131;
+                color: #c1c1c1;;
+            }
+
+            .search {
+                border-bottom-color: #3c3c3c;
+            }
         }
     </style>
 </body>
