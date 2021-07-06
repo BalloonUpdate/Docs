@@ -90,7 +90,17 @@
             margin: 0 0;
         }
 
+        details[open] {
+            border: 1px solid #fff;
+            border-radius: 4px;
+            padding: 8px;
+        }
+
         @media(prefers-color-scheme:dark) {
+            details[open] {
+                border-color: #676767;
+            }
+
             .sidebar, body {
                 background-color: rgb(39, 39, 39);
             }
