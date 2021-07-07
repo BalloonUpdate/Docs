@@ -8,7 +8,7 @@
 
 解决办法：目前只能手动加入白名单
 
-#### 有歧义的文件类型
+## 有歧义的文件类型
 
 AmbiguousFileTypeEeception
 
