@@ -2,7 +2,7 @@
 
 更新客户端小程序，Mod服好帮手
 
-!> 注意：v3.0.0与v2.x完全不兼容，请完全重新安装，2.x文档链接请[点击这里](历史版本文档.md)
+!> 注意：版本3.x与2.x完全不兼容，请重新安装。2.x文档链接请[点击这里](历史版本文档.md)
 
 <details>
 <summary>点击展开v3.0.0的发行说明</summary>
@@ -35,7 +35,7 @@ HTTP服务器推荐：Nginx、Apache、IIS、宝塔、Phpstudy、Http File Serve
 
 `中大规模服务器`的话，推荐静态服务端，一是不用安装在vps上和mc服务端争抢宝贵的带宽（买过服务器的应该都知道带宽价格极其昂贵），二是下载速度有保证，像阿里和腾讯一般都是1000mbps的下行带宽，流量约1GB/0.5元，用多少算多少，也没有月末清理的规定，更新频率少的话，10块钱能用近大半年。如果你有国内备案的话，建议直接上CDN，流量费可以直接降低一半，1GB/0.25元，
 
-`超大规模服务器`应该已经有适合自己的专业解决方案了，我在此就不献丑了。
+`超大规模服务器`应该已经有合适的专业解决方案了，我就不在此献丑了。
 
 </details>
 
@@ -53,20 +53,28 @@ Windows7 x64或以上
 
 点击对应的安装教程：[PHP服务端](PHP服务端安装.md ':target=_blank') / [静态服务端](静态服务端安装.md ':target=_blank')
 
-### 遇到问题
+遇到问题请首先参考[常见问题解答](FAQ.md ':target=_blank')，或通过下面的方式获取技术支持。
 
-首先参考[常见问题](FAQ.md ':target=_blank')，如不能解决，请：
+### 反馈问题
 
-1. qq群 925057600 免审核
-2. 直接私信qq 1805795356
-3. 发邮件aprilforests@qq.com和MCBBS站内私信
+1. [点击这里](https://jq.qq.com/?_wv=1027&k=PqAEtn39)加入我们的官方群聊【updater交流群】 925057600  (免审核，群文件里也可以下载)
+2. 加我的qq 1805795356 (备注 updater )
+3. 发邮件aprilforests@qq.com
+
+### 参与贡献
+
+由于个人精力有限，代码中难免会出现错误、疏忽、遗漏，还需要在大家的帮助下不断完善
+
+如果你发现了问题，欢迎前来GitHub仓库提交Issue、PullRequest，或者亲自告诉我，我会不断改进
+
+如果帮助文档中出现了错误或者是不适合的地方，同样欢迎大家进行修改，提交PR哦
 
 ### 开源地址
 
-喜欢的话，欢迎前来给一颗Star呀`━(*｀∀´*)ノ亻!`
+喜欢的话，欢迎前来给一颗Star呀`(｀・ω・´)`
 
 + 文档：https://github.com/updater-for-minecraft/Docs
++ 客户端：https://github.com/updater-for-minecraft/Client
 + PHP服务端：https://github.com/updater-for-minecraft/PHPServer
 + 静态服务端：https://github.com/updater-for-minecraft/StaticServer
-+ 客户端：https://github.com/updater-for-minecraft/Client
 + 小工具：https://github.com/updater-for-minecraft/UtilityTool
