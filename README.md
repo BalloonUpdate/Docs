@@ -41,9 +41,7 @@ HTTP服务器推荐：Nginx、Apache、IIS、宝塔、Phpstudy、Http File Serve
 
 #### **客户端**
 
-Windows7 x64或以上(v3.5之前的版本)
-
-Windows7 x32或以上(v3.5及以上)
+Windows7 x64或以上
 
 > 如果出现360误报，请手动加入白名单，如不放心，可以查阅源代码（updater是全开源项目）
 
