@@ -75,6 +75,5 @@ Windows7 x64或以上
 
 + 文档：https://github.com/updater-for-minecraft/Docs
 + 客户端：https://github.com/updater-for-minecraft/Client
-+ PHP服务端：https://github.com/updater-for-minecraft/PHPServer
-+ 静态服务端：https://github.com/updater-for-minecraft/StaticServer
-+ 小工具：https://github.com/updater-for-minecraft/UtilityTool
++ 服务端：https://github.com/updater-for-minecraft/Server
++ 小工具：https://github.com/updater-for-minecraft/Tool
