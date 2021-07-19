@@ -58,7 +58,6 @@ Windows7 x64或以上
 ### 反馈问题
 
 1. [点击这里](https://jq.qq.com/?_wv=1027&k=PqAEtn39)加入我们的官方群聊【updater交流群】 925057600  (免审核，群文件里也可以下载)
-2. 加我的qq 1805795356 (备注 updater )
 3. 发邮件aprilforests@qq.com
 
 ### 参与贡献
