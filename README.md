@@ -49,9 +49,9 @@ Windows7 x64或以上
 
 ### 下载安装
 
-下载链接请点击右上角或者点击[这里跳转](下载地址.md)
+请跳转到MCBBS贴内https://www.mcbbs.net/thread-711833-1-1.html
 
-点击对应的安装教程：[PHP服务端](PHP服务端安装.md ':target=_blank') / [静态服务端](静态服务端安装.md ':target=_blank')
+对应的教程：[PHP服务端](PHP服务端安装.md ':target=_blank') / [静态服务端](静态服务端安装.md ':target=_blank')（也可以随时从右上角跳转）
 
 遇到问题请首先参考[常见问题解答](FAQ.md ':target=_blank')，或通过下面的方式获取技术支持。
 

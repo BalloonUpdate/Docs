@@ -8,7 +8,7 @@
 
 4. `index.php`和`Spyc.php`为程序文件，不用管它
 
-7. 编辑`config.yml`，请参考[这里](服务端配置文件.md ':target=_blank')
+7. 编辑`index.yml`（之前是`config.yml`），请参考[这里](服务端配置文件.md ':target=_blank')
 
 6. 将需要更新的模组文件复制到`res/.minecraft/mods`目录里（其它文件按实际路径复制就好）
 
