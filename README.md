@@ -64,7 +64,7 @@ Windows7 x64或以上（不支持32位！）
 
 1. 参考[常见问题解答](FAQ.md ':target=_blank')
 2. [点击这里](https://jq.qq.com/?_wv=1027&k=PqAEtn39)加入【文件更新助手官方交流群】 925057600 获取技术支持  (免审核，有问题请直接在群里@四月浅森）
-3. 发邮件aprilforests@qq.com
+3. 发邮件asforest@qq.com
 
 反馈问题时，务必带上以下内容：
 
