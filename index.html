@@ -168,9 +168,31 @@
             padding: 8px;
         }
 
+        details summary {
+            cursor: pointer;
+            border-radius: 4px;
+            padding: 0px 4px;
+        }
+
+        details:not([open]) summary[auto]::after {
+            content: '展开';
+        }
+
+        details[open] summary[auto]::after {
+            content: '收起';
+        }
+
+        details summary:hover {
+            background: #efefef;
+        }
+
         @media(prefers-color-scheme:dark) {
             details[open] {
                 border-color: #676767;
+            }
+
+            details summary:hover {
+                background: #3e3e3e;
             }
 
             .sidebar, body {
