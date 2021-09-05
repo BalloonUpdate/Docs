@@ -1,0 +1,16 @@
+- [首页](/)
+- 教程
+  - [静态服务端](StaticServerInstall.md)
+  - [PHP服务端](PHPServerInstall.md)
+  - [单文件服务端](LittleServerInstall.md)
+- 目录
+  - [常见问题](FrequenctlyAskedQuestions.md)
+  - [更新记录](Changelogs.md)
+  - [排查日志](TroubleshootByLogs.md)
+  - [配置跟随启动](FollowingStart.md)
+  - [配置示例](ServerConfigurationExamples.md)
+  - [客户端配置参考](ClientConfigurationReference.md)
+  - [服务端配置参考](ServerConfigurationReference.md)
+  - [自定义界面](CustomizeInterface.md)
+  - [历史版本](HistoricalVersions.md)
+

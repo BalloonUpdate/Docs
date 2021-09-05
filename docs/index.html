@@ -2,7 +2,7 @@
 <html lang="cn">
 <head>
     <meta charset="UTF-8">
-    <title>Updater</title>
+    <title>文件更新助手帮助文档</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="description" content="Description">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
@@ -20,7 +20,7 @@
             // name: 'UpdaterForMinecraft',
             repo: 'https://github.com/updater-for-minecraft/Docs/',
             auto2top: true,
-            loadNavbar: '.pages/navbar.md',
+            loadNavbar: 'docs/navbar.md',
             basePath: '../',
             // relativePath: true,
             formatUpdated: '{YYYY}-{MM}-{DD} {HH}:{mm}',
@@ -175,11 +175,11 @@
             padding: 0px 4px;
         }
 
-        details:not([open]) summary[auto]::after {
-            content: '展开';
+        details:not([open]) summary[auto]::before {
+            content: '点击展开';
         }
 
-        details[open] summary[auto]::after {
+        details[open] summary[auto]::before {
             content: '收起';
         }
 
@@ -275,6 +275,12 @@
 
             .search {
                 border-bottom-color: #3c3c3c;
+            }
+        }
+
+        @media(max-width: 1024px) {
+            .markdown-section {
+                max-width: 95%;
             }
         }
     </style>

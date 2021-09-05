@@ -1,6 +1,6 @@
-# 常见问题解答
+## 常见问题解答
 
-## 360卫士报毒/拦截
+### 360卫士报毒/拦截
 
 `影响范围`：2.x全版本\~3.x全版本
 
@@ -8,7 +8,7 @@
 
 `解决办法`：此问题无解，目前只能手动加入白名单
 
-## 无文件更新直接跳过
+### 无文件更新直接跳过
 
 ```
 程序启动后显示"校验文件.."然后直接就退出了
@@ -24,9 +24,9 @@
 `解决办法`：（任选其一）
 
 1. 完整地重新按文档配置一次（注意不要遗漏任何步骤！）
-2. 通过程序日志排查问题（[跳转链接](排查日志.md)）
+2. 通过程序日志排查问题（[跳转链接](TroubleshootByLogs.md)）
 
-## 所有文件被意外清空
+### 所有文件被意外清空
 
 ```
 程序误将Minecraft客户端mods等文件夹下的内容全部清空，即使放新文件进去也会被清空
@@ -38,7 +38,7 @@
 
 `解决办法`：将需要被更新的文件放到服务端上**正确**的目录结构下（如果是静态服务端，不要忘记上传或者更新）
 
-## HTTP请求/连接失败
+### HTTP请求/连接失败
 
 ```
 HTTPResponseException(HTTP请求/连接失败(通常是网络原因))
@@ -52,7 +52,7 @@ HTTPResponseException(HTTP请求/连接失败(通常是网络原因))
 
 > 此报错和程序本身无关，通常是网络原因，不是程序BUG。
 
-## MCDirectoryNotFoundException
+### MCDirectoryNotFoundException
 
 ```
 MCDirectoryNotFoundException: The .minecraft directory not found.
@@ -72,7 +72,7 @@ MCDirectoryNotFoundException: The .minecraft directory not found.
 
 `解决办法`：将主程序移动到上面任意路径之一，都可以正常识别
 
-## 找不到配置文件
+### 找不到配置文件
 
 ```
 ConfigFileNotFoundException(找不到配置文件)
@@ -84,7 +84,7 @@ ConfigFileNotFoundException(找不到配置文件)
 
 `解决办法`：将配置文件移动到正确的位置
 
-## 服务端返回了无法解码的数据
+### 服务端返回了无法解码的数据
 
 ```
 UnableToDecodeException服务端返回了无法解码的数据(非yaml格式)
@@ -98,9 +98,9 @@ UnableToDecodeException服务端返回了无法解码的数据(非yaml格式)
 
 注：对话框中只会显示一小部分返回的内容，而且位置标记因为不是等宽字体的原因也无法准确反映错误位置，你可以打开日志文件`.minecraft/updater/updater.log`并滑到最下面或者搜索`RAWDATA`关键字，就能看到详细报错的行和列的位置
 
-（[跳转链接](排查日志.md)）
+（[跳转链接](TroubleshootByLogs.md)）
 
-## 连接关闭/传输中断
+### 连接关闭/传输中断
 
 ```
 ConnectionClosedException连接关闭/传输中断(通常是网络原因)
@@ -114,7 +114,7 @@ ConnectionClosedException连接关闭/传输中断(通常是网络原因)
 
 > 此报错和程序本身无关，通常是网络原因，不是程序BUG。
 
-## 不正确的HTTP状态码
+### 不正确的HTTP状态码
 
 ```
 UnexpectedHttpCodeExcepetion不正确的HTTP状态码(未处于2xx-3xx之间)
@@ -128,7 +128,7 @@ UnexpectedHttpCodeExcepetion不正确的HTTP状态码(未处于2xx-3xx之间)
 
 > 此报错和程序本身无关，而是HTTP服务器的问题，不是本程序的BUG。
 
-## 未知的工作模式
+### 未知的工作模式
 
 ```
 UnknownWorkModeException未知的工作模式
@@ -140,7 +140,7 @@ UnknownWorkModeException未知的工作模式
 
 `解决办法`：将服务端配置文件里的`mode`设置为下列值之一：`common`、`exist`
 
-## 重定向次数过多
+### 重定向次数过多
 
 ```
 MaxRedirectionReachedException重定向次数过多
@@ -152,7 +152,7 @@ MaxRedirectionReachedException重定向次数过多
 
 `解决办法`：减少跳转次数
 
-## 重定向出错
+### 重定向出错
 
 ```
 RedirectionFailedException重定向出错
@@ -164,7 +164,7 @@ RedirectionFailedException重定向出错
 
 `解决办法`：请寻求HTTP服务器管理员的帮助
 
-## 更新规则带-号时不更新任何文件
+### 更新规则带-号时不更新任何文件
 
 `详情`：没有更新任何文件，而且日志里显示，带`-`符号的路径末尾出现一个`\n`
 
@@ -177,7 +177,7 @@ RedirectionFailedException重定向出错
 + 避免更新路径里带有`-`符号，
 + 升级php服务端版本到3.1（客户端不用做任何改动）
 
-## 有歧义的文件类型
+### 有歧义的文件类型
 
 ```
 AmbiguousFileTypeEeception(有歧义的文件类型(内部错误))
@@ -189,7 +189,7 @@ AmbiguousFileTypeEeception(有歧义的文件类型(内部错误))
 
 `解决办法`：升级小工具的版本到v3.0.1
 
-## check_hostname requires server_hostname
+### check_hostname requires server_hostname
 
 `影响范围`：小工具全版本，当使用腾讯对象存储上传文件时会触发
 

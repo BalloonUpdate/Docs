@@ -1,4 +1,4 @@
-# 自定义界面
+## 自定义界面
 
 软件界面使用Electron框架打造，支持界面100%自定义
 
@@ -10,7 +10,7 @@ HTML和CSS3、 JS async/await、 [Vue声明式渲染](https://vuejs.bootcss.com/
 
 这是v3.0.0默认的界面（双进度条风格），3.0.0版本可以兼容2.x版本的界面资源。（虽然兼容2.x，但`on_error`事件回调函数的参数有变化，建议进行适配）
 
-![ui-2.7.0](自定义界面教程.assets/ui-2.7.0.png)
+![ui-2.7.0](CustomizeInterface/ui-2.7.0.png)
 
 ---
 
@@ -36,9 +36,9 @@ HTML和CSS3、 JS async/await、 [Vue声明式渲染](https://vuejs.bootcss.com/
 
 以下是各种事件触发的流程图（SVG文件）
 
-![事件流程图](自定义界面教程.assets/事件流程图.svg)
+![事件流程图](CustomizeInterface/事件流程图.svg)
 
-## 监听各种事件
+### 监听各种事件
 
 监听事件可以使用`updaterApi.on(eventName, callback)`进行监听
 
@@ -50,29 +50,29 @@ HTML和CSS3、 JS async/await、 [Vue声明式渲染](https://vuejs.bootcss.com/
 
 不需要的事件，可以不进行监听
 
-## 事件参数
+### 事件参数
 
 每个事件的回调函数都有不同的参数传入，可以参考下方
 
-### init事件
+#### init事件
 
 初始化事件
 
 + `config`：配置文件`updater.yml`的JSON对象，可以在配置文件里写一些自定义的配置项目，然后从这里进行读取
 
-### check_for_update
+#### check_for_update
 
 正在检查有没有文件需要更新
 
 无参数
 
-### updating_new_files
+#### updating_new_files
 
 即将开始下载需要被更新的文件
 
 `paths`：所有需要下载的文件（路径、大小）
 
-### updating_downloading
+#### updating_downloading
 
 正在下载文件（此事件会被触发多次）
 
@@ -85,13 +85,13 @@ HTML和CSS3、 JS async/await、 [Vue声明式渲染](https://vuejs.bootcss.com/
 
 当`bytes==total`满足时，表示该文件下载完毕
 
-### cleanup
+#### cleanup
 
 清理退出
 
 无参数
 
-### on_error
+#### on_error
 
 用于显示ppdater底层的异常/错误信息
 
@@ -99,7 +99,7 @@ HTML和CSS3、 JS async/await、 [Vue声明式渲染](https://vuejs.bootcss.com/
 + `detail`：异常的具体引发原因
 + `traceback`：异常的调用栈
 
-## API
+### API
 
 可以通过`updaterApi`变量去调用一些特殊函数，实现一些特殊功能
 
@@ -116,7 +116,7 @@ HTML和CSS3、 JS async/await、 [Vue声明式渲染](https://vuejs.bootcss.com/
 | async updaterApi.getWorkDir() | 获取当前工作目录       |               |
 | updaterApi.start()            | 开始更新文件！         |               |
 
-## 一些需要注意的地方
+### 一些需要注意的地方
 
 软件窗口启动后不会立即开始更新文件，而是等待js层的开始信号，可以在`init`事件的回调函数中调用`this.start()`来向底层发出开始信号，底层就会开始更新文件了
 
@@ -134,13 +134,13 @@ updaterApi.on('init', function(_config) {
 
 除了在`init`中调用`this.start()`以外，也可以在`init`被调用之后，再别的地方手动调用`updaterApi.start()`来发出开始信号（如果在`init`触发之前调用开始信号会报错）
 
-## 调试的技巧
+### 调试的技巧
 
 1. 修改界面可以直接使用普通浏览器进行调试开发，完成后再加载进软件里测试效果
 3. 在使用浏览器开发时，可以在网页控制台输入`test()`函数来模拟更新流程，能更快看到实际效果（确保`test.js`被加载）
 4. 如果需要在实际环境中测试，可以在客户端配置文件里设置`hold_ui: true`来让界面不会自动退出（需要手动叉掉），同时在空白处点击右键，DeveloperTool打开开发者工具进行调试（可以查看控制台输出）
 
-## 保存修改
+### 保存修改
 
 界面文件修改完以后，将`ui`文件夹复制到客户端的`.minecraft/updater`目录下，并在客户端配置文件`updater.yml`中设置`assets: ui/index.html `
 
