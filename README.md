@@ -105,5 +105,5 @@ https://afdian.net/@aprilforest
 
 + 文档：https://github.com/updater-for-minecraft/Docs
 + 客户端：https://github.com/updater-for-minecraft/Client
-+ 服务端：https://github.com/updater-for-minecraft/Server
 + 小工具：https://github.com/updater-for-minecraft/Tool
++ 服务端：[PHP服务端](https://github.com/updater-for-minecraft/PhpServer)、[单文件服务端](https://github.com/updater-for-minecraft/LittleServer)
