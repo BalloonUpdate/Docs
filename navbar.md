@@ -1,8 +1,8 @@
 - [首页](/)
 - 教程
-  - [静态服务端](StaticServerInstall.md)
-  - [PHP服务端](PHPServerInstall.md)
-  - [单文件服务端](LittleServerInstall.md)
+  - [静态服务端](StaticServerInstallation.md)
+  - [PHP服务端](PHPServerInstallation.md)
+  - [单文件服务端](LittleServerInstallation.md)
 - 目录
   - [常见问题](FrequenctlyAskedQuestions.md)
   - [更新记录](Changelogs.md)

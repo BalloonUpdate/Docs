@@ -69,7 +69,7 @@ Windows7 x64或以上（不支持32位！）
 
 下载请跳转到[MCBBS贴内](https://www.mcbbs.net/thread-711833-1-1.html)，或者[点击这里](https://jq.qq.com/?_wv=1027&k=PqAEtn39)加入【文件更新助手官方交流群】 925057600 从群文件获取(同步更新)
 
-对应的教程：[PHP服务端](PHPServerInstall.md) / [静态服务端](StaticServerInstall.md) / [单文件服务端](LittleServerInstall.md)（也可以随时从右上角的导航栏跳转）
+对应的教程：[PHP服务端](PHPServerInstallation.md) / [静态服务端](StaticServerInstallation.md) / [单文件服务端](LittleServerInstallation.md)（也可以随时从右上角的导航栏跳转）
 
 单文件服务端有5分钟快速入门视频教程，可以跳转至B站观看：https://www.bilibili.com/video/BV1jh411q7Ww
 
