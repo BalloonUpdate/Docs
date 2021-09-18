@@ -110,7 +110,9 @@
                     return html+`
                     <hr style="margin-top: 5rem;" />
                     <div id="github-contributors">
-                        <div class="github-contributor-title">Copyleft © 2021 - 2021 | Contributors: </div>
+                        <div class="github-contributor-title">Copyleft © 2021 - 2021</div>
+                        <div class="github-contributor-title"> | </div>
+                        <div class="github-contributor-title">Contributors: </div>
                         <div v-for="c in contributors" class="github-contributor-user">
                             <img v-bind:src="c.avatar_url" class="github-contributor-avatar" />
                             <div class="github-contributor-username" ><a v-bind:href="c.html_url" target="_blank">{{c.login}}<a/></div>
@@ -121,13 +123,15 @@
                             display: flex;
                             align-items: center;
                             opacity: 0.8;
+                            flex-wrap: wrap;
                         }
 
                         .github-contributor-title {
-                            margin: 0 10px;
+                            margin: 6px 10px;
                             font-size: 16px;
-                            // font-weight: bold;
+                            font-weight: bold;
                             color: inherit;
+                            white-space: nowrap;
                         }
 
                         .github-contributor-user {
@@ -137,7 +141,7 @@
                         }
 
                         .github-contributor-avatar {
-                            height: 24px;
+                            height: 28px;
                             /* padding: 2px; */
                             /* border: 1px solid #cecece; */
                             border-radius: 50%;
