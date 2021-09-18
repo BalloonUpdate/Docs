@@ -76,6 +76,7 @@ paths:
 + 阿里云对象存储（推荐）
 + 腾讯云对象存储（推荐）
 + FTP/FTPS
++ SFTP（不推荐，谨慎使用）
 
 > 不建议在后台一个一个文件地手动上传，因为这样**很容易**造成校验文件和实际内容对不上，导致更新出错！（使用手动上传模式没有此限制）
 
@@ -95,7 +96,7 @@ paths:
 # 填写tencent表示要上传到腾讯云
 service_provider: tencent
 
-# 然后需要填写tencent部分，使用腾讯云的话，aliyun和ftp部分可以留空
+# 然后需要填写tencent部分，使用腾讯云的话，aliyun/ftp/sftp 部分可以留空
 tencent:
   bucket: update-system      # 桶名
   secret_id: abcdefg         # 访问秘钥的id
@@ -113,7 +114,7 @@ tencent:
 # 填写aliyun表示要上传到阿里云
 service_provider: aliyun
 
-# 然后需要填写aliyun部分，使用阿里云的话，tencent和ftp部分可以留空
+# 然后需要填写 aliyun 部分，使用阿里云的话，tencent/ftp/sftp 部分可以留空
 aliyun:
   bucket: update-system                # 桶名
   access_id: abcdefg                   # 访问秘钥的id
@@ -131,7 +132,7 @@ aliyun:
 # 填写ftp表示要上传到ftp
 service_provider: ftp
 
-# 然后需要填写ftp部分，使用ftp的话，aliyun和tencent部分可以留空
+# 然后需要填写 ftp 部分，使用 ftp 的话，aliyun/tencent/sftp 部分可以留空
 ftp:
   host: 127.0.0.1 # 主机地址
   port: 21        # 端口（通常是21）
@@ -142,6 +143,28 @@ ftp:
 ```
 
 因为一些原因，**FTPS模式下**无法校验服务端证书（请自行确保证书是可信的）
+
+#### **SFTP**
+
+>  上传操作会清空 `BasePath` 下**所有**现有文件，请务必**做好备份**，并严格检查 `BasePath` 字段，否则会造成文件丢失！
+
+```yaml
+# 填写 sftp 表示要上传到 sftp
+service_provider: sftp
+
+sftp:
+  host: 127.0.0.1       # 主机地址
+  port: 22              # 端口（SSH 默认端口 22）
+  user: non-root        # 用户名，尽量避免使用 root
+  password: password    # 分两种情况，若 usePkey 为 true 且 私钥被加密，请填入私钥密码，否则请留空；若为 false，请填入密码
+  usePkey: false        # 密钥对认证开关
+  pkeyFile: id_rsa      # 私钥文件名，可使用相对路径，目前仅支持 OpenSSH 格式的 RSA 私钥
+
+  # 警告：此选项必须谨慎填写，如果填写错误可能导致数据丢失或者系统严重损坏！
+  # 极其不建议使用 root 用户进行上传，建议新建一个用户专门用于上传，并严格限制其读写权限
+  # basePath 建议使用 /home/<user>/updater 这类路径，并只保留上传 user 对自己 home 目录的读写权限
+  basePath: /tmp        # 上传到哪个路径，支持子目录，默认是 /tmp 目录防止意外，这里必须以 / 开头（即绝对路径），结尾不做要求
+```
 
 #### **手动部署/手动上传（高级）**
 
@@ -189,9 +212,10 @@ upload_only: false
 show_any_key_to_exit: false
 
 # 上传到哪里？
-# 腾讯云请填写tencent
-# 阿里云请填写aliyun
-# FTP请填写ftp
+# 腾讯云请填写 tencent
+# 阿里云请填写 aliyun
+# FTP 请填写 ftp
+# SFTP 请填写 sftp
 service_provider: tencent
 
 # 腾讯云需要填写此部分
@@ -262,6 +286,39 @@ ftp:
   
   # 高级参数，登录后是否立即发送prot_p命令
   prot_p: false
+
+# SFTP 需要填写此部分
+sftp:
+  host: 127.0.0.1
+  port: 22
+  user: non-root
+
+  # 如果使用 密码认证（usePkey 为 false），请填入密码
+  # 如果使用 密钥对认证（usePkey 为true） 且 私钥被加密，请填入私钥密码，否则请留空
+  password: password
+
+  # 是否使用密钥对认证
+  usePkey: false
+
+  # 私钥文件名，可使用相对路径，目前仅支持 OpenSSH RSA 私钥（格式如下）
+  # -----BEGIN RSA PRIVATE KEY-----
+  # I9no9NE9sjKCAQEAt0JNJh+DzjjedIIE68sAA2qNi2+AMZy0cMciqLogIBABsBub
+  # ...省略多行...
+  # TLudhHIwG/0yKSmCtEo5KWl6sqjawFEE0qrWZL3QTP8ofHcEe8c=
+  # -----END RSA PRIVATE KEY-----
+  # 如果私钥被加密，请在上面的 password 字段填入私钥密码
+  pkeyFile: id_rsa
+
+  # 上传到哪个路径，支持子目录，默认是 /tmp 目录防止意外，这里必须以 / 开头，结尾不做要求
+  # 警告：此选项必须谨慎填写，如果填写错误可能导致数据丢失或者系统严重损坏！
+  # 极其不建议使用 root 用户进行上传，建议新建一个用户专门用于上传，并严格限制其读写权限
+  # basePath 建议使用 /home/<user>/updater 这类路径，并只保留上传 user 对自己 home 目录的读写权限
+  basePath: /tmp
+
+  # 缓存文件的文件名。用来实现增量上传
+  # 此文件会存储到 SFTP 服务器上（而不是本地），删除此文件可以进行一次全量上传
+  # 只支持放置在 basePath 下（也就是说这里只能填写文件名不能填写一个路径）
+  cacheFile: .cache.yml 
 ```
 
 <!-- tabs:end -->
