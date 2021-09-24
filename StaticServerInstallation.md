@@ -148,6 +148,8 @@ ftp:
 
 >  上传操作会清空 `BasePath` 下**所有**现有文件，请务必**做好备份**，并严格检查 `BasePath` 字段，否则会造成文件丢失！
 
+这里以SFTP为例，只需要修改下面列出的部分，其它部分请保持默认，不要给删掉了
+
 ```yaml
 # 填写 sftp 表示要上传到 sftp
 service_provider: sftp
