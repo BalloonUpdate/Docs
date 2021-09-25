@@ -59,11 +59,11 @@ HTTP服务器推荐：[Nginx](https://nginx.org)、[Apache](https://httpd.apache
 
 Windows7 x64或以上（不支持32位！）
 
-需要安装`Visual C++ Redistributable Packages for Visual Studio 2015`（俗称VC++运行库）或更高版本
+3.0.0-3.0.12版本（从3.0.13版本开始不再需要，建议使用新版本），需要安装`Visual C++ Redistributable Packages for Visual Studio 2015`（俗称VC++运行库）或更高版本
 
 微软官方[集合下载页面](https://support.microsoft.com/en-us/topic/the-latest-supported-visual-c-downloads-2647da03-1eea-4433-9aff-95f26a218cc0)，或单独下载：[2015-2019_x86](https://aka.ms/vs/16/release/vc_redist.x86.exe)、[2015-2019_x64](https://aka.ms/vs/16/release/vc_redist.x64.exe)、[2015-2019_arm64](https://aka.ms/vs/16/release/VC_redist.arm64.exe)
 
-> 如果出现360误报，请手动加入白名单，如不放心，可以查阅源代码（updater是全开源项目）
+> 如果出现360误报，请手动加入白名单，如不放心，可以查阅源代码（文件更新助手是全开源项目）
 
 ## 下载安装
 
