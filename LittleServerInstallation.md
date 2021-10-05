@@ -16,24 +16,26 @@
 ![image-20210822233040650](assets/littleserver-inside-mods.png)
 
 3. 将其它要参与更新的文件同样按上面的方法，复制到对应的目录上（比如Vexview的贴图复制到`res/.minecraft/vexview/textures/`下）
-4. 编辑服务端配置文件`config.yml`，在`paths`下写上所有需要参与更新路径，默认只有一个`mods`文件夹
+4. 编辑服务端配置文件`config.yml`，在`common_mode`下写上所有需要参与更新路径
 
 ```yaml
 # 修改监听地址和监听端口，多网卡环境请自行指定对应的IP
-# 如果端口有冲突，请换成其它端口
-# 如果出现绑定失败的情况，请尝试换成0.0.0.0后再次尝试
+# 除非你特别清楚什么是绑定IP，否则请不要做任何修改
+# 并使用0.0.0.0或者127.0.0.1
 address: 127.0.0.1
 port: 8850
 
-# 更新模式，建议保持默认
-mode: common
-# 参与更新的路径，一行一个，可以写多个
-# 另外路径分隔符只能使用正斜线！禁止使用反斜线
-paths:
+# 这里填写要更新的路径
+# 路径分隔符只能使用正斜线
+common_mode:
   - .minecraft/mods
+  - .minecraft/vexview/textures
+
+# 不用填写
+once_mode: []
 ```
 
-更多示例可以参考[这里](ServerConfigurationExamples.md)
+更多示例可以参考[这里](ServerConfigurationExamples.md)，关于配置文件的配置参考可以参考[这里](ServerConfigurationReference.md)
 
 5. 到这里服务端配置完毕，然后是客户端
 
@@ -41,13 +43,13 @@ paths:
 
 !> 在安装之前，务必备份原有客户端，以防配置出错误删文件！
 
-1. 下载并解压客户端zip包，把主程序和配置文件一起解压到`.minecraft/updater`目录下（需要手动创建`updater/`目录）
+1. 下载并解压客户端zip包，把主程序和配置文件一起解压到`.minecraft`同级目录下
 
 ![client-inside-updater](assets/client-inside-updater.png)
 
 2. 打开并配置`updater.yml`，并将单文件服务端输出API地址复制粘贴到api选项后面
 
-3. 如果你喜欢，可以把客户端程序，移动到启动器旁边，并且可以改成别的文件名（比如：`点击更新mods.exe`等等），但是，客户端程序只有放在以下路径才能正常工作：`.minecraft`同级目录(启动器旁)、`.minecraft/`下，`.minecraft/updater/`下
+3. 如果你喜欢，可以把客户端程序改成别的文件名（比如：`点击更新mods.exe`等等），但是，客户端程序只有放在以下路径才能正常工作：`.minecraft`同级目录(启动器旁)、`.minecraft/`下任意7层目录以下
 
 ![out_mcdir](assets/out_mcdir.png)
 

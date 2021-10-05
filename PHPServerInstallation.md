@@ -16,19 +16,23 @@
 ![image-20210823103019711](assets/phpserver-inside-mods.png)
 
 3. 将其它要参与更新的文件同样按上面的方法，复制到对应的目录上（比如Vexview的贴图复制到`res/.minecraft/vexview/textures/`下）
-4. 编辑服务端配置文件`index.yml`，在`paths`下写上所有需要参与更新路径，默认只有一个`mods`文件夹
+4. 编辑服务端配置文件`index.yml`，在`common_mode`和`once_mode`下写上所有需要参与更新路径，默认只有一个`mods`文件夹和vexview贴图目录
 
 ```yaml
-# 更新模式，建议保持默认
-mode: "common"
-# 参与更新的路径，一行一个，可以写多个
-# php服务端需要将下面paths里面所有单反斜杠\全部换成双反斜杠\\（在正则模式下时）
-# 另外路径分隔符只能使用正斜线！禁止
-paths:
+# common_mode适合用来更新常规文件，详情请参阅服务端配置文件参考
+# 路径分隔符只能使用正斜线
+common_mode:
   - .minecraft/mods
+  - .minecraft/vexview/textures
+
+# common_mode适合用来补全配置文件，详情请参阅服务端配置文件参考
+# 路径分隔符只能使用正斜线
+once_mode: []
+
+# 使用php服务端需要将下面paths里面所有单反斜杠\全部换成双反斜杠\\
 ```
 
-更多示例可以参考[这里](ServerConfigurationExamples.md)
+更多示例可以参考[这里](ServerConfigurationExamples.md)，关于`common_mode`和`once_mode`的具体用法可以参考[这里](ServerConfigurationReference.md)
 
 5. 到这里，服务端配置完毕，然后是客户端
 
@@ -36,13 +40,13 @@ paths:
 
 !> 在安装之前，务必备份原有客户端，以防配置出错误删文件！
 
-1. 下载并解压客户端zip包，把主程序和配置文件一起解压到`.minecraft/updater`目录下（需要手动创建`updater/`目录）
+1. 下载并解压客户端zip包，把主程序和配置文件一起解压到`.minecraft`同级目录下
 
 ![client-inside-updater](assets/client-inside-updater.png)
 
 2. 打开并配置`updater.yml`，并将`index.yml`的URL填到api选项后面
 
-3. 如果你喜欢，可以把客户端程序，移动到启动器旁边，并且可以改成别的文件名（比如：`点击更新mods.exe`等等），但是，客户端程序只有放在以下路径才能正常工作：`.minecraft`同级目录(启动器旁)、`.minecraft/`下，`.minecraft/updater/`下
+3. 如果你喜欢，可以把客户端程序改成别的文件名（比如：`点击更新mods.exe`等等），但是，客户端程序只有放在以下路径才能正常工作：`.minecraft`同级目录(启动器旁)、`.minecraft/`下任意7层目录以下
 
 ![out_mcdir](assets/out_mcdir.png)
 

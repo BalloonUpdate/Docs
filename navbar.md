@@ -5,9 +5,10 @@
   - [单文件服务端](LittleServerInstallation.md)
 - 目录
   - [常见问题](FrequenctlyAskedQuestions.md)
-  - [更新记录](Changelogs.md)
+  - [更新记录](https://github.com/updater-for-minecraft/Client/releases)
   - [排查日志](TroubleshootByLogs.md)
-  - [配置跟随启动](FollowingStart.md)
+  - [公告栏配置](Announcement.md)
+  - [配置一键启动](FollowingStart.md)
   - [配置示例](ServerConfigurationExamples.md)
   - [客户端配置参考](ClientConfigurationReference.md)
   - [服务端配置参考](ServerConfigurationReference.md)

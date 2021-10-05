@@ -4,6 +4,8 @@
 
 !> 注意：版本3.x与2.x完全不兼容，请重新安装。2.x文档链接请[点击这里](HistoricalVersions.md)
 
+!> 新的客户端3.1.0和服务端3.6均不兼容之前的版本，如果你不是首次安装，请参阅[升级步骤](Migration.md)，如果需要3.0.x版本的帮助文档，请点击[这里](https://github.com/updater-for-minecraft/Docs/tree/v3.0.x#minecraft%E6%96%87%E4%BB%B6%E6%9B%B4%E6%96%B0%E5%8A%A9%E6%89%8B%E5%B8%AE%E5%8A%A9%E6%96%87%E6%A1%A3)
+
 <details>
 <summary auto>v3.0发行说明</summary>
 
@@ -58,10 +60,6 @@ HTTP服务器推荐：[Nginx](https://nginx.org)、[Apache](https://httpd.apache
 ## 客户端环境要求
 
 Windows7 x64或以上（不支持32位！）
-
-3.0.0-3.0.12版本（从3.0.13版本开始不再需要，建议使用新版本），需要安装`Visual C++ Redistributable Packages for Visual Studio 2015`（俗称VC++运行库）或更高版本
-
-微软官方[集合下载页面](https://support.microsoft.com/en-us/topic/the-latest-supported-visual-c-downloads-2647da03-1eea-4433-9aff-95f26a218cc0)，或单独下载：[2015-2019_x86](https://aka.ms/vs/16/release/vc_redist.x86.exe)、[2015-2019_x64](https://aka.ms/vs/16/release/vc_redist.x64.exe)、[2015-2019_arm64](https://aka.ms/vs/16/release/VC_redist.arm64.exe)
 
 > 如果出现360误报，请手动加入白名单，如不放心，可以查阅源代码（文件更新助手是全开源项目）
 

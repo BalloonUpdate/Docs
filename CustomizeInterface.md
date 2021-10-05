@@ -10,7 +10,7 @@ HTML和CSS3、 JS async/await、 [Vue声明式渲染](https://vuejs.bootcss.com/
 
 这是v3.0.0默认的界面（双进度条风格），3.0.0版本可以兼容2.x版本的界面资源。（虽然兼容2.x，但`on_error`事件回调函数的参数有变化，建议进行适配）
 
-![ui-2.7.0](CustomizeInterface/ui-2.7.0.png)
+![ui-2.7.0](assets/ui-2.7.0.png)
 
 ---
 
@@ -36,7 +36,7 @@ HTML和CSS3、 JS async/await、 [Vue声明式渲染](https://vuejs.bootcss.com/
 
 以下是各种事件触发的流程图（SVG文件）
 
-![事件流程图](CustomizeInterface/事件流程图.svg)
+![事件流程图](CustomizeInterface.assets/事件流程图.svg)
 
 ### 监听各种事件
 
@@ -142,6 +142,6 @@ updaterApi.on('init', function(_config) {
 
 ### 保存修改
 
-界面文件修改完以后，将`ui`文件夹复制到客户端的`.minecraft/updater`目录下，并在客户端配置文件`updater.yml`中设置`assets: ui/index.html `
+界面文件修改完以后，将`ui`文件夹复制到客户端程序旁边的，然后在客户端配置文件`updater.yml`中设置`ui: ui/index.html `
 
 启动客户端，就可以看到实际效果了

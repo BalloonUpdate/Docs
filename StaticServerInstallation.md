@@ -19,22 +19,23 @@
 ![image-20210823000009863](assets/staticserver-inside-mods.png)
 
 3. 将其它要参与更新的文件同样按上面的方法，复制到对应的目录上（比如Vexview的贴图复制到`updater/res/.minecraft/vexview/textures/`下）
-4. 编辑服务端配置文件`updater/index.yml`，在`paths`下写上所有需要参与更新路径，默认只有一个`mods`文件夹
+4. 编辑服务端配置文件`updater/index.yml`，在`common_mode`和`once_mode`下写上所有需要参与更新路径，默认只有一个`mods`文件夹和vexview贴图目录
 
 ```yaml
-version: "3.0" # 不要修改
-server_type: "static" # 不要修改
 update: 'res' # 不要修改
 
-# 更新模式，建议保持默认
-mode: "common"
-# 参与更新的路径，一行一个，可以写多个
-# 另外路径分隔符只能使用正斜线！禁止使用反斜线
-paths:
+# common_mode适合用来更新常规文件，详情请参阅服务端配置文件参考
+# 路径分隔符只能使用正斜线
+common_mode:
   - .minecraft/mods
+  - .minecraft/vexview/textures
+
+# common_mode适合用来补全配置文件，详情请参阅服务端配置文件参考
+# 路径分隔符只能使用正斜线
+once_mode: []
 ```
 
-更多示例可以参考[这里](ServerConfigurationExamples.md)
+更多示例可以参考[这里](ServerConfigurationExamples.md)，关于`common_mode`和`once_mode`的具体用法可以参考[这里](ServerConfigurationReference.md)
 
 5. 到这里就可以上传到自己服务器了，如果是上传到对象存储，建议使用[小工具上传](#小工具使用教程)，如果需要控制细节，也是支持手动上传的
 7. 上传完成后，服务端就配置完毕了，然后是客户端
@@ -47,9 +48,9 @@ paths:
 
 ![client-inside-updater](assets/client-inside-updater.png)
 
-2. 打开并配置`updater.yml`，并将对象存储/服务器上的`index.yml`的URL填到api选项后面
+2. 打开并配置`updater.yml`，并将对象存储/服务器上的`index.yml`的URL填到`api`选项后面
 
-3. 如果你喜欢，可以把客户端程序，移动到启动器旁边，并且可以改成别的文件名（比如：`点击更新mods.exe`等等），但是，客户端程序只有放在以下路径才能正常工作：`.minecraft`同级目录(启动器旁)、`.minecraft/`下，`.minecraft/updater/`下
+3. 如果你喜欢，可以把客户端程序改成别的文件名（比如：`点击更新mods.exe`等等），但是，客户端程序只有放在以下路径才能正常工作：`.minecraft`同级目录(启动器旁)、`.minecraft/`下任意7层目录以下
 
 ![out_mcdir](assets/out_mcdir.png)
 

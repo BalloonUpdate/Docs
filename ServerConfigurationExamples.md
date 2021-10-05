@@ -11,19 +11,19 @@
 普通写法：
 
 ```yaml
-mode: common
-paths:
+common_mode: 
   - .minecraft/mods
   - .minecraft/resourcepacks
+once_mode: []
 ```
 
 正则写法：
 
 ```yaml
-mode: common
-paths:
+common_mode: 
   - "@\.minecraft/mods"
   - "@\.minecraft/resourcepacks"
+once_mode: []
 ```
 
 ### **示例2**
@@ -33,9 +33,9 @@ paths:
 仅正则写法：
 
 ```yaml
-mode: common
-paths:
+common_mode: 
   - "@\.minecraft/mods/server-.*"
+once_mode: []
 ```
 
 ### **示例3**
@@ -47,9 +47,9 @@ paths:
 仅正则写法：
 
 ```yaml
-mode: common
-paths:
+common_mode: 
   - "@\.minecraft/mods/[^/]+\.jar"
+once_mode: []
 ```
 
 ### **示例4**
@@ -59,19 +59,19 @@ paths:
 仅普通写法：
 
 ```yaml
-mode: common
-paths:
+common_mode: 
   - bg
   - .minecraft/mods
+once_mode: []
 ```
 
 普通写法和正则写法混合使用：
 
 ```yaml
-mode: common
-paths:
+common_mode: 
   - bg
   - "@\\.minecraft/mods"
+once_mode: []
 ```
 
 <!-- tabs:end -->
