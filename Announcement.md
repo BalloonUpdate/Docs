@@ -66,5 +66,5 @@ announcement_api: http://127.0.0.1/anno.txt
 
 ### 关于如何在公告栏里调用系统浏览器
 
-如果需要点击公告栏上的某些按钮打开系统浏览器的话，请不要使用a标签打开，而是使用js代码，调用API`updaterApi.start('start https://mcbbs.com')`的形式打开，否则会打开一个小窗口显示页面，大小什么的好像也调不了，挺不美观的
+如果需要点击公告栏上的某些按钮打开系统浏览器的话，请不要使用a标签打开，而是使用js代码，调用API`updaterApi.execute('start https://mcbbs.com')`的形式打开，否则会打开一个小窗口显示页面，大小什么的好像也调不了，挺不美观的
 
