@@ -69,12 +69,12 @@ Windows7 x64或以上（不支持32位！）
 
 对应的教程：[PHP服务端](PHPServerInstallation.md) / [静态服务端](StaticServerInstallation.md) / [单文件服务端](LittleServerInstallation.md)（也可以随时从右上角的导航栏跳转）
 
-单文件服务端有5分钟快速入门视频教程，可以跳转至B站观看：https://www.bilibili.com/video/BV1jh411q7Ww
+~~单文件服务端有5分钟快速入门视频教程，可以跳转至B站观看：https://www.bilibili.com/video/BV1jh411q7Ww~~已过期，仅支持3.0.x旧版本，不支持3.1.x新版本
 
 ## 问题反馈&技术支持
 
 1. 首先参考[常见问题解答](FrequenctlyAskedQuestions.md)
-2. [点击这里](https://jq.qq.com/?_wv=1027&k=PqAEtn39)加入【文件更新助手官方交流群】 925057600 获取技术支持  (免审核，有问题请直接在群里@四月浅森）
+2. [点击这里](https://jq.qq.com/?_wv=1027&k=PqAEtn39)加入【文件更新助手官方交流群】 925057600 获取技术支持  (有问题请直接在群里@四月浅森）
 3. 发邮件asforest@qq.com
 
 反馈问题时，务必带上以下内容：
