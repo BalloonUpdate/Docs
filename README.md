@@ -2,14 +2,10 @@
 
 更新客户端小程序，Mod服好帮手
 
-!> 注意：版本3.x与2.x完全不兼容，请重新安装。2.x文档链接请[点击这里](HistoricalVersions.md)
-
-!> 新的客户端3.1.0和服务端3.6均不兼容之前的版本，如果你不是首次安装，请参阅[升级步骤](Migration.md)，如果需要3.0.x版本的帮助文档，请点击[这里](https://github.com/updater-for-minecraft/Docs/tree/v3.0.x#minecraft%E6%96%87%E4%BB%B6%E6%9B%B4%E6%96%B0%E5%8A%A9%E6%89%8B%E5%B8%AE%E5%8A%A9%E6%96%87%E6%A1%A3)
-
 <details>
-<summary auto>v3.0发行说明</summary>
+<summary>3.0版本发行说明</summary>
 
-不知不觉距离第一个版本发布已经过去5年了，首先感谢各位老板们在这些日子里的支持。
+不知不觉距离第一个版本发布已经过去5年了，首先感谢各位老板们在这些日子里的支持。特别是从远古项目ClientUpdater插件版和FileSA开始使用的老用户们。
 
 3.0主要以重写为主，之前2.0使用json配置文件，但很多人都不熟悉json的语法，很容易漏掉列表末尾的逗号，现在3.0使用yaml格式配置文件，只要有过开服经验的人，都能轻易上手。
 
@@ -20,20 +16,54 @@
 本软件同时也是一个开源项目，所有相关源代码完全开源，欢迎各大开发者给项目提出问题，意见。
 </details>
 
-## 服务端环境要求
+!> 注意：版本3.x与2.x完全不兼容，请重新安装。2.x文档链接请[点击这里](HistoricalVersions.md)
 
-服务端本质上是一个“网页”，依赖于HTTP服务器运行，更新走的是HTTP协议
+!> 新的客户端3.1.0和服务端3.6均不兼容之前的版本，如果你不是首次安装，请参阅[升级步骤](Migration.md)，如果需要3.0.x版本的帮助文档，请点击[这里](https://github.com/updater-for-minecraft/Docs/tree/v3.0.x#minecraft%E6%96%87%E4%BB%B6%E6%9B%B4%E6%96%B0%E5%8A%A9%E6%89%8B%E5%B8%AE%E5%8A%A9%E6%96%87%E6%A1%A3)
 
-之所以要做出不同类型的服务端，是为了能够适配更多的运行环境。功能完全一致，只需要选择**其中一种**
+## 软件架构
 
-+ `PHP服务端`：PHP7.2+，不建议使用PHP8.0（适合：PHP开发者或者有过建站经验的服主）
-+ `静态服务端`：任意HTTP服务器（适合：内容分发网络、对象存储等高并发环境）
-+ `单文件服务端`：仅需Win7x64或以上，使用起来最简单，单文件免安装开箱即用（适合：**计算机小白和尝鲜用户**）
+为了支持更多的运行/部署环境。Minecraft文件更新助手有3个版本的服务端程序和2个版本的客户端程序可供选择。
 
-HTTP服务器推荐：[Nginx](https://nginx.org)、[Apache](https://httpd.apache.org)、[IIS](https://www.iis.net)、[宝塔](https://www.bt.cn)等
+由于通信协议是兼容的，任意一个服务端可以混搭任意一个客户端使用，提供最高的自由度。（服务端本质上是一个“网页”，更新时走的是HTTP协议）
+
+| 服务端                                | 客户端                                  |
+| ------------------------------------- | --------------------------------------- |
+| 1. 静态服务端（有一定计算机基础用户） | 1. 正式版客户端（有一定计算机基础用户） |
+| 2. PHP服务端（有一定计算机基础用户）  | 2. Jar版客户端（傻瓜用户）              |
+| 3. 单文件服务端（傻瓜用户）           |                                         |
+
+
+### 教你如何选择
+
+<!-- tabs:start -->
+
+#### **客户端**
+
++ `Jar版客户端`：如果你只想简单地更新客户端文件，不想做过多复杂配置
++ `正式版客户端`：需要自定义界面，配合启动器一键启动，使用内置公告栏等高级功能
 
 <details>
-<summary>个人推荐方案（仅做参考）</summary>
+<summary auto>详细对比</summary>
+
+正式版优势：
+
+1. 支持自定义公告栏
+2. 支持自定义界面
+3. 支持后调用指令
+4. 支持错误信息引导
+5. 完整Chromium嵌入，支持cookies持久化
+
+Jar版本的优势：
+
+1. Jar格式打包跨平台，32/64位系统，甚至能兼容WinXp
+2. 只有核心更新功能，超小体积（5Mb左右）
+3. 简单易用，适合ClientUpdater/FileSA远古项目的老用户使用习惯
+4. 极低杀软误报
+5. 支持配置文件内置到Jar包体里
+
+</details>
+
+#### **服务端**
 
 `小型规模服务器`或者`朋友联机`：推荐使用**单文件服务端**，单文件免安装，随时启动停止，也不需要和复杂的HTTPSERVER打交道。尤其是计算机小白，个人是非常推荐用这个端的，当然你照样也可以使用**PHP端**或**静态端**，如果你有相关经验的话。
 
@@ -51,17 +81,26 @@ HTTP服务器推荐：[Nginx](https://nginx.org)、[Apache](https://httpd.apache
 
 如果你有国内备案的话，建议使用CDN做更新，流量费能降一半，1GB/0.25元
 
----
+<!-- tabs:end -->
 
-`超大规模服务器`应该已经有自己的专业解决方案了，我就不献丑了。
+### 环境要求
 
-</details>
+<!-- tabs:start -->
 
-## 客户端环境要求
+### **服务端**
 
-Windows7 x64或以上（不支持32位！）
++ `PHP服务端`：PHP7.2+，不建议使用PHP8.0（适合：PHP开发者或者有过建站经验的服主）
++ `静态服务端`：任意HTTP服务器（适合：内容分发网络、对象存储等高并发环境）
++ `单文件服务端`：最低Win7x64，使用起来最简单，免安装开箱即用（适合**小白和尝鲜用户**）
 
-> 如果出现360误报，请手动加入白名单，如不放心，可以查阅源代码（文件更新助手是全开源项目）
+HTTP服务器推荐：[Nginx](https://nginx.org)、[Apache](https://httpd.apache.org)、[IIS](https://www.iis.net)、[宝塔](https://www.bt.cn)等
+
+### **客户端**
+
++ `正式版客户端`：Windows7 x64或以上（不支持32位！）
++ `Jar版客户端`：最低Java8，支持32位
+
+<!-- tabs:end -->
 
 ## 下载安装
 
@@ -80,8 +119,9 @@ Windows7 x64或以上（不支持32位！）
 反馈问题时，务必带上以下内容：
 
 1. 问题详细描述
-2. 问题截图（如果有）
-3. 日志文件`.minecraft/updater/updater.log`（可选）
+2. 服务端版本号和客户端版本号
+3. 问题截图（如果有）
+4. 日志文件`.minecraft/updater/updater.log`（可选）
 
 ## 参与贡献
 
@@ -106,4 +146,4 @@ https://afdian.net/@aprilforest
 + 小工具：https://github.com/updater-for-minecraft/Tool
 + 服务端：[PHP服务端](https://github.com/updater-for-minecraft/PhpServer)、[单文件服务端](https://github.com/updater-for-minecraft/LittleServer)
 + 客户端可执行文件打包器：https://github.com/updater-for-minecraft/LittleWrapper
-
++ Jar版客户端：https://github.com/updater-for-minecraft/LittleClient

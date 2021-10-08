@@ -6,7 +6,8 @@
 - 目录
   - [常见问题](FrequenctlyAskedQuestions.md)
   - [更新记录](https://github.com/updater-for-minecraft/Client/releases)
-  - [排查日志](TroubleshootByLogs.md)
+  - [Jar版客户端](jar-version/)
+  - [排查问题](TroubleshootByLogs.md)
   - [公告栏配置](Announcement.md)
   - [配置一键启动](FollowingStart.md)
   - [配置示例](ServerConfigurationExamples.md)
