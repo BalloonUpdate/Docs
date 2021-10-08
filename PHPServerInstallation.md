@@ -22,8 +22,8 @@
 # common_mode适合用来更新常规文件，详情请参阅服务端配置文件参考
 # 路径分隔符只能使用正斜线
 common_mode:
-  - .minecraft/mods
-  - .minecraft/vexview/textures
+  - .minecraft/mods/*.jar
+  - .minecraft/vexview/textures/*
 
 # common_mode适合用来补全配置文件，详情请参阅服务端配置文件参考
 # 路径分隔符只能使用正斜线
@@ -42,44 +42,13 @@ once_mode: []
 
 ### **正式版客户端**
 
-!> 在安装之前，务必备份原有客户端，以防配置出错误删文件！
-
-1. 下载并解压客户端zip包，把主程序和配置文件一起解压到`.minecraft`同级目录下
-
-![client-inside-updater](assets/client-inside-updater.png)
-
-2. 打开并配置`updater.yml`，并将`index.yml`的URL填到api选项后面
-
-3. 如果你喜欢，可以把客户端程序改成别的文件名（比如：`点击更新mods.exe`等等），但是，客户端程序只有放在以下路径才能正常工作：`.minecraft`同级目录(启动器旁)、`.minecraft/`下任意7层目录以下
-
-![out_mcdir](assets/out_mcdir.png)
-
-5. 到这里所有的安装工作已经结束了，开始启动测试效果吧！
+[OfficialClientInstallation.md](OfficialClientInstallation.md ':include')
 
 ### **Jar版客户端**
 
-用压缩软件打开Jar包，把`config.yml`解压到Jar的旁边
-
-![inside-jar.png](assets/inside-jar.png)
-
-这个`config.yml`文件就是配置文件，我们用文本编辑器打开编辑
-
-各个配置选项的说明已经写在config.yml中了，可以阅读后调整各选项的值
-
-除了`server`选项是必填以外，其它选项均可省略不写
-
-编辑好配置文件后，保存关闭这个文件，双击启动Jar测试效果，注意不要设置成默认使用压缩软件打开Jar文件了，要用`javaw.exe`或者`java.exe`才能启动，正常情况下图标应该是Java的咖啡杯 ![java-icon][java-icon]
-
----
-
-**打包配置文件到Jar包里：**
-
-当程序检测到旁边有`config.yml`时会优先加载Jar旁边的配置文件`config.yml`，如果这个文件不存在，就会去读取Jar包里面的`config.yml`，如果两个文件都不存在，就会报错了。
-
-在调试好配置文件之后，可以用压缩软件把配置好的`config.yml`打包进Jar包里（如果提示覆盖的话记得点”是”），然后将外面的配置文件删掉，只留下Jar包里配置文件，这样看起来会整洁许多，也不会影响到程序的读取
+[JarClientInstallation.md](JarClientInstallation.md ':include')
 
 <!-- tabs:end -->
-
 
 ### 后续维护
 

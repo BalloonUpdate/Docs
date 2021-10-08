@@ -36,7 +36,7 @@ HTML和CSS3、 JS async/await、 [Vue声明式渲染](https://vuejs.bootcss.com/
 
 以下是各种事件触发的流程图（SVG文件）
 
-![事件流程图](CustomizeInterface.assets/事件流程图.svg)
+![事件流程图](assets/事件流程图.svg)
 
 ### 监听各种事件
 
