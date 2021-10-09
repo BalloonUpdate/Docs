@@ -35,7 +35,7 @@ common_mode:
 once_mode: []
 ```
 
-更多示例可以参考[这里](ServerConfigurationExamples.md)，关于配置文件的配置参考可以参考[这里](ServerConfigurationReference.md)
+关于配置文件的配置参考和更多示例可以点击[这里](ServerConfigurationReference.md)
 
 5. 到这里服务端配置完毕，然后是客户端
 
@@ -54,6 +54,10 @@ once_mode: []
 [JarClientInstallation.md](JarClientInstallation.md ':include')
 
 <!-- tabs:end -->
+
+## 遇到问题/报错怎么办?
+
+[RunningIntoTrouble.md](RunningIntoTrouble.md ':include')
 
 ## 后续维护
 

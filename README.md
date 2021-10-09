@@ -110,18 +110,9 @@ HTTP服务器推荐：[Nginx](https://nginx.org)、[Apache](https://httpd.apache
 
 ~~单文件服务端有5分钟快速入门视频教程，可以跳转至B站观看：https://www.bilibili.com/video/BV1jh411q7Ww~~已过期，仅支持3.0.x旧版本，不支持3.1.x新版本
 
-## 问题反馈&技术支持
+## 技术支持
 
-1. 首先参考[常见问题解答](FrequenctlyAskedQuestions.md)
-2. [点击这里](https://jq.qq.com/?_wv=1027&k=PqAEtn39)加入【文件更新助手官方交流群】 925057600 获取技术支持  (有问题请直接在群里@四月浅森）
-3. 发邮件asforest@qq.com
-
-反馈问题时，务必带上以下内容：
-
-1. 问题详细描述
-2. 服务端版本号和客户端版本号
-3. 问题截图（如果有）
-4. 日志文件`.minecraft/updater/updater.log`（可选）
+[RunningIntoTrouble.md](RunningIntoTrouble.md ':include')
 
 ## 参与贡献
 
@@ -147,3 +138,12 @@ https://afdian.net/@aprilforest
 + 服务端：[PHP服务端](https://github.com/updater-for-minecraft/PhpServer)、[单文件服务端](https://github.com/updater-for-minecraft/LittleServer)
 + 客户端可执行文件打包器：https://github.com/updater-for-minecraft/LittleWrapper
 + Jar版客户端：https://github.com/updater-for-minecraft/LittleClient
+
+## 更新记录
+
+  - [正式版客户端更新记录](https://github.com/updater-for-minecraft/Client/releases)
+  - [Jar版客户端更新记录](https://github.com/updater-for-minecraft/LittleClient/releases)
+
+## 历史版本
+
+[HistoricalVersions.md](HistoricalVersions.md ':include')

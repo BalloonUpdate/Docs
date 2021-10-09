@@ -35,7 +35,7 @@ common_mode:
 once_mode: []
 ```
 
-更多示例可以参考[这里](ServerConfigurationExamples.md)，关于`common_mode`和`once_mode`的具体用法可以参考[这里](ServerConfigurationReference.md)
+关于`common_mode`和`once_mode`的具体用法和更多示例可以点击[这里](ServerConfigurationReference.md)
 
 5. 到这里就可以上传到自己服务器了，如果是上传到对象存储，建议使用[小工具上传](#小工具使用教程)，如果需要控制细节，也是支持手动上传的
 7. 上传完成后，服务端就配置完毕了，然后是客户端
@@ -55,6 +55,10 @@ once_mode: []
 [JarClientInstallation.md](JarClientInstallation.md ':include')
 
 <!-- tabs:end -->
+
+## 遇到问题/技术支持
+
+[RunningIntoTrouble.md](RunningIntoTrouble.md ':include')
 
 ## 后续维护
 

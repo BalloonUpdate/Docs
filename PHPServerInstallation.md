@@ -32,7 +32,7 @@ once_mode: []
 # 使用php服务端需要将下面paths里面所有单反斜杠\全部换成双反斜杠\\
 ```
 
-更多示例可以参考[这里](ServerConfigurationExamples.md)，关于`common_mode`和`once_mode`的具体用法可以参考[这里](ServerConfigurationReference.md)
+关于`common_mode`和`once_mode`的具体用法和更多示例可以点击[这里](ServerConfigurationReference.md)
 
 5. 到这里，服务端配置完毕，然后是客户端
 
@@ -49,6 +49,10 @@ once_mode: []
 [JarClientInstallation.md](JarClientInstallation.md ':include')
 
 <!-- tabs:end -->
+
+### 遇到问题/技术支持
+
+[RunningIntoTrouble.md](RunningIntoTrouble.md ':include')
 
 ### 后续维护
 
