@@ -9,4 +9,4 @@
 1. 问题详细描述
 2. 服务端版本号和客户端版本号
 3. 问题截图（可选）
-4. 日志文件`.minecraft/updater/updater.log`（可选）
+4. 日志文件`updater.log`（可选）
