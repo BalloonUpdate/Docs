@@ -20,7 +20,9 @@ announcement_api: http://127.0.0.1/anno.txt
 
 （下面的方法是把公告内容和更新服务端整合到了一起，如果你喜欢，也可以单独在别的服务器上部署公告API）
 
-#### 单文件服务端
+<!-- tabs:start -->
+
+#### **单文件服务端**
 
 在单文件服务端的目录（`LittleServer-v1.2.exe`同级目录）下创建一个文件`anno.txt`，然后打开文件写上一些公告信息
 
@@ -34,7 +36,7 @@ announcement_api: http://127.0.0.1:8850/anno.txt
 
 最后启动程序测试实际效果
 
-#### 静态服务端
+#### **静态服务端**
 
 在静态服务端的`updater`目录下创建一个文件`anno.txt`，然后打开文件写上一些公告信息
 
@@ -50,7 +52,7 @@ announcement_api: http://127.0.0.1/anno.txt
 
 最后启动程序测试实际效果
 
-#### PHP服务端
+#### **PHP服务端**
 
 在PHP服务端的目录下创建一个文件`anno.txt`，然后打开文件写上一些公告信息
 
@@ -63,6 +65,8 @@ announcement_api: http://127.0.0.1/anno.txt
 这里的`announcement_api`的地址是和`api`是相同的，只不过把配置项`api`后面的`index.yml`换成`anno.txt`然后写到了这里，这样就能获取公告了
 
 最后启动程序测试实际效果
+
+<!-- tabs:end -->
 
 ### 关于如何在公告栏里调用系统浏览器
 
