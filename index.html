@@ -9,11 +9,14 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
     <link rel="icon" href="https://avatars.githubusercontent.com/u/77261045?s=32&v=4" type="image/png">
 
+    <!-- Vue2 Development -->
+    <script src="http://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
     <!-- Edit on Github -->
-    <script src="https://cdn.jsdelivr.net/npm/docsify-edit-on-github"></script>
-
-    <!-- Vue3 Development -->
-    <script src="https://cdn.jsdelivr.net/npm/vue@3/dist/vue.global.js"></script>
+    <script src="assets/docsify-plugins/docsify-edit-on-github.js"></script>
+    <!-- Auto Title -->
+    <script src="assets/docsify-plugins/docsify-auto-title.js"></script>
+    <!-- Github Repo Contributors -->
+    <script src="assets/docsify-plugins/docsify-github-repo-contributors.js"></script>
     
     <script>
         window.$docsify = {
@@ -43,12 +46,13 @@
                 noData: '没有结果!',
             },
             plugins: [
-                EditOnGithubPlugin.create('https://github.com/updater-for-minecraft/Docs/blob/main/', null, 'Edit on Github')
+                EditOnGithubPlugin.create('https://github.com/updater-for-minecraft/Docs/blob/main/', null, 'Edit on Github'),
+                DocsifyAutoTitle.create(),
+                DocsifyGithubRepoContributors.create()
             ]
         }
     </script>
-</head>
-<body>
+
     <div id="app">Loading...</div>
     <!-- Docsify v4 -->
     <script src="https://cdn.jsdelivr.net/npm/docsify@4"></script>
@@ -64,105 +68,8 @@
     <script src="https://cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
     <!-- 代码高亮 -->
     <script src="https://cdn.jsdelivr.net/npm/prismjs@1/components/prism-yaml.min.js"></script>
-
-    <script>
-
-        (function(){
-            // 将第一个标题作为网页Title
-            var defaultTitle = document.querySelector('title').innerHTML
-            var plugin = function(hook) {
-                hook.afterEach(function(html) {
-                    var parser = new DOMParser()
-                    var root = parser.parseFromString(html, 'text/html')
-                    var dom = root.querySelectorAll('h1,h2,h3,h4,h5,h6')
-                    if(dom.length > 0) {
-                        setTimeout(() => {
-                            document.querySelector('title').innerHTML = dom[0].innerText
-                        }, 5);
-                    } else {
-                        document.querySelector('title').innerHTML = defaultTitle
-                    }
-                    return html;
-                });
-            }
-            
-            window.$docsify.plugins = window.$docsify.plugins.concat([plugin])
-        })();
-
-        (function(){
-            var plugin = function(hook) {
-                hook.afterEach(function(html) {
-
-                    setTimeout(() => {
-                        let githubContributors = {
-                            data: () => ({
-                                contributors: []
-                            })
-                        }
-
-                        let vue = Vue.createApp(githubContributors).mount('#github-contributors')
-
-                        fetch('https://api.github.com/repos/updater-for-minecraft/Docs/contributors').then((r) => r.json()).then((data) => {
-                            vue.contributors = data
-                        })
-                    }, 150);
-                    
-                    return html+`
-                    <hr style="margin-top: 5rem;" />
-                    <div id="github-contributors">
-                        <div class="github-contributor-title">Copyleft © 2021 - 2021 <a href="https://github.com/updater-for-minecraft">updater-for-minecraft</a></div>
-                        <div class="github-contributor-title" v-show="contributors.length > 0"> | </div>
-                        <div class="github-contributor-title" v-show="contributors.length > 0">Contributors: </div>
-                        <div v-for="c in contributors" class="github-contributor-user" v-show="contributors.length > 0">
-                            <img v-bind:src="c.avatar_url" class="github-contributor-avatar" />
-                            <div class="github-contributor-username" ><a v-bind:href="c.html_url" target="_blank">{{c.login}}<a/></div>
-                        </div>
-                    </div>
-                    <style>
-                        #github-contributors {
-                            display: flex;
-                            align-items: center;
-                            opacity: 0.8;
-                            flex-wrap: wrap;
-                        }
-
-                        .github-contributor-title {
-                            margin: 6px 10px;
-                            font-size: 16px;
-                            font-weight: bold;
-                            color: inherit;
-                            white-space: nowrap;
-                        }
-
-                        .github-contributor-user {
-                            display: inline-flex;
-                            align-items: center;
-                            margin-right: 4px;
-                        }
-
-                        .github-contributor-avatar {
-                            height: 28px;
-                            /* padding: 2px; */
-                            /* border: 1px solid #cecece; */
-                            border-radius: 50%;
-                            box-shadow: 3px 4px 8px #00000014;
-                        }
-
-                        .github-contributor-username {
-                            margin: 0 8px;
-                            font-size: 16px;
-                            // font-weight: bold;
-                            color: inherit;
-                        }
-                    </style>
-                    `;
-                });
-            }
-            
-            window.$docsify.plugins = window.$docsify.plugins.concat([plugin])
-        })();
-    </script>
-
+</head>
+<body>
     <style>
         /* .markdown-section {
             padding-top: 8px;
