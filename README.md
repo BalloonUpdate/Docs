@@ -1,24 +1,25 @@
 ## Minecraft文件更新助手帮助文档（版本3.1.3）
 
-更新客户端小程序，Mod服好帮手
+—— 更新客户端小程序，Mod服好帮手
 
 <details>
 <summary>3.0版本发行说明</summary>
 
 不知不觉距离第一个版本发布已经过去5年了，首先感谢各位老板们在这些日子里的支持。特别是从远古项目ClientUpdater插件版和FileSA开始使用的老用户们。
 
-3.0主要以重写为主，之前2.0使用json配置文件，但很多人都不熟悉json的语法，很容易漏掉列表末尾的逗号，现在3.0使用yaml格式配置文件，只要有过开服经验的人，都能轻易上手。
+v3.0主要以重写为主，之前v2.0使用json配置文件，但很多人都不熟悉json的语法，很容易漏掉列表末尾的逗号，现在v3.0使用yaml格式配置文件，只要有过开服经验的人，都能轻易上手。
 
-3.0也修复了2.0遗留的兼容/报毒问题，现在3.0使用Electron框架构建，由c/c++驱动，不依赖.net，误报的概率能降低很多，兼容性也会提升不少。
+v3.0也修复了v2.0遗留的兼容/报毒问题，现在3.0使用Electron框架构建，由c/c++驱动，不依赖.net，误报的概率能降低很多，兼容性也会提升不少。
 
-另外比较重要的一个改变是：3.0移除了自升级功能，这会使得软件配置起来更加简单，不会再遇到过程极其复杂的配置方法了，同时还会有一些额外好处，比如启动速度提升，文件大小变小，易安装和配置等优势。
+另外比较重要的一个改变是：v3.0移除了自升级功能，这会使得软件配置起来更加简单，不会再遇到过程极其复杂的配置方法了，同时还会有一些额外好处，比如启动速度提升，文件大小变小，易安装和配置等优势。
 
 本软件同时也是一个开源项目，所有相关源代码完全开源，欢迎各大开发者给项目提出问题，意见。
+
+如果喜欢且有经济条件的话，欢迎访问我的[爱发电主页](#爱发电主页)赞助哦
+
 </details>
 
-!> 注意：版本3.x与2.x完全不兼容，请重新安装。2.x文档链接请[点击这里](#历史版本)
-
-!> 新的客户端3.1.0和服务端3.6均不兼容之前的版本，如果你不是首次安装，请参阅[不兼容的变更](Migration.md)，如果需要3.0.x版本的帮助文档，请点击[这里](#历史版本)
+> 如果你在找旧版本文档的话，点击[这里](#历史版本)跳转
 
 ## 软件架构
 
@@ -104,7 +105,9 @@ HTTP服务器推荐：[Nginx](https://nginx.org)、[Apache](https://httpd.apache
 
 ## 下载安装
 
-下载请跳转到[MCBBS贴内](https://www.mcbbs.net/thread-711833-1-1.html)，或者[点击这里](https://jq.qq.com/?_wv=1027&k=PqAEtn39)加入【文件更新助手官方交流群】 925057600 从群文件获取(同步更新)
+!> 这些版本无法直接升级，需要重新安装配置：`v2 升级到 v3`、`v3.0 升级到 v3.1`
+
+下载请跳转到[MCBBS贴内](https://www.mcbbs.net/thread-711833-1-1.html)，或者[点击这里](https://jq.qq.com/?_wv=1027&k=PqAEtn39)加入【文件更新助手官方交流群】 925057600 从群文件获取(同步更新)，或者前往[GithubRelease](#开源地址)下载
 
 对应的教程：[PHP服务端](PHPServerInstallation.md) / [静态服务端](StaticServerInstallation.md) / [单文件服务端](LittleServerInstallation.md)（也可以随时从右上角的导航栏跳转）
 
@@ -141,8 +144,8 @@ https://afdian.net/@aprilforest
 
 ## 更新记录
 
-  - [正式版客户端更新记录](https://github.com/updater-for-minecraft/Client/releases)
-  - [Jar版客户端更新记录](https://github.com/updater-for-minecraft/LittleClient/releases)
+  - [正式版客户端更新记录](https://github.com/updater-for-minecraft/Client/releases)（将跳转至GithubRelease）
+  - [Jar版客户端更新记录](https://github.com/updater-for-minecraft/LittleClient/releases)（将跳转至GithubRelease）
 
 ## 历史版本
 
