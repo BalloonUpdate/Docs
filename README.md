@@ -105,8 +105,6 @@ HTTP服务器推荐：[Nginx](https://nginx.org)、[Apache](https://httpd.apache
 
 ## 下载安装
 
-!> 这些版本无法直接升级，需要重新安装配置：`v2 升级到 v3`、`v3.0 升级到 v3.1`
-
 下载请跳转到[MCBBS贴内](https://www.mcbbs.net/thread-711833-1-1.html)，或者[点击这里](https://jq.qq.com/?_wv=1027&k=PqAEtn39)加入【文件更新助手官方交流群】 925057600 从群文件获取(同步更新)，或者前往[GithubRelease](#开源地址)下载
 
 对应的教程：[PHP服务端](PHPServerInstallation.md) / [静态服务端](StaticServerInstallation.md) / [单文件服务端](LittleServerInstallation.md)（也可以随时从右上角的导航栏跳转）
@@ -116,6 +114,15 @@ HTTP服务器推荐：[Nginx](https://nginx.org)、[Apache](https://httpd.apache
 ## 技术支持
 
 [RunningIntoTrouble.md](RunningIntoTrouble.md ':include')
+
+## 版本升级
+
+在下面列出的各个版本号区间内，可以直接替换文件来升级到新版而无需重新配置，但如果你现有版本和将要升级的版本不再同一个区间里，那么就需要完全重头开始安装配置
+
+| 正式版客户端 | Jar版客户端  | 服务端   |
+| ------------ | ------------ | -------- |
+| 3.0          | 0.0.1\~0.0.4 | 3.2\~3.6 |
+| 3.1.x        | 1.0          | 3.7      |
 
 ## 参与贡献
 
