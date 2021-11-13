@@ -109,8 +109,6 @@ HTTP服务器推荐：[Nginx](https://nginx.org)、[Apache](https://httpd.apache
 
 对应的教程：[PHP服务端](PHPServerInstallation.md) / [静态服务端](StaticServerInstallation.md) / [单文件服务端](LittleServerInstallation.md)（也可以随时从右上角的导航栏跳转）
 
-~~单文件服务端有5分钟快速入门视频教程，可以跳转至B站观看：https://www.bilibili.com/video/BV1jh411q7Ww~~已过期，仅支持3.0.x旧版本，不支持3.1.x新版本
-
 ## 技术支持
 
 [RunningIntoTrouble.md](RunningIntoTrouble.md ':include')
