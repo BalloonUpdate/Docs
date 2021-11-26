@@ -42,6 +42,7 @@ window_height: 130
 # 高阶的用法请参考Windows的cmd命令
 # 如果需要异步启动程序，可以不用start启动
 # 而是在此配置项的最前面加一个+号，代表不阻塞执行
+# 起始路径是.minecraft所在目录，并不是exe所在
 postcalled_command: start https://www.mcbbs.net
 
 # 报错时（网络问题、配置文件等问题出现时），屏幕上显示的自定义错误信息
