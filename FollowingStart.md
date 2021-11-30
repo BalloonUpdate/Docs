@@ -27,8 +27,9 @@
 
 1. 启动HMCL，打开设置
 2. 找到**启动前指令**（不是前置指令）这一项
-3. 填写`$INST_MC_DIR\..\updater.exe -s -u`
-4. 启动游戏
+3. 填写`updater.exe -s -u`
+4. 如果你将exe文件放到`.minecraft/update/`下，那么请填写`.minecraft/update/updater.exe -s -u`
+5. 启动游戏
 
 ### **PCL2**
 
