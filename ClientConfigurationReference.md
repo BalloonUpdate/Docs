@@ -118,4 +118,11 @@ log_file: 'log.txt'
 # 如果你发现了填写的规律，你可以用来做任何目录的更新
 # 此选项相当于给工作目录做了一个偏移(offset)
 start_path: ''
+
+# 启动无边框模式
+frameless: true
+
+# 启动透明窗口模式，开启后窗口会变成圆角风格
+# 开启后，受Electron限制，双击标题栏最大化的功能会禁用
+transparent: false
 ```
