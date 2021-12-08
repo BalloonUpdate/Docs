@@ -8,9 +8,9 @@ HTML和CSS3、 JS async/await、 [Vue声明式渲染](https://vuejs.bootcss.com/
 
 ---
 
-这是v3.0.0默认的界面（双进度条风格），3.0.0版本可以兼容2.x版本的界面资源。（虽然兼容2.x，但`on_error`事件回调函数的参数有变化，建议进行适配）
+这是v3.1.5的默认的界面（双进度条风格），3.x版本可以兼容2.x版本的界面资源。（虽然兼容2.x，但`on_error`事件回调函数的参数有变化，建议进行适配）
 
-![ui-2.7.0](assets/ui-2.7.0.png)
+![ui-3.1.5](CustomizeInterface.assets/ui-3.1.5.gif)
 
 ---
 
