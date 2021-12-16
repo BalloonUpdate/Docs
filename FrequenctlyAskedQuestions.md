@@ -62,7 +62,7 @@ HTTPResponseException(HTTP请求/连接失败(通常是网络原因))
 
 > 此报错和程序本身无关，通常是网络原因，不是程序BUG。
 
-#### MCDirectoryNotFoundException
+#### The .minecraft directory not found
 
 ```
 MCDirectoryNotFoundException: The .minecraft directory not found.
