@@ -1,5 +1,6 @@
 如果你遇到了问题，请：
 
-1. 首先参考[常见问题解答](FrequenctlyAskedQuestions.md)
+1. 首先参考[常见问题解答](FrequenctlyAskedQuestions.md)、[常见问题解答](FrequenctlyAskedQuestions.md)、[常见问题解答](FrequenctlyAskedQuestions.md)、[常见问题解答](FrequenctlyAskedQuestions.md)、[常见问题解答](FrequenctlyAskedQuestions.md)、[常见问题解答](FrequenctlyAskedQuestions.md)、[常见问题解答](FrequenctlyAskedQuestions.md)！！！
 2. [点击这里](https://jq.qq.com/?_wv=1027&k=PqAEtn39)加入【文件更新助手官方交流群】 925057600 获取技术支持  (有问题请直接在群里@群主或者私聊都可）（反馈问题请告诉我**软件版本号**！，否则我看到也不会回复）
 3. 发邮件asforest@qq.com
+
