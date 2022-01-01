@@ -11,7 +11,7 @@
 | index.php | 服务端主程序文件                           |
 | Spyc.php  | 服务端程序的依赖文件                       |
 
-2. 将要更新文件，比如模组文件，复制到`res/.minecraft/mods/`里面（`.minecraft/mods/`目录请自行创建）
+2. 将要更新文件，比如`mods`目录里面**所有**的模组文件，复制到`res/.minecraft/mods/`里面（`.minecraft/mods/`目录请自行创建），注意不是只复制需要新增的文件，而是要复制所有文件
 
 ![image-20210823103019711](assets/phpserver-inside-mods.png)
 
@@ -35,6 +35,8 @@ once_mode: []
 关于`common_mode`和`once_mode`的具体用法和更多示例可以点击[这里](ServerConfigurationReference.md)
 
 5. 到这里，服务端配置完毕，然后是客户端
+
+[ForbiddenChars.md](ForbiddenChars.md ':include')
 
 ## 客户端安装
 

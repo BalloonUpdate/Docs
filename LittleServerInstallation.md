@@ -24,11 +24,11 @@
 | LittleServer.exe或者jar | 服务端主程序文件                       |
 | 启动.bat                | 启动服务端主程序的脚本（推荐这样启动） |
 
-2. 将要更新文件，比如模组文件，复制到`res/.minecraft/mods/`里面（`.minecraft/mods/`目录请自行创建）
+2. 把`mods`目录里面**所有**的文件，都复制到`res/.minecraft/mods/`里面（`.minecraft/mods/`目录请自行创建），注意不是只复制需要新增的文件，而是要复制所有文件
 
 ![image-20210822233040650](assets/littleserver-inside-mods.png)
 
-3. 将其它要参与更新的文件同样按上面的方法，复制到对应的目录上（比如Vexview的贴图复制到`res/.minecraft/vexview/textures/`下）
+3. 将其它要更新的文件同样按上面的方法，复制到对应的目录上（比如Vexview的贴图复制到`res/.minecraft/vexview/textures/`下）
 4. 编辑服务端配置文件`config.yml`，在`common_mode`下写上所有需要参与更新路径
 
 ```yaml
@@ -50,6 +50,8 @@ once_mode: []
 关于配置文件的配置参考和更多示例可以点击[这里](ServerConfigurationReference.md)
 
 5. 到这里服务端配置完毕，然后是客户端
+
+[ForbiddenChars.md](ForbiddenChars.md ':include')
 
 ## 客户端安装
 

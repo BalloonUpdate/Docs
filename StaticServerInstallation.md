@@ -16,7 +16,7 @@
 | Tool.exe          | 小工具的主程序文件（用来一键上传）     |
 | 上传.bat          | 启动小工具主程序的脚本（推荐这样启动） |
 
-2. 将要更新文件，比如模组文件，复制到`updater/res/.minecraft/mods/`里面（`.minecraft/mods/`目录请自行创建）
+2. 将要更新文件，比如`mods`目录里面**所有**的模组文件，复制到`updater/res/.minecraft/mods/`里面（`.minecraft/mods/`目录请自行创建），注意不是只复制需要新增的文件，而是要复制所有文件
 
 ![image-20210823000009863](assets/staticserver-inside-mods.png)
 
@@ -41,6 +41,8 @@ once_mode: []
 
 5. 到这里就可以上传到自己服务器了，如果是上传到对象存储，建议使用[小工具上传](#小工具使用教程)，如果需要控制细节，也是支持[手动上传](#手动部署(高级))的
 7. 上传完成后，服务端就配置完毕了，然后是客户端
+
+[ForbiddenChars.md](ForbiddenChars.md ':include')
 
 ## 客户端安装
 
