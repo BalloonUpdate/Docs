@@ -125,4 +125,7 @@ frameless: true
 # 启动透明窗口模式，开启后窗口会变成圆角风格
 # 开启后，受Electron限制，双击标题栏最大化的功能会禁用
 transparent: false
+
+# HTTP无缓存模式，开启之后会在每个请求后面跟上?t=<xx>（<xx>会被换成实际时间戳秒），这里的t也可以换成别的参数名，用来解决CDN缓存的问题
+http_no_cache: t
 ```
