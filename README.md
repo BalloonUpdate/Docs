@@ -113,7 +113,12 @@ HTTP服务器推荐：[Nginx](https://nginx.org)、[Apache](https://httpd.apache
 
 对应的教程：[PHP服务端](PHPServerInstallation.md) / [静态服务端](StaticServerInstallation.md) / [单文件服务端](LittleServerInstallation.md)（也可以随时从右上角的导航栏跳转）
 
+---
+
 单文件服务端和Jar客户端视频教程：https://www.bilibili.com/video/BV1QL411u7Aj
+
+<div class="bilibli-video-wrapper"><iframe src="//player.bilibili.com/player.html?bvid=BV1QL411u7Aj&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe></div>
+
 
 ## 技术支持
 
