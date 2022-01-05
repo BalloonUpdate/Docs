@@ -23,7 +23,7 @@
 # 路径分隔符只能使用正斜线
 common_mode:
   - .minecraft/mods/*.jar
-  - .minecraft/vexview/textures/*
+  - .minecraft/vexview/textures/**
 
 # common_mode适合用来补全配置文件，详情请参阅服务端配置文件参考
 # 路径分隔符只能使用正斜线

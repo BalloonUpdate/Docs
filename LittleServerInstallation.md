@@ -41,7 +41,7 @@ port: 8850
 # 路径分隔符只能使用正斜线，如果用反斜线出了问题请自行解决！
 common_mode:
   - .minecraft/mods/*.jar
-  - .minecraft/vexview/textures/*
+  - .minecraft/vexview/textures/**
 
 # 不用填写
 once_mode: []

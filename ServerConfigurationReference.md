@@ -6,8 +6,10 @@
 # 除了写目录的路径外，这里还可以写文件的路径（单独更新某个文件）
 # common_mode适合用来更新常规文件
 common_mode: 
-  - .minecraft/mods/*.jar
-  - .minecraft/vexview/textures/* # 如果这样写无法更新所有子文件和子目录，请尝试用.minecraft/vexview/textures/*.*代替
+  - .minecraft/mods/*.jar # 只更新一级子目录下的.jar文件
+  - .minecraft/vexview/textures/* # 只更新一级子目录下的任意后缀文件
+  - .minecraft/vexview/textures/** # 更新任意级子目录下的任意后缀文件
+  - .minecraft/vexview/textures/**/*.jar # 更新任意级子目录下的.jar文件
 
 # 除了写目录的路径外，这里还可以写文件的路径（单独更新某个文件）
 # once_mode适合用来补全配置文件
