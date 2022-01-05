@@ -34,7 +34,7 @@ once_mode: []
 
 关于`common_mode`和`once_mode`的具体用法和更多示例可以点击[这里](ServerConfigurationReference.md)
 
-5. 到这里，服务端配置完毕，然后是客户端
+5. 到这里，服务端配置完毕，然后请参考下方的客户端安装章节
 
 [ForbiddenChars.md](ForbiddenChars.md ':include')
 

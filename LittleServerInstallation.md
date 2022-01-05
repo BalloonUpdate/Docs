@@ -47,9 +47,13 @@ common_mode:
 once_mode: []
 ```
 
-关于配置文件的配置参考和更多示例可以点击[这里](ServerConfigurationReference.md)
+关于配置文件的配置参考和更多示例可以点击[这里](ServerConfigurationReference.md)，注意每次修改`config.yml`后，需要重启单文件服务端才会生效。如果仅仅是修改要更新的文件，则不用重启
 
-5. 到这里服务端配置完毕，然后是客户端
+有个地方要注意，Windows系统下使用时，如果误进入了`选择`模式，如下图，会导致程序卡死。请按Esc或者点击右键来退出
+
+![image-20220105225843121](LittleServerInstallation.assets/image-20220105225843121.png)
+
+到这里服务端配置完毕，然后请参考下方的客户端安装章节
 
 [ForbiddenChars.md](ForbiddenChars.md ':include')
 
