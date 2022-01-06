@@ -2,7 +2,7 @@
 
 > 静态服务端适合部署到对象存储，内容分发网络，或者其它静态服务器上
 
-> 静态服务端新增GitPages部署的示例项目，详情点击[这里](#GitPages服务部署)
+> 静态服务端新增GitPages部署的示例项目，详情点击[这里](#GitPages部署)
 
 1. 把整个`静态服务端`文件夹解压到桌面上（或者其它任何地方）
 
@@ -376,5 +376,5 @@ python3 tool.py updater
 4. 基础的英文阅读能力
 5. 使用正式版客户端3.1.3或以上版本；或者使用Jar版客户端1.0.0或以上版本
 
-如果你满足上面的要求，那么请点击[这里](https://github.com/updater-for-minecraft/StaticServerForPages)查看具体的教程
+如果你满足上面的要求，那么请点击[这里](https://gitee.com/updater-for-minecraft/StaticServerForPages)查看具体的教程
 
