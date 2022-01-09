@@ -144,7 +144,7 @@ UnexpectedHttpCodeExcepetion不正确的HTTP状态码(未处于2xx-3xx之间)
 UnknownWorkModeException未知的工作模式
 ```
 
-`影响范围`：3.x全版本
+`影响范围`：3.1全版本
 
 `原因`：服务端配置文件里的`mode`设置不正确
 
@@ -198,6 +198,14 @@ AmbiguousFileTypeEeception(有歧义的文件类型(内部错误))
 `原因`：小工具的bug所导致
 
 `解决办法`：升级小工具的版本到v3.0.1
+
+#### 找不到res.yml（404问题）
+
+`影响范围`：3.x全版本
+
+`原因`：客户端配置错误，尤其是使用PHP服务端的时候
+
+`解决办法`：将客户端配置文件里的`api`选项，从`.yml`结尾换成`.php`结尾（前提是没有使用URLrewrite）
 
 #### check_hostname requires server_hostname
 

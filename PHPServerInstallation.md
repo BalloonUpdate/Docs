@@ -4,12 +4,12 @@
 
 ![image-20210822235615564](assets/phpserver-all-files.png)
 
-| 文件      | 用途                                       |
-| --------- | ------------------------------------------ |
-| res       | 存放要参与更新的文件                       |
-| index.yml | 服务端配置文件（图中为`config.yml`未更正） |
-| index.php | 服务端主程序文件                           |
-| Spyc.php  | 服务端程序的依赖文件                       |
+| 文件      | 用途                 |
+| --------- | -------------------- |
+| res       | 存放要参与更新的文件 |
+| index.yml | 服务端配置文件       |
+| index.php | 服务端主程序文件     |
+| Spyc.php  | 服务端程序的依赖文件 |
 
 2. 将要更新文件，比如`mods`目录里面**所有**的模组文件，复制到`res/.minecraft/mods/`里面（`.minecraft/mods/`目录请自行创建），注意不是只复制需要新增的文件，而是要复制所有文件
 
@@ -34,7 +34,24 @@ once_mode: []
 
 关于`common_mode`和`once_mode`的具体用法和更多示例可以点击[这里](ServerConfigurationReference.md)
 
-5. 到这里，服务端配置完毕，然后请参考下方的客户端安装章节
+---
+
+然后需要验证服务端是否正确工作（这一步很重要）：使用浏览器打开`index.php`的URL
+
+如果浏览器显示了类似下面代码框里的yaml格式的内容。那么恭喜！服务端配置无误
+
+如果是老版本PHP服务端，则会弹出下载框，请下载后用文本编辑器打开，格式也应当类似下面代码框里的yaml格式的内容
+
+如果不是，请自行排查原因（格式对得上就可以了，实际内容可能不完全相同）
+
+```yaml
+update: 'index.php?purpose=update&source=res'
+common_mode:
+  - '.minecraft/mods/**'
+once_mode: [ ]
+```
+
+如果一切配置正确，那么到这里，服务端配置完毕，接下来请参考下方的客户端安装章节
 
 [ForbiddenChars.md](ForbiddenChars.md ':include')
 
