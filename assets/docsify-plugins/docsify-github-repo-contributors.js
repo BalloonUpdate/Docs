@@ -11,10 +11,33 @@
                 }
 
                 let vue = new (Vue.extend(githubContributors))().$mount('#github-contributors')
+                let repos = [
+                    'https://api.github.com/repos/updater-for-minecraft/Docs/contributors',
+                    'https://api.github.com/repos/updater-for-minecraft/Tool/contributors',
+                    'https://api.github.com/repos/updater-for-minecraft/LittleClient/contributors',
+                ]
 
-                fetch('https://api.github.com/repos/updater-for-minecraft/Docs/contributors').then((r) => r.json()).then((data) => {
-                    vue.contributors = data
-                })
+                vue.contributors = []
+
+                for (const repo of repos)
+                    fetch(repo).then((r) => r.json()).then((data) => {
+
+                        for (let i = 0;i < data.length;i++)
+                        {
+                            let idx = findIndex(data[i], vue.contributors)
+                            if(idx != -1)
+                            {
+                                if(data[i]['contributions'] > vue.contributors[idx]['contributions'])
+                                    vue.contributors[idx] = data[i]
+                            } else {
+                                vue.contributors.push(data[i])
+                            }
+                        }
+
+                        vue.contributors = vue.contributors.sort((a, b) => b['contributions'] - a['contributions'])
+
+                        console.log(vue.contributors)
+                    })
             }, 150);
             
             return html+`
@@ -66,6 +89,15 @@
                 }
             </style>
             `;
+
+            function findIndex(el, array)
+            {
+                let index = -1
+                for (let i = 0;i < array.length;i++)
+                    if(array[i]['id'] == el['id'])
+                        index = i
+                return index
+            }
         });
     }
 
