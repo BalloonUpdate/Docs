@@ -215,6 +215,16 @@ AmbiguousFileTypeEeception(有歧义的文件类型(内部错误))
 
 `解决方案`：尝试关闭代理，或者在虚拟机里使用小工具
 
+#### The "path" argument must be type string
+
+`The "path" argument must be type string, Received type number(1)`
+
+`影响范围`：正式版客户端全版本
+
+`原因`：当遇到文件名是纯数字的文件时会触发这个问题，具体原因与YAML规范有关
+
+`解决方案`：参考[这里](#YAML规范导致的Int和String的问题)
+
 ### Jar版客户端
 
 #### 配置文件读取失败
@@ -242,6 +252,29 @@ AmbiguousFileTypeEeception(有歧义的文件类型(内部错误))
 #### 找不到.minecraft目录
 
 请将本软件放置到.minecraft目录旁边，或者在配置文件config.yml里手动指定一个更新起始路径
+
+#### java.lang.ClassCastException
+
+`java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.String`
+
+`影响范围`：Jar客户端全版本
+
+`原因`：当遇到文件名是纯数字的文件时会触发这个问题，具体原因与YAML规范有关
+
+`解决方案`：参考[这里](#YAML规范导致的Int和String的问题)
+
+### 通用问题
+
+#### YAML规范导致的Int和String的问题
+
+yaml规范会默认把纯数字字符串以字符串的形式保存，在读取的时候读取到的就是整形，而不是字符串。对一些强类型语言来说，这会引发错误
+
+解决方法：
+
+1. 临时解决方法：检查所有参与更新的文件，将所有纯数字的文件名改成非纯数字，需要注意的是，纯数字文件名没有后缀，如果是`1.txt`之类的文件，则不算是纯数字文件名
+2. 如果使用静态服务端：升级小工具到3.1.4或者以上版本
+3. 如果使用PHP服务端：暂无彻底解决的方法，请使用上方的临时解决
+4. 如果使用单文件服务端：升级到0.0.3或者以上的版本
 
 
 
