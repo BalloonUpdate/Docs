@@ -235,6 +235,16 @@ AmbiguousFileTypeEeception(有歧义的文件类型(内部错误))
 
 `解决方案`：参考[这里](#YAML规范导致的Int和String的问题)
 
+#### EPERM: operation not permitted, opendir xxx
+
+`EPERM: operation not permitted, opendir 'c:\Documents and Settings'`
+
+`影响范围`：正式版客户端3.x
+
+`原因`：把程序误放到了C盘根目录执行，因为尝试读取了系统保护的目录，没有权限，因此报错
+
+`解决方法`：把程序放到子目录里运行，不要放到盘符的根目录下执行
+
 ### Jar版客户端
 
 #### 配置文件读取失败
