@@ -1,10 +1,6 @@
-用压缩软件打开Jar包，把`config.yml`解压到Jar的旁边
+用压缩软件打开Jar包，把`config.yml`解压到Jar的旁边，用文本编辑器打开
 
-![inside-jar.png](assets/inside-jar.png)
-
-这个`config.yml`文件就是配置文件，我们用文本编辑器打开编辑
-
-各个配置选项的说明已经写在config.yml中了，可以阅读后调整各选项的值
+各个配置选项的说明已经写在`config.yml`中了，可以阅读后调整各选项的值
 
 除了`server`选项是必填以外，其它选项均可省略不写
 

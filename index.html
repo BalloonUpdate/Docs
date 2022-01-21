@@ -37,14 +37,14 @@
                 tabComments: true,
                 tabHeadings: true
             },
-            search : {
-                maxAge: 1800000, //(30min) 过期时间，单位毫秒，默认一天86400000
-                paths: 'auto',
-                depth: 6,
-                hideOtherSidebarContent: true, // 是否隐藏其他侧边栏内容
-                placeholder: '搜索...',
-                noData: '没有结果!',
-            },
+            // search : {
+            //     maxAge: 1800000, //(30min) 过期时间，单位毫秒，默认一天86400000
+            //     paths: 'auto',
+            //     depth: 6,
+            //     hideOtherSidebarContent: true, // 是否隐藏其他侧边栏内容
+            //     placeholder: '搜索...',
+            //     noData: '没有结果!',
+            // },
             plugins: [
                 EditOnGithubPlugin.create('https://github.com/updater-for-minecraft/Docs/blob/main/', null, 'Edit on Github'),
                 DocsifyAutoTitle.create(),
@@ -65,7 +65,7 @@
     <!-- docsify-tabs (latest v1.x.x) -->
     <script src="https://cdn.jsdelivr.net/npm/docsify-tabs@1"></script>
     <!-- 全局搜索 -->
-    <script src="https://cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/docsify/lib/pldugins/search.min.js"></script> -->
     <!-- 代码高亮 -->
     <script src="https://cdn.jsdelivr.net/npm/prismjs@1/components/prism-yaml.min.js"></script>
 </head>

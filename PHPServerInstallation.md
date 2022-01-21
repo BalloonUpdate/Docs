@@ -1,22 +1,10 @@
 ## PHP服务端
 
-1. 把`PHP服务端`文件夹里的所有文件，解压到网站根目录（一共四个文件）
-
-![image-20210822235615564](assets/phpserver-all-files.png)
-
-| 文件      | 用途                 |
-| --------- | -------------------- |
-| res       | 存放要参与更新的文件 |
-| index.yml | 服务端配置文件       |
-| index.php | 服务端主程序文件     |
-| Spyc.php  | 服务端程序的依赖文件 |
-
-2. 将要更新文件，比如`mods`目录里面**所有**的模组文件，复制到`res/.minecraft/mods/`里面（`.minecraft/mods/`目录请自行创建），注意不是只复制需要新增的文件，而是要复制所有文件
-
-![image-20210823103019711](assets/phpserver-inside-mods.png)
-
-3. 将其它要参与更新的文件同样按上面的方法，复制到对应的目录上（比如Vexview的贴图复制到`res/.minecraft/vexview/textures/`下）
-4. 编辑服务端配置文件`index.yml`，在`common_mode`和`once_mode`下写上所有需要参与更新路径，默认只有一个`mods`文件夹和vexview贴图目录
+1. 环境要求：PHP 7.4或者以上版本（不建议使用8.0）
+2. 把`PHP服务端`文件夹里的所有文件，解压到网站根目录
+3. 把你Minecraft客户端里**所有**的模组文件全部复制到`res/.minecraft/mods/`里面（目录请自行创建），注意不是只复制需要新增的文件，而是要复制所有文件
+4. 将其它要更新的文件同样按上面的方法，复制到`res`目录里对应的路径的目录上（比如Vexview的贴图复制到`res/.minecraft/vexview/textures/`下，其它文件同理）
+5. 编辑服务端配置文件`config.yml`，在`common_mode`和`once_mode`下写上所有需要参与更新路径，默认只有一个`mods`文件夹和vexview贴图目录
 
 ```yaml
 # common_mode适合用来更新常规文件，详情请参阅服务端配置文件参考
@@ -32,26 +20,24 @@ once_mode: []
 # 使用php服务端需要将下面paths里面所有单反斜杠\全部换成双反斜杠\\
 ```
 
-关于`common_mode`和`once_mode`的具体用法和更多示例可以点击[这里](ServerConfigurationReference.md)
+> 配置文件参考和更多示例请[点击这里](ServerConfigurationReference.md)（推荐阅读！）
 
----
+6. 验证服务端是否正确工作（这一步很重要，请不要跳过）
+7. 使用浏览器打开`index.php`的URL，如果浏览器显示了类似下面代码框里的`json`格式的内容（实际内容可能不完全相同）。那么恭喜，服务端配置无误！
 
-然后需要验证服务端是否正确工作（这一步很重要）：使用浏览器打开`index.php`的URL
-
-如果浏览器显示了类似下面代码框里的yaml格式的内容。那么恭喜！服务端配置无误
-
-如果是老版本PHP服务端，则会弹出下载框，请下载后用文本编辑器打开，格式也应当类似下面代码框里的yaml格式的内容
-
-如果不是，请自行排查原因（格式对得上就可以了，实际内容可能不完全相同）
-
-```yaml
-update: 'index.php?purpose=update&source=res'
-common_mode:
-  - '.minecraft/mods/**'
-once_mode: [ ]
+```json
+{
+    "update": "index.php?purpose=update&source=res",
+    "common_mode": [
+        ".minecraft/mods/**",
+    ],
+    "once_mode": []
+}
 ```
 
-如果一切配置正确，那么到这里，服务端配置完毕，接下来请参考下方的客户端安装章节
+如果不是，请自行排查原因，因为这大概率不是程序BUG，而是你网络环境的问题！
+
+如果一切配置正确，那么到这里服务端配置完毕，接下来请参考下方的客户端安装章节
 
 [ForbiddenChars.md](ForbiddenChars.md ':include')
 
