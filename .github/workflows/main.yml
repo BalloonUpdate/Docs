@@ -12,7 +12,7 @@ jobs:
       - name: Sync to Gitee
         uses: spyoungtech/mirror-action@b313a53232e77d8f7d8fcdb00f90b94100767be1
         with:
-          REMOTE: 'ssh://git@gitee.com/updater-for-minecraft/rcdocs.git'
+          REMOTE: 'ssh://git@gitee.com/updater-for-minecraft/docs-mirror.git'
           GIT_SSH_PRIVATE_KEY: ${{ secrets.GITEE_RSA_PRIVATE_KEY }}
           GIT_SSH_NO_VERIFY_HOST: true
 
