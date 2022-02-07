@@ -334,7 +334,21 @@ sftp:
 
 <!-- tabs:start -->
 
+### **Python脚本生成**
+
+可以使用我们提供的python脚本来完成自动化操作，[Github源代码链接](https://github.com/updater-for-minecraft/Tool/blob/hashtool/tool.py)
+
+使用方式比较简单，在启动参数后面跟上一个目录的路径即可，这个目录通常是`res`目录的**父目录**（一般就是与小工具同级的`updater`文件夹），运行脚本后，就会在`res`文件夹旁边生成一个同名`.json`文件
+
+使用示例如下：
+
+```bash
+python3 tool.py updater
+```
+
 ### **小工具生成**
+
+!> 小工具生成方法只适用于3.x版本。如果你在使用4.x版本，请使用Python脚本生成
 
 1. 首先删掉小工具的配置文件，只保留一个主程序，使小工具进入结构生成模式，而不是上传模式
 2. 把`updater`目录直接拖到小工具EXE上松开，生成完毕
@@ -346,18 +360,6 @@ sftp:
 Tool-v3.1.2.exe updater
 echo "结构文件已生成/更新"
 pause
-```
-
-### **Python脚本生成**
-
-可以使用我们提供的python脚本来完成自动化操作，[Github源代码链接](https://github.com/updater-for-minecraft/Tool/blob/hashtool/tool.py)
-
-使用方式比较简单，在启动参数后面跟上一个目录的路径即可，这个目录通常是`res`目录的**父目录**（一般就是与小工具同级的`updater`文件夹），运行脚本后，就会在`res`文件夹旁边生成一个同名`.json`文件
-
-使用示例如下：
-
-```bash
-python3 tool.py updater
 ```
 
 <!-- tabs:end -->
