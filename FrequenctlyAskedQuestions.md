@@ -261,6 +261,14 @@ AmbiguousFileTypeEeception(有歧义的文件类型(内部错误))
 
 `解决方法`：从更新规则里排除日志文件，或者将日志文件移动位置，或者禁用日志文件输出
 
+#### EBUSY: resource busy or locked, unlink 'xxxxx/xxx.xxx'
+
+`影响范围`：正式版客户端3.x/4.x
+
+`原因`：对应文件被锁定/占用
+
+`解决方法`：关闭占用的进程。或者检查Minecraft进程是否退出
+
 #### .minecraft目录更新误在了程序所在目录
 
 `影响范围`：正式版客户端3.x/4.0.0
