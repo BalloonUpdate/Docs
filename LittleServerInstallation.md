@@ -17,6 +17,8 @@ port: 8850
 
 # 这里填写要更新的文件
 # 路径分隔符只能使用正斜线，如果用反斜线出了问题请自行解决！
+# 使用Glob表达式时，请避免文件名包含[]方括号，因为会导致更新失败
+# 如果一定要包含方括号，请考虑使用中文括号【】或者使用正则写法，下面的once_mode同理
 common_mode:
   - .minecraft/mods/*.jar
   - .minecraft/vexview/textures/**

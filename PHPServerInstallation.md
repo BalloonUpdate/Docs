@@ -9,6 +9,8 @@
 ```yaml
 # common_mode适合用来更新常规文件，详情请参阅服务端配置文件参考
 # 路径分隔符只能使用正斜线
+# 使用Glob表达式时，请避免文件名包含[]方括号，因为会导致更新失败
+# 如果一定要包含方括号，请考虑使用中文括号【】或者使用正则写法，下面的once_mode同理
 common_mode:
   - .minecraft/mods/*.jar
   - .minecraft/vexview/textures/**
