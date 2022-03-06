@@ -92,6 +92,8 @@ once_mode: []
 
 ## 视频教程
 
-单文件服务端和Jar客户端视频教程：https://www.bilibili.com/video/BV1QL411u7Aj
+!> 视频已经过时，请进来阅读上面的文字教程以完成安装！否则不提供任何技术支持
+
+~~单文件服务端和Jar客户端视频教程：https://www.bilibili.com/video/BV1QL411u7Aj~~
 
 <div class="bilibli-video-wrapper"><iframe src="//player.bilibili.com/player.html?bvid=BV1QL411u7Aj&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe></div>
