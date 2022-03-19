@@ -1,8 +1,8 @@
 ## 常见问题解答
 
-如果你在使用JAR版客户端，如果出现了某个错误但在当前页面里找不到的时候，烦请翻看一下正式版客户端的目录中是否有提及对应的问题，因为有一些通用错误，为避免重复，我只会写在正式版客户端的章节，还请大家理解。如果仍然无法解决，请尝试联系我
+如果你在使用JAR版客户端，如果出现了某个错误但在当前页面里找不到的时候，烦请翻看一下Exe客户端的目录中是否有提及对应的问题，因为有一些通用错误，为避免重复，我只会写在Exe客户端的章节，还请大家理解。如果仍然无法解决，请尝试联系我
 
-### 正式版客户端
+### Exe客户端
 
 #### 找不到VCRUNTIME140_1.dll
 
@@ -36,7 +36,7 @@
 `解决办法`：（任选其一）
 
 1. 完整地重新按文档配置一次（注意不要遗漏任何步骤！）
-2. 通过程序日志排查问题（[跳转链接](TroubleshootByLogs.md)）
+2. 通过程序日志排查问题（[跳转链接](troubleshoot-with-logs.md)）
 
 #### 所有文件被意外清空
 
@@ -110,7 +110,7 @@ UnableToDecodeException服务端返回了无法解码的数据(非yaml格式)
 
 注：对话框中只会显示一小部分返回的内容，而且位置标记因为不是等宽字体的原因也无法准确反映错误位置，你可以打开日志文件`.minecraft/updater/updater.log`并滑到最下面或者搜索`RAWDATA`关键字，就能看到详细报错的行和列的位置
 
-（[跳转链接](TroubleshootByLogs.md)）
+（[跳转链接](troubleshoot-with-logs.md)）
 
 #### 连接关闭/传输中断
 
@@ -229,7 +229,7 @@ AmbiguousFileTypeEeception(有歧义的文件类型(内部错误))
 
 `The "path" argument must be type string, Received type number(1)`
 
-`影响范围`：正式版客户端全版本
+`影响范围`：Exe客户端全版本
 
 `原因`：当遇到文件名是纯数字的文件时会触发这个问题，具体原因与YAML规范有关
 
@@ -239,7 +239,7 @@ AmbiguousFileTypeEeception(有歧义的文件类型(内部错误))
 
 `EPERM: operation not permitted, opendir 'c:\Documents and Settings'`
 
-`影响范围`：正式版客户端3.x
+`影响范围`：Exe客户端3.x
 
 `原因`：把程序误放到了C盘根目录执行，因为尝试读取了系统保护的目录，没有权限，因此报错
 
@@ -247,7 +247,7 @@ AmbiguousFileTypeEeception(有歧义的文件类型(内部错误))
 
 #### EPERM: operation not permitted, open 'xxxxx/updater.log'
 
-`影响范围`：正式版客户端3.x
+`影响范围`：Exe客户端3.x
 
 `原因`：误把日志文件设置了只读属性或者隐藏属性
 
@@ -255,7 +255,7 @@ AmbiguousFileTypeEeception(有歧义的文件类型(内部错误))
 
 #### EPERM: operation not permitted, lstat 'xxxxx/updater.log'
 
-`影响范围`：正式版客户端4.x
+`影响范围`：Exe客户端4.x
 
 `原因`：日志文件被包含进了更新规则里
 
@@ -263,7 +263,7 @@ AmbiguousFileTypeEeception(有歧义的文件类型(内部错误))
 
 #### EBUSY: resource busy or locked, unlink 'xxxxx/xxx.xxx'
 
-`影响范围`：正式版客户端3.x/4.x
+`影响范围`：Exe客户端3.x/4.x
 
 `原因`：对应文件被锁定/占用
 
@@ -271,7 +271,7 @@ AmbiguousFileTypeEeception(有歧义的文件类型(内部错误))
 
 #### .minecraft目录更新误在了程序所在目录
 
-`影响范围`：正式版客户端3.x/4.0.0
+`影响范围`：Exe客户端3.x/4.0.0
 
 `原因`：当程序没有放在`.minecraft`同级目录时会出现这个问题，这个是程序BUG
 
@@ -279,7 +279,7 @@ AmbiguousFileTypeEeception(有歧义的文件类型(内部错误))
 
 #### 按类型更新/忽略文件失效
 
-`影响范围`：正式版客户端全版本和Jar客户端全版本
+`影响范围`：Exe客户端全版本和Jar客户端全版本
 
 `原因`：当你尝试更新mods文件夹或者其它文件夹里所有`.jar`时，如果客户端`mods`文件夹不存在，就会直接下载所有服务端mods里的所有文件
 
@@ -291,7 +291,7 @@ AmbiguousFileTypeEeception(有歧义的文件类型(内部错误))
 
 倒数第一行为：`probable reason: xxxx (123)`（注意这个123）
 
-`影响范围`：正式版客户端全版本
+`影响范围`：Exe客户端全版本
 
 `原因`：程序运行路径包含无效的字符
 

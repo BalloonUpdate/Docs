@@ -8,12 +8,6 @@ HTML和CSS3、 JS async/await、 [Vue声明式渲染](https://vuejs.bootcss.com/
 
 ---
 
-这是v3.1.5的默认的界面（双进度条风格），3.x版本可以兼容2.x版本的界面资源。（虽然兼容2.x，但`on_error`事件回调函数的参数有变化，建议进行适配）
-
-![ui-3.1.5](CustomizeInterface.assets/ui-3.1.5.gif)
-
----
-
 首先需要下载界面资源文件
 
 1. 访问开源仓库 https://github.com/updater-for-minecraft/Client
@@ -36,7 +30,7 @@ HTML和CSS3、 JS async/await、 [Vue声明式渲染](https://vuejs.bootcss.com/
 
 以下是各种事件触发的流程图（SVG文件）
 
-![事件流程图](assets/事件流程图.svg)
+![事件流程图](../assets/事件流程图.svg)
 
 ### 监听各种事件
 
