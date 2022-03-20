@@ -8,6 +8,7 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     steps:
       - name: Sync to Gitee
         uses: spyoungtech/mirror-action@b313a53232e77d8f7d8fcdb00f90b94100767be1
