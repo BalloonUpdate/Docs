@@ -2,17 +2,9 @@
 
 本章节教你如何通过日志来排查遇到的各种问题（覆盖率100%）
 
-对于3.0.9之前的版本，暂时不支持通过日志排查问题
-
-对于3.0.9-3.0.12版本的客户端，请点击[这里](https://github.com/updater-for-minecraft/Docs/blob/a5e2e8376d306bcb642ec1d0db5daa97e4bf2483/TroubleshootByLogs.md)来查阅历史版本
-
-对于3.0.12-3.0.14之后的版本，请点击[这里](https://github.com/updater-for-minecraft/Docs/tree/v3.0.x#minecraft%E6%96%87%E4%BB%B6%E6%9B%B4%E6%96%B0%E5%8A%A9%E6%89%8B%E5%B8%AE%E5%8A%A9%E6%96%87%E6%A1%A3)来查阅历史版本
-
-对于3.1.0及之后的版本，请往下阅读
-
 ---
 
-日志文件名：`updater.log`
+日志文件名：`updater.log`（如果是Jar客户端，在Jar文件旁边（工作目录下）新建一个`updater.log`即可看到日志内容）
 
 使用任何文本编辑器打开日志文件（推荐使用等宽字体显示）
 
