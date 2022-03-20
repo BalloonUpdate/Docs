@@ -43,7 +43,7 @@
             return html+`
             <hr style="margin-top: 5rem;" />
             <div id="github-contributors">
-                <div class="github-contributor-title">Copyleft © 2021 - 2021 <a href="https://github.com/updater-for-minecraft">updater-for-minecraft</a></div>
+                <div class="github-contributor-title">Copyleft © 2021 - 2022 <a href="https://github.com/updater-for-minecraft">updater-for-minecraft</a></div>
                 <div class="github-contributor-title" v-show="contributors.length > 0"> | </div>
                 <div class="github-contributor-title" v-show="contributors.length > 0">Contributors: </div>
                 <div v-for="c in contributors" class="github-contributor-user" v-show="contributors.length > 0">
