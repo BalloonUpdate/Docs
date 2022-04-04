@@ -335,6 +335,21 @@ AmbiguousFileTypeEeception(有歧义的文件类型(内部错误))
 
 `解决方案`：参考[这里](#YAML规范导致的Int和String的问题)
 
+#### http状态码不正确（Error 404, file not found: /res.yml）
+
+服务器未能相应正确的数据
+
+```
+http状态码不正确（不在2xx-3xx之间）
+http://xx.com/res.yml with httpcode(404)
+Error 404, file not found: /res.yml
+```
+`影响范围`：Jar客户端4.0.0，4.0.1
+
+`原因`：程序bug导致访问到了不存在的文件`res.yml`，正确应该为`res.json`
+
+`解决方案`：升级到Jar客户端4.0.2版本或者更高
+
 ### 通用问题
 
 #### 下载大文件时进度条卡住
