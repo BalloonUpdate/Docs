@@ -6,11 +6,13 @@
 
 下载最新版本的`batch-runner.exe`并放到`.minecraft`目录里，然后在`batch-runner.exe`文件的旁边新建一个文本文件`updater-script.bat`
 
-打开`updater-script.bat`，文件并将下面的代码复制粘贴进去：（记得把`LittleClient-4.0.0.jar`件改成实际的文件名）
+打开`updater-script.bat`，文件并将下面的代码复制粘贴进去：
+
+记得把`LittleClient-4.0.0.jar`件改成实际的文件名，如果你的文件名是中文的`文件更新助手-4.0.2.jar`，请改成英文。如果不想改，另一种方式是将`bat`文件以GBK或者GB2312保存，注意Windows10自带的记事本是保存的UTF-8
 
 ```bash
 @echo off
-java -jar LittleClient-4.0.0.jar
+java -jar LittleClient-4.0.0.jar > nul
 ```
 
 然后把Jar客户端文件移动到`updater-script.bat`文件的旁边，接着按照下面不同启动器的做法，进行不同的步骤
