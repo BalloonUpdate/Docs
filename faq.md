@@ -360,6 +360,21 @@ Error 404, file not found: /res.yml
 
 `解决方案`：在`java -jar xxx.jar`的后面增加` > nul`语句
 
+#### java.lang.ClassCastException
+
+完整错误信息：
+
+```
+java.lang.ClassCastException
+java.lang.Long cannot be cast to java.lang.Integer
+```
+
+`影响范围`：Jar客户端4.x
+
+`原因`：代码对服务端获取到的数据进行解析时未判断数据类型导致
+
+`解决方案`：升级到Jar客户端4.0.3版本或者更高
+
 ### 通用问题
 
 #### 下载大文件时进度条卡住
