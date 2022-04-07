@@ -155,7 +155,20 @@ Glob写法和正则写法混合使用：
 ```yaml
 common_mode: 
   - bg/*
-  - "@\\.minecraft/mods"
+  - "@\.minecraft/mods"
+once_mode: []
+```
+
+### **示例5**
+
+需求：只更新除`exclude1.jar`和`exclude2.jar`以外的其它模组文件
+
+仅正则写法：
+
+```yaml
+common_mode: 
+    // 多个忽略的文件之间用竖线|隔开
+  - "@\.minecraft/mods/(?!exclude1\.jar|exclude2\.jar).*\.jar"
 once_mode: []
 ```
 
