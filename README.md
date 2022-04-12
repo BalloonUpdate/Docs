@@ -20,7 +20,7 @@
 
 客户端的选择：（推荐使用Jar客户端）
 
-1. [Jar客户端](client/jar-client.md)（jar格式的客户端，双击即可启动，支持跨平台，体积小没有过多依赖）
+1. [Jar客户端](client/jar-client.md)（jar格式的客户端，支持跨平台，）
 2. [Exe客户端](client/exe-client.md)（使用Electron制作的客户端，可以自定义全部的界面，但是体积非常大80mb左右）
 
 ## 下载安装

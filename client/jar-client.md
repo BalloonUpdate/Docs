@@ -20,4 +20,4 @@ Jar客户端运行环境要求：Java 8或更高
 
 ---
 
-更多玩法：[配置启动器一键启动](dependently-start-for-jar.md)
+更多玩法：[配置启动器一键启动](dependently-start-for-jar.md)、[安卓端热更新（Boat）](java-agent-based-mobile.md)
