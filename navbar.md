@@ -1,3 +1,2 @@
 - [首页](/)
-- [常见问题解答](/faq.md)
-- [遇到问题?](/troubleshooting.md)
+- [常见问题解答（FAQ）](/faq.md)

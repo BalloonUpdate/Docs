@@ -2,7 +2,9 @@
 
 —— 更新客户端小程序，Mod服好帮手（旧版本文档[点击这里](#历史版本文档)跳转）
 
-!> 4.0版本和3.0版本不兼容，如果不是首次安装，请仔细阅读教程重新安装
+官方企鹅群：[【更新助手官方群】](https://jq.qq.com/?_wv=1027&k=PqAEtn39) 925057600 
+
+欢迎过来聊天吹水，讨论技术，和提出建议（注意请不要发广告，会被禁言很久的）
 
 ## 使用前说明
 
@@ -20,10 +22,12 @@
 
 客户端的选择：（推荐使用Jar客户端）
 
-1. [Jar客户端](client/jar-client.md)（jar格式的客户端，支持跨平台，）
+1. [Jar客户端](client/jar-client.md)（jar格式的客户端，支持跨平台）
 2. [Exe客户端](client/exe-client.md)（使用Electron制作的客户端，可以自定义全部的界面，但是体积非常大80mb左右）
 
 ## 下载安装
+
+!> 4.0版本和3.0版本不兼容，如果不是首次安装，请仔细阅读教程重新安装
 
 下载请跳转到[MCBBS贴内](https://www.mcbbs.net/thread-711833-1-1.html)，或者[点击这里](https://jq.qq.com/?_wv=1027&k=PqAEtn39)加入【文件更新助手官方交流群】 925057600 从群文件获取（同步更新），或者前往[Github Release](#开源地址)手动下载
 
@@ -55,14 +59,14 @@ https://afdian.net/@aprilforest
 
 喜欢的话，欢迎前来给一颗Star呀`(｀・ω・´)`
 
-+ 文档：https://github.com/updater-for-minecraft/Docs
-+ 客户端：https://github.com/updater-for-minecraft/Client
-+ 小工具：https://github.com/updater-for-minecraft/Tool
-+ 服务端：[PHP服务端](https://github.com/updater-for-minecraft/PhpServer)、[单文件服务端](https://github.com/updater-for-minecraft/LittleServer)
-+ 可执行文件打包器：https://github.com/updater-for-minecraft/LittleWrapper
-+ Jar版客户端：https://github.com/updater-for-minecraft/LittleClient
++ 文档：https://github.com/FireworkUpdate/Docs
++ 客户端：https://github.com/FireworkUpdate/Client
++ 小工具：https://github.com/FireworkUpdate/Tool
++ 服务端：[PHP服务端](https://github.com/FireworkUpdate/PhpServer)、[单文件服务端](https://github.com/FireworkUpdate/LittleServer)
++ 可执行文件打包器：https://github.com/FireworkUpdate/LittleWrapper
++ Jar版客户端：https://github.com/FireworkUpdate/LittleClient
 
 ## 历史版本文档
 
-https://github.com/updater-for-minecraft/Docs/branches
+https://github.com/FireworkUpdate/Docs/branches
 
