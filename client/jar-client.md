@@ -14,7 +14,7 @@ Jar客户端运行环境要求：Java 8或更高
 
 注意不要设置成默认使用压缩软件打开Jar文件了，要用`javaw.exe`或者`java.exe`设置成默认打开方式之后，双击启动！（一定要设置成默认打开方式，并用双击启动，否则可能会提示找不到.minecraft目录）。设置默认打开方式为Java后，软件的图标应该是一个Java的咖啡杯的样子
 
-如果需要日志文件，可以查看Jar客户端文件旁的`firework_update.log`文件
+如果需要日志文件，可以查看Jar客户端文件旁的`balloon_update.log`文件
 
 ---
 
@@ -22,4 +22,8 @@ Jar客户端运行环境要求：Java 8或更高
 
 ---
 
-更多玩法：[配置启动器一键启动](dependently-start-for-jar.md)、[安卓端热更新（Boat）](java-agent-based-mobile.md)
+更多玩法：
+
++ [配置启动器一键启动（传统）](onekey-start-jar.md)（传统的一键启动方案，仅完美支持HMCL）
++ [JavaAgent一键启动（推荐）](onekey-start-ja-pc.md)（新的一键启动方案，完美支持任何启动器）
++ [安卓端热更新（Boat）](onekey-start-ja-mobile.md)（适用于澪，以及任何基于Boat的移动端启动方案）

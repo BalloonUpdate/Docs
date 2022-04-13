@@ -17,7 +17,7 @@ Exe客户端使用Electron制作，相比Jar客户端的优点是多了自定义
 
 ---
 
-更多玩法：[配合启动器一键启动](dependently-start.md)、[自定义公告栏](announcement.md)、[自定义界面](custom-ui.md)
+更多玩法：[配合启动器一键启动](onekey-start-exe.md)、[自定义公告栏](announcement.md)、[自定义界面](custom-ui.md)
 
 ## 配置参考
 

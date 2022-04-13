@@ -2,7 +2,7 @@
 
 本章节教你如何通过日志来排查遇到的各种问题（覆盖率100%）
 
-日志一般在客户端程序的旁边，文件名：`updater.log`/`firework_update.log`/`firework_update.txt`
+日志一般在客户端程序的旁边，文件名：`updater.log`/`balloon_update.log`/`balloon_update.txt`
 
 首先使用任何文本编辑器打开日志文件（推荐使用等宽字体显示）
 

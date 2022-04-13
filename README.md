@@ -14,16 +14,16 @@
 
 不同类型的服务端/客户端对计算机知识的要求也不尽相同。请根据自己的水平合理选择，不要折磨自己
 
-服务端的选择：（推荐使用单文件服务端）
+服务端的选择：（小白推荐使用单文件服务端）
 
 1. [单文件服务端](server/light-server.md)（jar格式的单文件服务端，自带http-server，使用起来最为方便）
 2. [PHP服务端](server/php-server.md)（运行在php环境里的服务端，适合有网站主机或者宝塔等环境的用户）
 3. [静态服务端](server/static-server.md)（纯静态服务端，适合对象存储或者内容分发网络场景）
 
-客户端的选择：（推荐使用Jar客户端）
+客户端的选择：（小白推荐使用Jar客户端）
 
-1. [Jar客户端](client/jar-client.md)（jar格式的客户端，支持跨平台）
-2. [Exe客户端](client/exe-client.md)（使用Electron制作的客户端，可以自定义全部的界面，但是体积非常大80mb左右）
+1. [Jar客户端](client/jar-client.md)（支持跨平台、Boat端、以及任意启动器的一键启动）
+2. [Exe客户端](client/exe-client.md)（使用Electron制作的客户端，内置浏览器环境，可以自定义全部的界面）
 
 ## 下载安装
 
@@ -35,11 +35,11 @@
 
 在下面列出的各个版本号区间内，可以直接替换文件来升级到新版而无需重新配置，但如果你现有版本和将要升级的版本不再同一个区间里，那么就需要完全重头开始安装配置
 
-| 正式版客户端 | Jar版客户端  | 服务端   |
-| ------------ | ------------ | -------- |
-| 3.0          | 0.0.1\~0.0.4 | 3.2\~3.6 |
-| 3.1          | 1.0          | 3.7      |
-| 4.0          | 4.0          | 4.0      |
+| Exe客户端 | Jar版客户端  | 服务端   |
+| --------- | ------------ | -------- |
+| 3.0       | 0.0.1\~0.0.4 | 3.2\~3.6 |
+| 3.1       | 1.0          | 3.7      |
+| 4.0       | 4.0          | 4.0      |
 
 ## 参与贡献
 
@@ -59,14 +59,17 @@ https://afdian.net/@aprilforest
 
 喜欢的话，欢迎前来给一颗Star呀`(｀・ω・´)`
 
-+ 文档：https://github.com/FireworkUpdate/Docs
-+ 客户端：https://github.com/FireworkUpdate/Client
-+ 小工具：https://github.com/FireworkUpdate/Tool
-+ 服务端：[PHP服务端](https://github.com/FireworkUpdate/PhpServer)、[单文件服务端](https://github.com/FireworkUpdate/LittleServer)
-+ 可执行文件打包器：https://github.com/FireworkUpdate/LittleWrapper
-+ Jar版客户端：https://github.com/FireworkUpdate/LittleClient
+| 项目             | 仓库链接                                       |
+| ---------------- | ---------------------------------------------- |
+| 文档             | https://github.com/BalloonUpdate/Docs          |
+| 客户端           | https://github.com/BalloonUpdate/Client        |
+| 小工具           | https://github.com/BalloonUpdate/Tool          |
+| PHP服务端        | https://github.com/BalloonUpdate/PhpServer     |
+| 单文件服务端     | https://github.com/BalloonUpdate/LittleServer  |
+| 可执行文件打包器 | https://github.com/BalloonUpdate/LittleWrapper |
+| Jar版客户端      | https://github.com/BalloonUpdate/JarClient     |
 
 ## 历史版本文档
 
-https://github.com/FireworkUpdate/Docs/branches
+https://github.com/BalloonUpdate/Docs/branches
 
