@@ -12,9 +12,9 @@
 
                 let vue = new (Vue.extend(githubContributors))().$mount('#github-contributors')
                 let repos = [
-                    'https://api.github.com/repos/updater-for-minecraft/Docs/contributors',
-                    'https://api.github.com/repos/updater-for-minecraft/Tool/contributors',
-                    'https://api.github.com/repos/updater-for-minecraft/LittleClient/contributors',
+                    'https://api.github.com/repos/balloonupdate/Docs/contributors',
+                    'https://api.github.com/repos/balloonupdate/Tool/contributors',
+                    'https://api.github.com/repos/balloonupdate/JarClient/contributors',
                 ]
 
                 vue.contributors = []
@@ -43,7 +43,7 @@
             return html+`
             <hr style="margin-top: 5rem;" />
             <div id="github-contributors">
-                <div class="github-contributor-title">Copyleft © 2021 - 2022 <a href="https://github.com/updater-for-minecraft">updater-for-minecraft</a></div>
+                <div class="github-contributor-title">Copyleft © 2021 - 2022 <a href="https://github.com/balloonupdate">BalloonUpdate</a></div>
                 <div class="github-contributor-title" v-show="contributors.length > 0"> | </div>
                 <div class="github-contributor-title" v-show="contributors.length > 0">Contributors: </div>
                 <div v-for="c in contributors" class="github-contributor-user" v-show="contributors.length > 0">
