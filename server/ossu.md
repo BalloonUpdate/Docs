@@ -45,7 +45,7 @@
 
 如果你希望手动部署到自己的服务器上，可以使用结构工具生成结构文件之后，利用自己的工具上传到自己的服务器上。结构工具使用Python3语言编写，默认提供win x64和linux x64的二进制可执行文件，如果你需要部署到linux 32位或者arm机器上，请自行使用`pyinstaller build.spec`命令构建二进制可执行文件
 
-结构工具仓库链接：https://github.com/updater-for-minecraft/StructureTool
+结构工具仓库链接：https://github.com/BalloonUpdate/StructureTool
 
 <!-- tabs:end -->
 

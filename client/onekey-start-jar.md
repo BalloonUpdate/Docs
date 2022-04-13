@@ -2,7 +2,7 @@
 
 一键启动的作用：点击启动游戏按钮，自动弹出更新，更新完毕后，接着自动启动minecraft。玩家只要点击启动，会自动进行更新，不需要进行任何其它额外操作
 
-由于启动器不支持直接调用batch文件，所以我们首先需要下载一个[辅助软件](https://github.com/updater-for-minecraft/BatchRunner/releases)来让启动器调用Jar文件
+由于启动器不支持直接调用batch文件，所以我们首先需要下载一个[辅助软件](https://github.com/BalloonUpdate/BatchRunner/releases)来让启动器调用Jar文件
 
 下载最新版本的`batch-runner.exe`并放到`.minecraft`目录里，然后在`batch-runner.exe`文件的旁边新建一个文本文件`updater-script.bat`
 

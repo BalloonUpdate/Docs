@@ -10,7 +10,7 @@ HTML和CSS3、 JS async/await、 [Vue声明式渲染](https://vuejs.bootcss.com/
 
 首先需要下载界面资源文件
 
-1. 访问开源仓库 https://github.com/updater-for-minecraft/Client
+1. 访问开源仓库 https://github.com/BalloonUpdate/ExeClient
 2. 克隆或者下载Zip，拿到源代码
 3. 提取出`src/render`文件夹，并重命名为`ui`
 4. 文件说明：
