@@ -109,3 +109,13 @@ Error 404, file not found: /res.yml
 `问题原因`：把游戏客户端解压到了某个盘的根目录
 
 `解决方法`：不要解压到根目录上
+
+### org.json.JSON.Exception
+
+`A JsonArray text must start with xxx`
+
+`影响范围`：Jar客户端4.1.3 及更早
+
+`问题原因`：程序内部异常捕获错误（实际报错是JSON无法正常解析，检查服务端是否配置正确）
+
+`解决方法`：更新到Jar客户端4.1.4版本或更高
