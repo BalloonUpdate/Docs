@@ -8,7 +8,7 @@
 
 ## 使用前说明
 
-为了提供更灵活的使用方式，服务端程序和客户端程序均有多个类型可供选择
+为了提供更灵活的使用方式，服务端程序和客户端程序均有多个变体可供选择
 
 由于通信协议是兼容的，任意服务端可以混搭任意客户端使用
 
@@ -57,17 +57,20 @@ https://afdian.net/@aprilforest
 
 ## 开源地址
 
-喜欢的话，欢迎前来给一颗Star呀`(｀・ω・´)`
+更新助手（BalloonUpdate）是一个完整的文件更新解决方案，提供了一整套文件更新生态。由多个仓库组成，所有的源代码完全开源，欢迎各位萌新大佬前来学(bai)习(piao)
 
-| 项目             | 仓库链接                                       |
-| ---------------- | ---------------------------------------------- |
-| 文档             | https://github.com/BalloonUpdate/Docs          |
-| 客户端           | https://github.com/BalloonUpdate/Client        |
-| 小工具           | https://github.com/BalloonUpdate/Tool          |
-| PHP服务端        | https://github.com/BalloonUpdate/PhpServer     |
-| 单文件服务端     | https://github.com/BalloonUpdate/LittleServer  |
-| 可执行文件打包器 | https://github.com/BalloonUpdate/LittleWrapper |
-| Jar版客户端      | https://github.com/BalloonUpdate/JarClient     |
+| 项目                   | 仓库链接                                                     |
+| ---------------------- | ------------------------------------------------------------ |
+| 帮助文档               | https://github.com/BalloonUpdate/Docs                        |
+| WindowsExe文件打包器   | https://github.com/BalloonUpdate/LittleWrapper               |
+| Exe客户端              | https://github.com/BalloonUpdate/Client                      |
+| Jar客户端              | https://github.com/BalloonUpdate/JarClient                   |
+| 静态服务端小工具（旧） | https://github.com/BalloonUpdate/Tool                        |
+| PHP服务端              | https://github.com/BalloonUpdate/PhpServer                   |
+| 单文件服务端           | https://github.com/BalloonUpdate/LittleServer                |
+| 静态服务端结构文件工具 | https://github.com/BalloonUpdate/StructureTool               |
+| 静态服务端对象存储工具 | https://github.com/BalloonUpdate/ObjectStorageServiceUtility |
+| Jar客户端一键启动工具  | https://github.com/BalloonUpdate/BatchRunner                 |
 
 ## 历史版本文档
 
