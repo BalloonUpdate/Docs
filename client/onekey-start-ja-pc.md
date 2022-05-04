@@ -34,7 +34,7 @@
 
 当Jar客户端在PC机上运行时，会自动检测是否是桌面环境，如果是，则会显示包含进度条的窗口
 
-如果你不希望显示窗口，而是希望像[安卓端更新方案](java-agent-based-mobile.md)那样全程以无窗口方式运行，你可以添加一个javaagent参数`windowless`，来开启**无窗口模式**，比如这样配置JVM参数：`-javaagent:JarClient-0.0.0.jar=windowless`。则即使是桌面环境，也不会显示更新进度条，所有更新过程将完全在后台运行
+如果你不希望显示窗口，而是希望像[安卓端更新方案](onekey-start-ja-mobile.md)那样全程以无窗口方式运行，你可以添加一个javaagent参数`windowless`，来开启**无窗口模式**，比如这样配置JVM参数：`-javaagent:JarClient-0.0.0.jar=windowless`。则即使是桌面环境，也不会显示更新进度条，所有更新过程将完全在后台运行
 
 ## 游戏崩溃专题
 
