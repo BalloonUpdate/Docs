@@ -18,7 +18,7 @@
 
 将游戏核心Jar文件（只有一个），比如`/sdcard/MioLauncher/.minecraft/versions/1.12.2/1.12.2.jar`导出到电脑上
 
-用压缩软件打开，删除`META-INF/`目录下的`MOJANGCS.RSA`和`MOJANGCS.SF`文件，然后保存并导回到手机上覆盖对应的文件，这一步很重要，请不要遗漏
+用压缩软件打开，删除`META-INF/`目录下的`MOJANGCS.RSA`和`MOJANGCS.SF`文件，然后保存并导回到手机上覆盖对应的文件（某些特殊情况下，此步骤不是必须的。但为保险起见，还是删掉比较稳妥，毕竟安卓端调试比较麻烦）
 
 ### 3.配置JVM参数
 
