@@ -72,8 +72,6 @@ UnableToDecodeException服务端返回了无法解码的数据(非yaml格式)
 
 注：对话框中只会显示一小部分返回的内容，而且位置标记因为不是等宽字体的原因也无法准确反映错误位置，你可以打开日志文件`.minecraft/updater/updater.log`并滑到最下面或者搜索`RAWDATA`关键字，就能看到详细报错的行和列的位置
 
-（[跳转链接](troubleshoot-with-logs.md)）
-
 ### 连接关闭/传输中断
 
 ```
