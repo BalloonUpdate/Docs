@@ -11,7 +11,7 @@ Exe客户端使用Electron制作，相比Jar客户端的优点是多了自定义
 其中我们只需要修改`server`选项就好了，其它的选项都可以保持默认值
 1. 如果是单文件服务端：将单文件服务端输出API地址复制粘贴到`server`选项后面
 2. 如果是PHP服务端：将`index.php`的URL填到`server`选项后面
-3. 如果是静态服务端：将`index.yml`的URL填到`server`选项后面
+3. 如果是静态服务端：将`index.json/yml`的URL填到`server`选项后面
 
 编辑好配置文件后，保存关闭这个文件。双击启动测试效果吧！
 

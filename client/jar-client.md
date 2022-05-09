@@ -8,7 +8,7 @@ Jar客户端运行环境要求：Java 8或更高
 
 1. 如果是单文件服务端：将单文件服务端输出API地址复制粘贴到`server`选项后面
 2. 如果是PHP服务端：将`index.php`的URL填到`server`选项后面
-3. 如果是静态服务端：将`index.yml`的URL填到`server`选项后面
+3. 如果是静态服务端：将`index.json/yml`的URL填到`server`选项后面
 
 编辑好配置文件后，保存关闭这个文件，双击启动Jar测试效果
 
