@@ -33,6 +33,10 @@
 
 下载请跳转到[MCBBS贴内](https://www.mcbbs.net/thread-711833-1-1.html)，或者[点击这里](https://jq.qq.com/?_wv=1027&k=PqAEtn39)加入【文件更新助手官方交流群】 925057600 从群文件获取（同步更新），或者前往[Github Release](#开源地址)手动下载
 
+## 常见问题解答FAQ
+
+[常见问题解答（FAQ）](/faq.md)
+
 ## 版本升级
 
 在下面列出的各个版本号区间内，可以直接替换文件来升级到新版而无需重新配置，但如果你现有版本和将要升级的版本不再同一个区间里，那么就需要完全重头开始安装配置
@@ -57,22 +61,22 @@ https://afdian.net/@aprilforest
 
 做开源项目不易，如果你有经济能力，欢迎过来赞助一下哟！
 
-## 开源地址
+## 开源地址/更新记录
 
 更新助手（BalloonUpdate）是一个完整的文件更新解决方案，提供了一整套文件更新生态。由多个仓库组成，所有的源代码完全开源，欢迎各位萌新大佬前来学(bai)习(piao)
 
-| 项目                   | 仓库链接                                                     |
-| ---------------------- | ------------------------------------------------------------ |
-| 帮助文档               | https://github.com/BalloonUpdate/Docs                        |
-| WindowsExe文件打包器   | https://github.com/BalloonUpdate/LittleWrapper               |
-| Exe客户端              | https://github.com/BalloonUpdate/ExeClient                   |
-| Jar客户端              | https://github.com/BalloonUpdate/JarClient                   |
-| 静态服务端小工具（旧） | https://github.com/BalloonUpdate/Tool                        |
-| PHP服务端              | https://github.com/BalloonUpdate/PhpServer                   |
-| 单文件服务端           | https://github.com/BalloonUpdate/LittleServer                |
-| 静态服务端结构文件工具 | https://github.com/BalloonUpdate/StructureTool               |
-| 静态服务端对象存储工具 | https://github.com/BalloonUpdate/ObjectStorageServiceUtility |
-| Jar客户端一键启动工具  | https://github.com/BalloonUpdate/BatchRunner                 |
+| 项目                            | 仓库链接                                                     | 更新记录                                                     |
+| ------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| 帮助文档                        | https://github.com/BalloonUpdate/Docs                        | 没有更新记录                                                 |
+| WindowsExe文件打包器            | https://github.com/BalloonUpdate/LittleWrapper               | https://github.com/BalloonUpdate/LittleWrapper/releases      |
+| Exe客户端                       | https://github.com/BalloonUpdate/ExeClient                   | https://github.com/BalloonUpdate/ExeClient/releases          |
+| Jar客户端                       | https://github.com/BalloonUpdate/JarClient                   | https://github.com/BalloonUpdate/JarClient/releases          |
+| 静态服务端小工具（旧）          | https://github.com/BalloonUpdate/Tool                        | 没有更新记录                                                 |
+| PHP服务端                       | https://github.com/BalloonUpdate/PhpServer                   | 没有更新记录                                                 |
+| 单文件服务端                    | https://github.com/BalloonUpdate/LittleServer                | https://github.com/BalloonUpdate/LittleServer/releases       |
+| 静态服务端结构文件工具          | https://github.com/BalloonUpdate/StructureTool               | https://github.com/BalloonUpdate/StructureTool/releases      |
+| 静态服务端对象存储工具          | https://github.com/BalloonUpdate/ObjectStorageServiceUtility | https://github.com/BalloonUpdate/ObjectStorageServiceUtility/releases |
+| Jar客户端一键启动工具（Legacy） | https://github.com/BalloonUpdate/BatchRunner                 | 此项目已弃用，核心功能已集成进Jar客户端                      |
 
 ## 历史版本文档
 
