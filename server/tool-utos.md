@@ -12,6 +12,21 @@
 
 ## **腾讯云**
 
+静态服务端-4.6或更高版本：
+
+1. 解压`静态服务端`目录到任意目录
+2. 复制`服务商/tencent/`目录下的所有文件到`静态服务端`目录下
+3. 编辑`tencent.cos.yaml`文件
+   1. 将`cos.base.secretid`修改为你的腾讯云账号的Secret Id（具体方法请查看腾讯云文档）
+   2. 将`cos.base.secretkey`修改为你的腾讯云账号的Secret Key（具体方法请查看腾讯云文档）
+   3. 将`cos.buckets[0].name`修改为你的桶名（一般是aaa-bbbbb格式，aaa是桶名，bbbbbb是账号id）
+   4. 将`cos.buckets[0].endpoint`修改为你桶的地域（一般是cos.ap-xxxxxx.myqcloud.com格式，xxxxxx是地域的拼音）
+   5. 其它选项不需要修改，保存并关闭配置文件
+
+---
+
+静态服务端-4.5或以前的版本：
+
 1. 在[腾讯云文档中心](https://cloud.tencent.com/document/product/436/63144)下载对象存储命令行工具coscli，并按文档中的步骤，使用`./coscli.exe`命令配置好Secret ID和Secret Key参数
 2. 将coscli可执行文件复制到`静态服务端`目录里
 3. 将`示例配置文件/config.tencent.yml`复制到`ossu-win32.exe`旁边里并命名为`config.yml`
@@ -23,6 +38,23 @@
 
 ## **阿里云**
 
+静态服务端-4.6或更高版本：
+
+1. 解压`静态服务端`目录到任意目录
+2. 复制`服务商/aliyun/`目录下的所有文件到`静态服务端`目录下
+3. 编辑`aliyun.oos.ini`文件
+   1. 将`accessKeyID`修改为你的阿里云账号的accesskey id（具体方法请查看阿里云文档）
+   2. 将`accessKeySecret`修改为你的阿里云账号的accesskey secret（具体方法请查看阿里云文档）
+   3. 将`endpoint`修改为你桶的地域（一般是oss-cn-xxxxx.aliyuncs.com格式，xxxxx是地域的拼音）
+   4. 其它选项不需要修改，保存并关闭配置文件
+4. 编辑`config.yml`文件
+   1. 修改`variables.bucket-name`为你的桶名
+   2. 其它选项不需要修改，保存并关闭配置文件
+
+---
+
+静态服务端-4.5或以前的版本：
+
 1. 在[阿里云帮助中心](https://help.aliyun.com/document_detail/120075.htm)下载对象存储命令行工具ossutil，并按文档中的步骤，使用`ossutil64.exe config`命令配置好Endpoint和AccessKey ID和AccessKey Secret参数
 2. 将ossutil可执行文件复制到`静态服务端`目录里
 3. 将`示例配置文件/config.aliyun.yml`复制到`ossu-win32.exe`旁边并命名为`config.yml`
@@ -33,6 +65,24 @@
         + 其它选项不需要修改，保存并关闭配置文件
 
 ## **七牛云**
+
+静态服务端-4.6或更高版本：
+
+1. 解压`静态服务端`目录到任意目录
+2. 复制`服务商/qiniuyun/`目录下的所有文件到`静态服务端`目录下
+3. 在`静态服务端`目录打开终端（在目录空白处按Shift+右键，然后点击“启动命令提示符”）
+4. 在终端输入`qshell.exe account -L -w -- ak sk name`来配置七牛云工具
+   1. `ak`请替换成你七牛云的ak信息
+   2. `sk`请替换成你七牛云的sk信息
+   3. `name`请替换成你七牛云的账号名（一般是手机号）
+   4. 关闭终端
+5. 编辑`config.yml`文件
+   1. 修改`variables.bucket`为你的桶名（另外七牛云的桶不区分地域）
+   2. 其它选项不需要修改，保存并关闭配置文件
+
+---
+
+静态服务端-4.5或以前的版本：
 
 1. 在[七牛云开发者中心](https://developer.qiniu.com/kodo/1302/qshell)下载对象存储命令行工具qshell，并按文档中的步骤，使用`qshell account`命令配置好AccessKey和SecretKey参数
 2. 将qshell可执行文件复制到`静态服务端`目录里
