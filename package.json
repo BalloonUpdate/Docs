@@ -1,0 +1,13 @@
+{
+  "name": "balloon-update-docs",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "asforest <asforest@qq.com>",
+  "license": "MIT",
+  "dependencies": {
+    "http-server": "^14.1.1"
+  },
+  "scripts": {
+    "serve": "yarn http-server . -d -c-1 -o"
+  }
+}
