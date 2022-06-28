@@ -24,6 +24,6 @@ Jar客户端运行环境要求：Java 8或更高
 
 更多玩法：
 
-+ [配置启动器一键启动（传统）](onekey-start-jar.md)（传统的一键启动方案，仅完美支持HMCL）
 + [JavaAgent一键启动（推荐）](onekey-start-ja-pc.md)（新的一键启动方案，完美支持任何启动器）
++ [配置启动器一键启动（传统）](onekey-start-jar.md)（传统的一键启动方案，仅完美支持HMCL）
 + [安卓端热更新（Boat）](onekey-start-ja-mobile.md)（适用于澪，以及任何基于Boat的移动端启动方案）
