@@ -55,6 +55,10 @@
 
 [forbidden-chars.md](forbidden-chars.md ':include')
 
+---
+
+[for-xmcl.md](for-xmcl.md ':include')
+
 ## 后续维护
 
 得益于软件的同步式更新架构，后续的客户端维护其实是非常简单的：

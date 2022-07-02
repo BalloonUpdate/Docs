@@ -10,7 +10,7 @@
 
 注意Jar客户端的版本需要大于等于4.1，只有4.1版本开始才支持作为`javaagent`参数启动
 
-将Jar客户端和配置文件（如果有）移动到`.minecraft/`目录下
+将Jar客户端和配置文件（如果有）移动到`.minecraft/`目录下（如果是XMCL，请移动到对应的实例目录下，Windows下一般位于`~/.xmcl/instances/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/`）
 
 ### 2.移除签名证书
 

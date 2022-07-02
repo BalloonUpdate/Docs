@@ -1,0 +1,1 @@
+如果你在使用XMCL启动器，由于XMCL的模组资源包存储结构不同于HMCL、PCL等启动器。XMCL没有`.minecraft`目录，在上面的所有步骤中，把`.minecraft`这一级目录给删除掉，换成实际的目录。否则会提示找不到`.minecraft`目录而更新失败
