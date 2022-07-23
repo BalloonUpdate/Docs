@@ -18,8 +18,8 @@
 
 客户端发行版：
 
-1. [Jar客户端](client/jar-client.md)（**小白推荐**。支持跨平台、Boat端、以及任意启动器的一键启动）
-2. [Exe客户端](client/exe-client.md)（使用Electron制作的客户端，内置浏览器环境，可以自定义全部的界面）
+1. [Jar客户端](client/jar-client.md)（**小白推荐**。支持PC端、安卓Boat端等多个平台、以及任意启动器的一键启动）
+2. [Exe客户端](client/exe-client.md)（使用Electron制作的客户端，内置浏览器环境，可以自定义全部的界面，仅支持Windows系统）
 
 附加链接（选阅部分）：
 
