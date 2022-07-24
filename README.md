@@ -26,6 +26,9 @@
 1. [新的对象存储上传工具](server/tool-utos.md)
 2. [老的对象存储上传工具](server/tool-oss.md)（原对象存储小工具）
 3. [服务端配置参考](server/reference.md)
+4. [Jar客户端之JavaAgent一键启动（推荐）](client/onekey-start-ja-pc.md)
+5. [Jar客户端之配置启动器一键启动（传统）](client/onekey-start-jar.md)
+6. [Jar客户端之安卓端热更新（Boat）](client/onekey-start-ja-mobile.md)
 
 ## 下载安装
 
