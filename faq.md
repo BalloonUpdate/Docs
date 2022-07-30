@@ -22,4 +22,8 @@
 
 [universal.md](faqs/universal.md ':include')
 
+## **单文件服务端**
+
+[little-server.md](faqs/little-server.md ':include')
+
 <!-- tabs:end -->
