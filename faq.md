@@ -6,13 +6,13 @@
 
 <!-- tabs:start -->
 
-## **Exe客户端**
-
-[exe-client.md](faqs/exe-client.md ':include')
-
 ## **Jar版客户端**
 
 [jar-client.md](faqs/jar-client.md ':include')
+
+## **Exe客户端**
+
+[exe-client.md](faqs/exe-client.md ':include')
 
 ## **上传工具**
 
