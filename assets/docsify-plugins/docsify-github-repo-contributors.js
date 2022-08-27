@@ -17,6 +17,8 @@
                     'https://api.github.com/repos/balloonupdate/JarClient/contributors',
                     'https://api.github.com/repos/balloonupdate/LittleServer/contributors',
                     'https://api.github.com/repos/balloonupdate/ExeClient/contributors',
+                    'https://api.github.com/repos/balloonupdate/ModClient/contributors',
+                    'https://api.github.com/repos/balloonupdate/BalloonServer/contributors',
                 ]
 
                 vue.contributors = []
