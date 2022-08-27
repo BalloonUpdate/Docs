@@ -1,2 +1,13 @@
-- [首页](/)
-- [常见问题解答（FAQ）](/faq.md)
+- [首页 Home](/)
+- 手册 Manual
+  - [单文件服务端](/server/little-server-manual.md)
+  - [静态服务端](/server/static-server-manual.md)
+  - [Jar客户端](/client/jar-client-manual.md)
+  - [ForgeMod客户端](/client/forge-mod-client-manual.md)
+  - [Jar客户端一键启动（Windows平台）](/client/jar-client-desktop.md)
+  - [Jar客户端一键启动（Android平台）](/client/jar-client-android.md)
+- 参考 Reference
+  - [编写更新规则](/server/filter-rules-reference.md)
+  - [单文件服务端](/server/little-server-reference.md)
+  - [静态服务端](/server/static-server-reference.md)
+- [常见问题解答 FAQ](/faq.md)
