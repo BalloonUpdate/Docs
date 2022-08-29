@@ -1,5 +1,5 @@
 ## BalloonServer 服务端 Manual
-BalloonServer 是 LittleServer 的一个完全图形化扩展，并且底层基于高性能的 Netty-IO，性能更佳。
+BalloonServer 是由[KasumiNova](https://github.com/KasumiNova)大佬制作的一个完全图形化的单文件服务端，底层基于高性能的 Netty-IO，性能更佳。
 
 [点击这里](balloon-server-reference.md)跳转到 BalloonServer 服务端的参考页面，了解更多用法和技术细节
 

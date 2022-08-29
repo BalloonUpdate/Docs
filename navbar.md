@@ -1,5 +1,6 @@
 - [首页 Home](/)
 - 手册 Manual
+  - [BalloonServer 服务端](/server/balloon-server-manual.md)
   - [单文件服务端](/server/little-server-manual.md)
   - [静态服务端](/server/static-server-manual.md)
   - [Jar客户端](/client/jar-client-manual.md)
@@ -9,5 +10,6 @@
 - 参考 Reference
   - [编写更新规则](/server/filter-rules-reference.md)
   - [单文件服务端](/server/little-server-reference.md)
+  - [BalloonServer 服务端](/server/balloon-server-reference.md)
   - [静态服务端](/server/static-server-reference.md)
 - [常见问题解答 FAQ](/faq.md)

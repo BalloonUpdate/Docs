@@ -22,13 +22,14 @@
 
 服务端发行版：
 
-1. [单文件服务端（手册）](server/little-server-manual.md)（**小白推荐**。jar格式的单文件服务端，开箱即用无任何依赖）
-3. [静态服务端（手册）](server/static-server-manual.md)（适合对象存储等纯静态环境、也可用于PHP网站主机或者宝塔环境）
+1. [BalloonServer 服务端（手册）](server/balloon-server-manual.md)（**小白推荐**。Jar格式的单文件**图形化**服务端，开箱即用 + 99.9% 可视化操作 + 无处不在多线程优化！）
+2. [单文件服务端（手册）](server/little-server-manual.md)（**小白推荐**。Jar格式的单文件**命令行**服务端，小体积打包，适配命令行环境）
+3. [静态服务端（手册）](server/static-server-manual.md)（略有门槛，适合对象存储等纯静态环境、也可用于PHP网站主机或者宝塔环境）
 
 客户端发行版：
 
-1. [Jar客户端（手册）](client/jar-client-manual.md)（**小白推荐**。支持PC端、安卓Boat端等多个平台、以及任意启动器的一键启动）
-3. [Forge模组客户端（手册）](client/forge-mod-client-manual.md)（基于Jar客户端开发，猫反友好）
+1. [Jar客户端（手册）](client/jar-client-manual.md)（独立软件并非模组。支持PC端、安卓端平台。以及任意启动器的一键启动）
+3. [Forge模组客户端（手册）](client/forge-mod-client-manual.md)（基于Jar客户端开发，支持任意平台运行，猫反友好）
 
 ## 版本升级
 
@@ -56,16 +57,20 @@ https://afdian.net/@aprilforest
 
 ## 仓库地址
 
-| 项目                       | 仓库链接                                                     | 更新记录                                                     |
-| -------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| 帮助文档                   | [BalloonUpdate/Docs](https://github.com/BalloonUpdate/Docs)  | 没有更新记录                                                 |
-| Jar客户端                  | [BalloonUpdate/JarClient](https://github.com/BalloonUpdate/JarClient) | [前往Release页面](https://github.com/BalloonUpdate/JarClient/releases) |
-| ForgeMod客户端             | [BalloonUpdate/ModClient](https://github.com/BalloonUpdate/ModClient) | [前往Release页面](https://github.com/BalloonUpdate/ModClient/releases) |
-| 单文件服务端               | [BalloonUpdate/LittleServer](https://github.com/BalloonUpdate/LittleServer) | [前往Release页面](https://github.com/BalloonUpdate/LittleServer/releases) |
-| WindowsExe文件打包器       | [BalloonUpdate/LittleWrapper](https://github.com/BalloonUpdate/LittleWrapper) | [前往Release页面](https://github.com/BalloonUpdate/LittleWrapper/releases) |
-| ~~Exe客户端~~              | ~~[BalloonUpdate/ExeClient](https://github.com/BalloonUpdate/ExeClient)~~（不再有新特性） | [前往Release页面](https://github.com/BalloonUpdate/ExeClient/releases) |
-| ~~静态服务端小工具（旧）~~ | ~~[BalloonUpdate/Tool](https://github.com/BalloonUpdate/Tool)~~（已被其它功能替代） | 没有更新记录                                                 |
-| ~~PHP服务端~~              | ~~[BalloonUpdate/PhpServer](https://github.com/BalloonUpdate/PhpServer)~~（已集成进静态服务端） | 没有更新记录                                                 |
-| ~~静态服务端结构文件工具~~ | ~~[BalloonUpdate/StructureTool](https://github.com/BalloonUpdate/StructureTool)~~（已被其它功能替代） | [前往Release页面](https://github.com/BalloonUpdate/StructureTool/releases) |
-| ~~静态服务端对象存储工具~~ | ~~[BalloonUpdate/ObjectStorageServiceUtility](https://github.com/BalloonUpdate/ObjectStorageServiceUtility)~~（已被其它功能替代） | [前往Release页面](https://github.com/BalloonUpdate/ObjectStorageServiceUtility/releases) |
-| ~~Jar客户端一键启动工具~~  | ~~[BalloonUpdate/BatchRunner](https://github.com/BalloonUpdate/BatchRunner)~~（已被其它功能替代） | 核心功能已集成进Jar客户端                                    |
+如果需要查阅更新记录和历史，请访问对应仓库的Release页面（部分仓库因为架构过于简单，没有更新记录）
+
++ [帮助文档](https://github.com/BalloonUpdate/Docs)：项目的帮助文档仓库，包含手册和参考
++ [ForgeMod客户端](https://github.com/BalloonUpdate/ModClient)（由[KasumiNova](https://github.com/KasumiNova)大佬开发）：Forge模组版本的客户端，支持任意平台，猫反友好
++ [Jar客户端](https://github.com/BalloonUpdate/JarClient)：普通客户端，是一个独立软件，支持多平台和任意三方启动器
++ [LittleServer 服务端](https://github.com/BalloonUpdate/LittleServer)（由[KasumiNova](https://github.com/KasumiNova)大佬开发）：图形化单文件服务端，可视化操作 + 多线程优化
++ [单文件服务端](https://github.com/BalloonUpdate/LittleServer)：命令行单文件服务端，适配大部分无桌面场景
+
+不再维护：
+
++ ~~[WindowsExe文件打包器](https://github.com/BalloonUpdate/LittleWrapper)~~（不再维护）：Exe客户端打包工具
++ [~~Exe客户端~~](https://github.com/BalloonUpdate/ExeClient)~~（不再有新特性）：Electron版本客户端，支持自定义全部界面，但仅支持Windows平台
++ [~~静态服务端小工具（旧）~~](https://github.com/BalloonUpdate/Tool)~~（已被其它功能替代）：第一版的静态服务端上传工具，操作不当有误删文件的风险，不再建议使用
++ [~~PHP服务端~~](https://github.com/BalloonUpdate/PhpServer)~~（已集成进静态服务端）：PHP编写的服务端，但因为性能问题不再更新，已由静态服务端承担PHP服务端所有的功能
++ [~~静态服务端结构文件工具~~](https://github.com/BalloonUpdate/StructureTool)~~（已被其它功能替代）：第二版的静态服务端生成工具。已由最新版静态服务端整合包替代
++ [~~静态服务端对象存储工具~~](https://github.com/BalloonUpdate/ObjectStorageServiceUtility)~~（已被其它功能替代）：第二版的静态服务端上传工具。已由最新版静态服务端整合包替代
++ [~~Jar客户端一键启动工具~~](https://github.com/BalloonUpdate/BatchRunner)~~（已被其它功能替代）：初代Jar客户端的一键启动方案，因为配置复杂容易出错，已由更简单方便的新启动方式替代
