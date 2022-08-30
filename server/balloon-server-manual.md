@@ -3,6 +3,8 @@ BalloonServer 是由[KasumiNova](https://github.com/KasumiNova)大佬制作的�
 
 [点击这里](balloon-server-reference.md)跳转到 BalloonServer 服务端的参考页面，了解更多用法和技术细节
 
+**注意：从 1.0.6-BETA 版本起，程序的最低 JAVA 版本要求提高到了 17。**
+
 ## 优点
 - 99.9% 可视化操作，上手简单便捷
 - 开箱即用，无需手动编辑配置文件
@@ -12,7 +14,7 @@ BalloonServer 是由[KasumiNova](https://github.com/KasumiNova)大佬制作的�
 - 支持实时文件监听，实现全自动服务端维护
 - 支持最小化到任务栏托盘（需要系统支持）
 - 支持跨平台（Linux, Windows, MacOS）
-- 无处不在的多线程处理，最大化利用服务器资源，减少卡顿
+- 高性能多线程处理，最大化利用服务器资源，减少卡顿
 ## 窗口介绍
 
 ![](../assets/1.png)
