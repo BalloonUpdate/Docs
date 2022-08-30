@@ -68,6 +68,16 @@
 
 `解决方法`：参考[安全机制导致操作失败](#安全机制导致操作失败)
 
+## java.io.IOException
+
+`java.io.IOException: unexpected end of stream on http://xxx.com...`
+
+`影响范围`：Jar客户端4.x全版本+单文件服务端全版本
+
+`问题原因`：暂未找到问题原因
+
+`解决方法`：重启单文件服务端
+
 ---
 
 ### 配置文件读取失败
