@@ -14,7 +14,7 @@
 
 1. 首先下载服务端zip包，将`静态服务端`解压到任意位置（建议使用纯英文路径）
 2. 如果你要更新模组文件，复制Minecraft客户端中所有的模组文件到`res/.minecraft/mods/`里（目录请自行创建），注意是所有文件。如果你要更新其它文件，同样按上面的方法，复制到`res`目录里对应的路径的目录上（比如vexview的贴图复制到`res/.minecraft/vexview/textures/`下，其它文件同理）
-3. 编辑配置文件`updater/index.json`，在`common_mode`下写上所有要进行更新的目录的路径，比如要更新模组文件和vexview的贴图文件可以这样写。需要注意的是，路径分隔符只能使用正斜线（即使是在Windows上），且避免在更新规则中包含`[]`方括号，会导致更新失败（[更新规则示例、参考链接](filter-rules-reference.md)）
+3. 编辑配置文件`updater/index.json`，在`common_mode`下写上所有要进行更新的目录的路径，比如要更新模组文件和vexview的贴图文件可以这样写。需要注意的是，路径分隔符只能使用正斜线（即使是在Windows上），且避免在更新规则中包含`[]`方括号，会导致更新失败（允许玩家自己添加mod可以参考：[更新规则示例、参考链接](filter-rules-reference.md)中的示例2）
 
 ```json
 {
