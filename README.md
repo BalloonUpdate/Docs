@@ -29,7 +29,11 @@
 客户端发行版：
 
 1. [Jar客户端（手册）](client/jar-client-manual.md)（独立软件并非模组。支持PC端、安卓端平台。以及任意启动器的一键启动）
-3. [Forge模组客户端（手册）](client/forge-mod-client-manual.md)（基于Jar客户端开发，支持任意平台运行，猫反友好）
+2. [Forge模组客户端（手册）](client/forge-mod-client-manual.md)（基于Jar客户端开发，支持任意平台运行，猫反友好）
+
+小工具（新！）：
+
+1. [更新规则编辑器（手册）](server/rule-editor-tool-manaual.md)（以可视化点击的方式代替手写更新规则。规则尽量亲自手写，不要过度依赖编辑器）
 
 ## 版本升级
 
