@@ -7,6 +7,7 @@
   - [ForgeMod客户端](/client/forge-mod-client-manual.md)
   - [Jar客户端一键启动（Windows平台）](/client/jar-client-desktop.md)
   - [Jar客户端一键启动（Android平台）](/client/jar-client-android.md)
+  - [更新规则编辑器](/server/rule-editor-tool-manaual.md)
 - 参考 Reference
   - [编写更新规则](/server/filter-rules-reference.md)
   - [单文件服务端](/server/little-server-reference.md)
