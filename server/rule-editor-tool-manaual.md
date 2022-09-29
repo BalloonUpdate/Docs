@@ -36,7 +36,7 @@
 1. 将 "规则编辑器" 文件夹复制到
     1. a.单文件服务端根目录下（LittleServer.jar 旁）
     2. b.或者静态服务端的根目录下（run.bat 旁）
-    3. c.或者BalloonServer的根目录下（BalloonServer.exe 旁）
+    3. c.或者BalloonServer的根目录下（BalloonServer.exe 旁）注意编辑规则期间请完全退出BalloonServer否则不会生效
 2. 根据不同的服务端变体，双击对应的 `启动规则编辑器.cmd` 文件来启动编辑器
 3. 规则编辑器启动成功会输出两个链接，并会自动打开你的浏览器
     如果浏览器没有自动打开，请随意复制其中一个链接到浏览器里手动打开
@@ -49,7 +49,7 @@
 8. 更新规则修改完成后，可以直接关闭黑色窗口来退出规则编辑器，然后关闭浏览器页面
     1. 如果是单文件服务端，重新启动单文件服务端程序
     2. 如果是静态服务端，重新运行 run.bat 上传
-    3. 如果是BalloonServer，重新启动BalloonServer程序
+    3. 如果是BalloonServer，注意编辑规则期间请完全退出BalloonServer否则不会生效。编辑完成后再次启动BalloonServer程序
 
 ## 常见问题
 
