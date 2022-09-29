@@ -23,7 +23,7 @@
 服务端发行版：
 
 1. [BalloonServer 服务端（手册）](server/balloon-server-manual.md)（**小白推荐**。Jar格式的单文件**图形化**服务端，开箱即用 + 99.9% 可视化操作 + 多线程优化！）
-2. [单文件服务端（手册）](server/little-server-manual.md)（**小白推荐**。Jar格式的单文件**命令行**服务端，小体积打包，适配命令行环境）
+2. [单文件服务端（手册）](server/little-server-manual.md)（**小白推荐**。Jar格式的单文件**命令行**服务端，无其它依赖库，小体积打包，稳定可靠，适配桌面和命令行环境）
 3. [静态服务端（手册）](server/static-server-manual.md)（略有门槛，适合对象存储等纯静态环境、也可用于PHP网站主机或者宝塔环境）
 
 客户端发行版：
