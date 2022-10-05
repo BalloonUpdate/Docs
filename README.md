@@ -66,7 +66,7 @@ https://afdian.net/@aprilforest
 + [帮助文档](https://github.com/BalloonUpdate/Docs)：项目的帮助文档仓库，包含手册和参考
 + [ForgeMod客户端](https://github.com/BalloonUpdate/ModClient)（由[KasumiNova](https://github.com/KasumiNova)大佬开发）：Forge模组版本的客户端，支持任意平台，猫反友好
 + [Jar客户端](https://github.com/BalloonUpdate/JarClient)：普通客户端，是一个独立软件，支持多平台和任意三方启动器
-+ [LittleServer 服务端](https://github.com/BalloonUpdate/LittleServer)（由[KasumiNova](https://github.com/KasumiNova)大佬开发）：图形化单文件服务端，可视化操作 + 多线程优化
++ [BalloonServer 服务端](https://github.com/BalloonUpdate/BalloonServer)（由[KasumiNova](https://github.com/KasumiNova)大佬开发）：图形化单文件服务端，可视化操作 + 多线程优化
 + [单文件服务端](https://github.com/BalloonUpdate/LittleServer)：命令行单文件服务端，适配大部分无桌面场景
 
 不再维护：
