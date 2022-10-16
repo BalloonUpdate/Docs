@@ -72,6 +72,8 @@
 
 FTP并不是一个具体的服务商，而是指的FTP协议，可以把文件上传到所有支持FTP协议的服务器上，通常我们购买的PHP网站主机都是使用的FTP协议去后台管理文件的
 
+使用ftp协议需要额外安装Java环境，最低Java8，并能在终端中使用java目录访问即可
+
 1. 编辑`tools/ftp/config.yml`文件
    1. 修改`variables.user`为你的FTP用户名
    2. 修改`variables.pass`为你的FTP用户密码
