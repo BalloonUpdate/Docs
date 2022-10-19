@@ -6,6 +6,21 @@
 
 !> 这是新版的文档，如果你在找旧文档（Exe客户端、旧版PHP服务端等），点击[这里](https://github.com/BalloonUpdate/Docs/tree/old-servers)跳转到GitHub仓库查阅历史分支。更早的文档，请从[此处](https://github.com/BalloonUpdate/Docs/branches)查阅
 
+## 新闻
+
+更新助手的独立衍生版本[Mc Versioning](https://balloonupdate.github.io/McVersioningDocs)已经发布。Mc Versioning相比更新助手，有这些优点：
+
+1. **检测文件速度快**：Mc Versioning使用基于版本号的更新，而非基于同步的更新。基于版本号的更新速度更快。磁盘IO开销更小，对移动端设备更加友好
+
+2. **不用再写更新规则**：更新规则是个很巧妙的设计，但却又是个很反人类的功能，在Mc Versioning中会直接去掉这个辣鸡玩意，程序会自动检测到文件改变，不再需要用更新规则去标明更新范围
+
+3. **玩家可以自行添加模组文件**：更新助手中，玩家自行添加的文件，只要命中更新规则的，都会被客户端无情地删除掉。如果要避免这种情况，只能编写复杂又头疼的更新规则，或者模组文件名加前缀，或者使用规则编辑器。但Mc Versioning不会自作主张删掉这些文件，甚至连在更新的时候，玩家自己添加的文件也能得以保留
+
+<details>
+<summary>服务端编辑器预览图：</summary>
+![mv.png](assets/mv.png)
+</details>
+
 ## 介绍
 
 文件更新助手是一个使用HTTP协议的服务端/客户端架构的程序，需要两者都安装才能正常使用。服务端程序和客户端程序有不同的发行版可选择，且通信协议互相兼容，可以自由混搭。
