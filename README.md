@@ -2,9 +2,14 @@
 
 —— 更新客户端小程序，Mod服好帮手
 
-官方企鹅群：[【更新助手官方群】](https://jq.qq.com/?_wv=1027&k=PqAEtn39) 925057600 。欢迎过来聊天吹水，讨论技术，和提出建议。如果访问页面出现 404 - not found，请清理缓存后再试
+官方企鹅群，欢迎过来聊天，讨论，和提出建议：
+
++ [【更新助手官方一群】](https://jq.qq.com/?_wv=1027&k=PqAEtn39) 925057600
++ [【更新助手官方二群】](https://jq.qq.com/?_wv=1027&k=4rTiKPat) 361421141
 
 !> 这是新版的文档，如果你在找旧文档（Exe客户端、旧版PHP服务端等），点击[这里](https://github.com/BalloonUpdate/Docs/tree/old-servers)跳转到GitHub仓库查阅历史分支。更早的文档，请从[此处](https://github.com/BalloonUpdate/Docs/branches)查阅
+
+如果访问页面出现 404 - not found，请清理缓存后再试
 
 ## 新闻
 
